@@ -1,0 +1,32 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { PAGES } from '../../lib/guides';
+import { helpers } from '../../lib/helpers';
+const lang = 'en';
+const h = helpers(lang);
+const n = PAGES.filter((p) => p.en).length + 1;
+const nSrc = Object.keys(h.P.sources).length;
+---
+<PageLayout title="Permit practice test publisher: who runs State Permit Test" description="Who publishes State Permit Test, why every practice question and state rule here is free, where each figure comes from and what the site will never sell." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+  <header class="mb-6"><p class="kicker">About</p><h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-4xl">Who writes the questions of State Permit Test</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>State Permit Test is published by Radif Partners, a company that builds free tools on public data. This one is for teens getting their first learner permit, the parents who sit beside them, adults who never got a license, and drivers moving to a new state or to a motorcycle or a truck.</p>
+    <h2>Why this site exists</h2>
+    <p>Search "permit practice test" in October 2026 and the first result was a site that lets you answer a handful of questions, then shows "Premium Members Only" and asks you to pay to unlock "500+ exam-like questions". On its California page, the same site gave two different "last verified" dates and a pass mark that did not match its own question count. Most of the other results were apps or clones of the same format. The state handbooks, the source of all of them, are free but long, and none of them tells a teen on which day the permit becomes possible.</p>
+    <p>So this site does better than the first Google result because it gives every question free with the answer explained, scores each attempt against the pass mark of the state you pick, and works out from a date of birth the day of the permit, the provisional license and the full license, with the hours to log and the state fees.</p>
+    <h2>Where the questions and rules come from</h2>
+    <p>We wrote the {h.counts.general} general questions, {h.counts.cdl} CDL questions and {h.counts.moto} motorcycle questions ourselves, each from a fact stated in a state driver handbook, in the federal Manual on Uniform Traffic Control Devices, in a NHTSA publication or in the federal motor carrier rules. The state rules (permit age, holding period, hours, test length, pass mark, retake wait, fees) were read on the official page of each state agency or in its handbook, with the address kept for each figure. Our parameter file cites {nSrc} federal pages, read on {displayDate(h.P.retrieved_at, 'en-US')}. The <a href={route('method', lang)}>method page</a> gives the details.</p>
+    <h2>What we are not</h2>
+    <p>We are not a DMV, a state agency, a driving school or an app publisher. We cannot book a test, issue a permit or see your record, and our questions are not the official ones: no state publishes its test bank. The site uses no state seal or logo.</p>
+    <h2>How the site is paid for</h2>
+    <p>It is free and needs no account or email. We sell no course, app, insurance or study guide, take no commission and link to no firm that does. If advertising is added one day, it will never sit above the test, and it cannot use your answers because they never leave your browser.</p>
+    <h2>Tell us when something is wrong</h2>
+    <p>Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with the state and the rule, or the first words of the question. The <a href={route('editorial', lang)}>editorial policy</a> explains how a correction is made. The site has {n} pages in English; the full list is in the menu.</p>
+    <p class="text-sm text-navy-600">State rules last checked on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-US')}</time>.</p>
+  </div>
+</PageLayout>

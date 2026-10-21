@@ -1,0 +1,159 @@
+---
+/**
+ * Home of one language: the practice test on the first screen, then the reference page on how the
+ * knowledge test works in each state (RECETTE §5, §21). Every state figure is read from the data.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Tool from './Tool.astro';
+import Clamp from './Clamp.astro';
+import { route, hasRoute, type Locale } from '../i18n/routes';
+import { PAGES } from '../lib/guides';
+import { groupLabel, GROUPS_ORDER } from '../i18n/nav';
+import { helpers } from '../lib/helpers';
+import { LAST_UPDATED, AUTHOR_NAME } from '../data/site-config';
+import { displayDate } from '../lib/format';
+import { faqSchema, webApplicationSchema, websiteSchema, organizationSchema } from '../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const es = lang === 'es';
+const h = helpers(lang, true);
+const { STATES, S, num, pc } = h;
+const withQ = STATES.filter((s) => s.testQ);
+const withPct = STATES.filter((s) => s.testPct);
+const shortest = h.rank((s) => s.testQ)[0];
+const longest = h.rank((s) => s.testQ, -1)[0];
+const lowPct = h.rank((s) => s.testPct)[0];
+const highPct = h.rank((s) => s.testPct, -1)[0];
+const spanishYes = STATES.filter((s) => s.spanish === true);
+const sameDay = STATES.filter((s) => s.retakeDays === 0);
+const week = STATES.filter((s) => (s.retakeDays ?? 0) >= 7);
+const youngest = h.rank((s) => s.permitAge)[0];
+const mostHours = h.rank((s) => s.hours, -1)[0];
+const ca = S('CA');
+const signTopics = h.counts.general;
+const pctList = [...new Set(withPct.map((s) => Math.round((s.testPct as number) * 1000) / 10))].sort((a, b) => a - b);
+const modal = (() => { const c = new Map<number, number>(); withPct.forEach((s) => { const k = Math.round((s.testPct as number) * 100); c.set(k, (c.get(k) ?? 0) + 1); }); return [...c.entries()].sort((a, b) => b[1] - a[1])[0]; })();
+const rows = STATES.map((s) => { const x = S(s.code); return [h.sl(s.code), x.testQ ?? '–', x.need && x.testQ ? `${x.need}` : '–', x.testPct ? pc(x.testPct) : '–', x.retakeDays != null ? (x.retakeDays === 0 ? (es ? 'mismo día' : 'same day') : `${x.retakeDays} ${es ? (x.retakeBusiness ? 'día hábil' : x.retakeDays === 1 ? 'día' : 'días') : (x.retakeBusiness ? 'business day' : x.retakeDays === 1 ? 'day' : 'days')}`) : '–', x.spanish === true ? (es ? 'Sí' : 'Yes') : x.spanish === false ? 'No' : '–']; });
+const L = es ? {
+  title: 'Examen de práctica del permiso 2026: gratis, por estado',
+  description: 'Examen de práctica del permiso gratis para cada estado: preguntas de auto, moto y CDL con respuestas explicadas, calificadas con la nota de su estado. Sin pago.',
+  h1: 'Examen de práctica del permiso, gratis y por estado',
+  intro: 'Elija su estado: preguntas sobre señales, reglas y manejo seguro, con la respuesta explicada al instante y calificadas con la nota que exige su estado. Sin cuenta, sin pago.',
+} : {
+  title: 'Permit Practice Test 2026: Free, Scored for Your State',
+  description: 'Free permit practice test for every US state: car, motorcycle and CDL questions with explained answers, scored against your state\'s pass mark. No paywall.',
+  h1: 'Free permit practice test for your state',
+  intro: 'Pick your state: questions on signs, rules and safe driving, each answer explained at once, scored against the pass mark your state uses. No account, nothing to unlock.',
+};
+const resume = es
+  ? `El examen teórico del permiso de aprendizaje tiene entre ${shortest.testQ} preguntas en ${h.sl(shortest.code)} y ${longest.testQ} en ${h.sl(longest.code)}, entre los ${withQ.length} estados que publican el número en una página oficial, y la nota para aprobar va de ${pc(lowPct.testPct as number)} a ${pc(highPct.testPct as number)}; el ${modal[0]} % es la más frecuente. Todas las preguntas salen del manual del conductor del estado: señales de tránsito, semáforos y marcas viales, derecho de paso, distancias y velocidades, alcohol y reglas de la licencia para jóvenes. Este examen de práctica reúne ${num(h.counts.general)} preguntas generales escritas por nosotros a partir de esos manuales y del manual federal de señales, más las preguntas propias de cada estado generadas a partir de sus reglas verificadas, y ${num(h.counts.cdl)} preguntas de CDL y ${num(h.counts.moto)} de motocicleta. Cada respuesta se explica en el momento, y el marcador compara su puntuación con la nota que exige su estado. Nada está bloqueado detrás de un plan pago.`
+  : `The learner permit knowledge test has between ${shortest.testQ} questions in ${h.sl(shortest.code)} and ${longest.testQ} in ${h.sl(longest.code)}, among the ${withQ.length} states that publish the number on an official page, and the pass mark runs from ${pc(lowPct.testPct as number)} to ${pc(highPct.testPct as number)}, with ${modal[0]} % the most common. Every question comes from the state's driver handbook: road signs, signals and pavement markings, right of way, following distances and speeds, alcohol, and the rules of the teen license. This practice test holds ${num(h.counts.general)} general questions we wrote from those handbooks and the federal sign manual, plus questions specific to each state generated from its verified rules, ${num(h.counts.cdl)} CDL questions and ${num(h.counts.moto)} motorcycle questions. Every answer is explained the moment you pick it, and the score panel compares your result with your state's own pass mark. Nothing is locked behind a paid plan.`;
+const faqs = es ? [
+  { q: '¿Cuántas preguntas tiene el examen del permiso?', a: `Depende del estado. Entre los ${withQ.length} estados que publican la cifra, va de ${shortest.testQ} en ${S(shortest.code).nameL} a ${longest.testQ} en ${S(longest.code).nameL}. La tabla de esta página da el número de cada estado y las respuestas correctas que hacen falta. Donde la agencia no publica el número, lo indicamos como no confirmado en lugar de copiar una cifra de otro sitio.` },
+  { q: '¿Son estas las preguntas reales del DMV?', a: 'No. Ningún DMV publica su banco de preguntas y no copiamos preguntas filtradas ni de otros sitios. Escribimos cada pregunta a partir de un dato del manual oficial del estado o de la regla federal correspondiente, por lo que cubren los mismos temas que el examen real. Si domina las explicaciones, conoce las reglas que el examen pone a prueba.' },
+  { q: '¿Qué pasa si repruebo el examen teórico?', a: `Puede volver a presentarlo tras una espera que fija cada estado: el mismo día en ${sameDay.length} estados de nuestros datos y una semana o más en ${week.length}. Muchos estados cobran de nuevo o limitan el número de intentos por tarifa. La página de cada estado indica su regla, y el examen de práctica con la duración real sirve para comprobar si está listo antes de volver.` },
+  { q: '¿Puedo presentar el examen en español?', a: `En ${spanishYes.length} de los estados de nuestros datos la agencia confirma que el examen teórico se ofrece en español, y muchos publican además el manual en español. Este examen de práctica está completo en español, con las mismas preguntas y explicaciones que en inglés, para que pueda estudiar en el idioma en que presentará el examen.` },
+  { q: '¿A qué edad se puede presentar el examen del permiso?', a: `Depende del estado: desde los ${h.ageLabel(youngest.permitAge)} en ${S(youngest.code).nameL}, la edad más baja de nuestros datos, y a los 16 en los estados más estrictos. En casi todos, el examen se presenta el mismo día en que se pide el permiso, una vez cumplida la edad. La calculadora de fechas da el día exacto a partir de la fecha de nacimiento y el estado.` },
+  { q: '¿El examen de práctica es realmente gratis?', a: 'Sí, todo: cada pregunta, cada explicación, el repaso de errores, los exámenes de moto y CDL y la calculadora de fechas. No hay cuenta, ni correo, ni plan premium, ni preguntas reservadas para suscriptores. Las respuestas se quedan en su navegador. El sitio no vende cursos ni aplicaciones y no tiene enlaces de afiliación.' },
+] : [
+  { q: 'How many questions are on the permit test?', a: `It depends on the state. Among the ${withQ.length} states that publish the figure, it ranges from ${shortest.testQ} in ${S(shortest.code).nameL} to ${longest.testQ} in ${S(longest.code).nameL}. The table on this page gives each state's number and the correct answers needed. Where the agency does not publish a number, we show it as not confirmed rather than copy a figure from another site.` },
+  { q: 'Are these the real DMV questions?', a: 'No. No DMV publishes its question bank, and we do not copy leaked questions or questions from other sites. We write each question from a fact in the state\'s official handbook or the federal rule behind it, so the questions cover the same ground as the real test. If you understand the explanations, you know the rules the test checks.' },
+  { q: 'What happens if I fail the knowledge test?', a: `You can take it again after a wait set by each state: the same day in ${sameDay.length} states of our data and a week or more in ${week.length}. Many states charge again or limit the number of attempts per fee. Each state page gives its rule, and the full-length practice test tells you whether you are ready before you go back.` },
+  { q: 'Can I take the permit test in Spanish?', a: `In ${spanishYes.length} of the states in our data the agency confirms the knowledge test is offered in Spanish, and many also publish a Spanish handbook. This practice test is complete in Spanish, with the same questions and explanations as in English, so you can study in the language you will test in.` },
+  { q: 'How old do you have to be to take the permit test?', a: `It depends on the state: from ${h.ageLabel(youngest.permitAge)} in ${S(youngest.code).nameL}, the youngest in our data, up to 16 in the strictest states. In almost every state the test is taken on the day you apply for the permit, once you have reached the age. The date calculator gives the exact day from a date of birth and a state.` },
+  { q: 'Is this practice test really free?', a: 'Yes, all of it: every question, every explanation, the mistake review, the motorcycle and CDL tests and the date calculator. There is no account, no email, no premium plan and no question held back for subscribers. Your answers stay in your browser. The site sells no course or app and carries no affiliate link.' },
+];
+const jsonLd = [webApplicationSchema({ name: L.h1, description: L.description, path: route('home', lang), lang }), websiteSchema(lang), organizationSchema(lang), faqSchema(faqs, lang)];
+const groups = GROUPS_ORDER.filter((g) => g !== 'states').map((g) => ({ g, pages: PAGES.filter((p) => p.group === g && hasRoute(p.id, lang)) })).filter((x) => x.pages.length);
+const states = PAGES.filter((p) => p.group === 'states' && hasRoute(p.id, lang));
+const T = (p: (typeof PAGES)[number]) => (es ? p.es! : p.en);
+---
+<PageLayout title={L.title} description={L.description} lang={lang} jsonLd={jsonLd} faqs={faqs}>
+  <header class="mb-3">
+    <h1 class="text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{L.h1}</h1>
+    <p class="mt-2 text-base text-navy-700 sm:text-lg">{L.intro}</p>
+  </header>
+  <div data-outil class="mb-4"><Tool tool={{ kind: 'quiz', props: { state: 'CA', type: 'car' } }} lang={lang} primary={true} /></div>
+  <Clamp text={resume} id="clamp-home" lang={lang} class="mb-3" />
+  <p class="mb-8 text-sm text-navy-600">{es ? 'Reglas estatales revisadas el' : 'State rules checked on'} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, es ? 'es-US' : 'en-US')}</time> · {AUTHOR_NAME} · <a href={route('method', lang)} class="underline hover:text-navy-900">{es ? 'Cómo se escriben las preguntas' : 'How the questions are written'}</a> · <a href={route('about', lang)} class="underline hover:text-navy-900">{es ? 'Quiénes somos' : 'About this site'}</a></p>
+
+  {es ? (
+  <div class="prose prose-slate max-w-none">
+    <p>Este sitio hace más que el primer resultado de Google para «examen de práctica del permiso», un sitio que muestra unas preguntas y luego pide pagar para desbloquear el resto, porque da gratis todas sus preguntas con la respuesta explicada, califica cada intento con la nota que exige su estado y calcula a partir de su fecha de nacimiento el día del permiso, de la licencia provisional y de la completa.</p>
+    <h2>Cómo funciona el examen teórico</h2>
+    <p>El examen del permiso, llamado examen de conocimientos o examen escrito, es un cuestionario de opción múltiple que se presenta en una oficina de la agencia de vehículos del estado, casi siempre en una pantalla táctil y a veces en línea con supervisión. Se presenta junto con la prueba de la vista y el pago de la tarifa del permiso. Al aprobarlo se recibe el permiso de aprendizaje, que permite manejar acompañado de un adulto con licencia. Cada estado elige el número de preguntas y la nota para aprobar; pocos publican ambos en la misma página, y algunos solo los dan en el manual. Reunimos lo que dice cada agencia en la tabla siguiente.</p>
+    <p>La mayoría de los estados que publican un porcentaje fijan el mínimo en el {modal[0]} %: con un examen de 25 preguntas eso significa 20 correctas, es decir, cinco errores permitidos. Las notas publicadas en nuestros datos son {pctList.map((x) => `${String(x).replace('.', ',')} %`).join(', ')}. Algunos estados cortan el examen en cuanto se alcanza la nota, o en cuanto ya no se puede alcanzar; otros dividen el examen en una parte de señales y otra de reglas, cada una con su propio mínimo.</p>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <p>This site does better than the first Google result for "permit practice test", a site that shows a few questions and then asks you to pay to unlock the rest, because it gives every question free with the answer explained, scores each attempt against the pass mark your own state uses, and works out from a date of birth the day of the permit, the provisional license and the full license.</p>
+    <h2>How the knowledge test works</h2>
+    <p>The permit test, called the knowledge test or written test, is a multiple-choice exam taken at an office of the state motor vehicle agency, usually on a touch screen and sometimes online under supervision. It goes with the vision screening and the permit fee. Passing it gets you the learner permit, which lets you drive with a licensed adult beside you. Each state sets the number of questions and the pass mark; few publish both on the same page, and some only in the handbook. The table below gathers what each agency says.</p>
+    <p>Most states that publish a percentage set the bar at {modal[0]} %: on a 25-question test that means 20 correct, so five mistakes allowed. The pass marks published in our data are {pctList.map((x) => `${x} %`).join(', ')}. Some states stop the test as soon as you reach the mark, or as soon as you can no longer reach it; others split the test into a signs part and a rules part, each with its own minimum.</p>
+  </div>
+  )}
+
+  <Fragment set:html={h.table(es ? ['Estado', 'Preguntas', 'Correctas', 'Nota', 'Repetir tras', 'Español'] : ['State', 'Questions', 'Correct needed', 'Pass mark', 'Retake after', 'Spanish'], rows, es ? `Examen teórico del permiso de auto (clase C o D) en los ${STATES.length} estados y DC. Un guion: dato no publicado en las páginas oficiales leídas.` : `Car permit knowledge test (class C or D) in the ${STATES.length} states and DC. A dash: not published on the official pages read.`, ['l', 'r', 'r', 'r', 'r', 'r'])} />
+
+  {es ? (
+  <div class="prose prose-slate max-w-none">
+    <h2>Lo que pregunta el examen</h2>
+    <p>Todos los manuales estatales cubren los mismos grandes temas, porque las señales, los semáforos y las marcas viales siguen un mismo manual federal, el <Fragment set:html={h.src('mutcd', 'MUTCD')} />, y las reglas de circulación se parecen mucho de un estado a otro. El examen de práctica reparte sus {num(signTopics)} preguntas generales entre siete temas:</p>
+    <ul>
+      <li><strong>Señales de tránsito.</strong> La forma y el color dicen la mitad de la respuesta: octágono rojo para el alto, triángulo invertido para ceder el paso, rombo amarillo para advertencias, pentágono para zonas escolares, círculo amarillo para un cruce de ferrocarril.</li>
+      <li><strong>Semáforos y señales de agentes.</strong> Flecha verde, luz roja intermitente, luz amarilla intermitente, semáforo apagado.</li>
+      <li><strong>Marcas en el pavimento.</strong> Líneas amarillas que separan sentidos contrarios, líneas blancas entre carriles del mismo sentido, carriles de giro a la izquierda compartidos.</li>
+      <li><strong>Derecho de paso.</strong> Cruces sin señal, glorietas, vehículos de emergencia, peatones, autobuses escolares detenidos.</li>
+      <li><strong>Manejo seguro.</strong> Distancia de seguimiento, velocidad según las condiciones, lluvia, niebla, puntos ciegos, estacionamiento en pendiente.</li>
+      <li><strong>Alcohol y drogas.</strong> Límites de alcohol en la sangre, consentimiento implícito, efectos sobre la conducción.</li>
+      <li><strong>Reglas de la licencia.</strong> Uso del cinturón, celular, restricciones para jóvenes, qué hacer tras un choque.</li>
+    </ul>
+    <p>A eso se suman las preguntas propias de cada estado, generadas a partir de sus reglas confirmadas: edad del permiso, tiempo mínimo, horas supervisadas, nota para aprobar, límite de alcohol para menores de 21. Así, un examen de práctica de California y uno de Texas no son iguales. Si quiere centrarse en las señales, elija «Solo señales de tránsito» en el selector de examen; la <Fragment set:html={h.a('road-signs', 'guía de señales')} /> repasa cada forma y color.</p>
+    <h2>Del permiso a la licencia completa</h2>
+    <p>El permiso es la primera etapa de la licencia graduada, un sistema que la <Fragment set:html={h.src('nhtsa_teen', 'NHTSA')} /> recomienda y que todos los estados aplican de una forma u otra. {S(youngest.code).nameL} otorga el permiso desde los {h.ageLabel(youngest.permitAge)}, la edad más baja de nuestros datos; {S(mostHours.code).nameL} exige {mostHours.hours} horas de práctica supervisada, la cifra más alta. En California se tiene el permiso a los {ca.permitAgeL}, se conserva {ca.holdL} con {ca.hours ?? h.nc} horas de práctica, de ellas {ca.nightHours ?? h.nc} de noche, y la licencia provisional llega a los {ca.interAgeL}. La <Fragment set:html={h.a('permit-age', 'calculadora de fechas')} /> hace la cuenta con su fecha de nacimiento.</p>
+    <h2>Cómo prepararse sin perder tiempo</h2>
+    <p>Lea el manual de su estado una vez, de principio a fin, sin intentar memorizar: la mayoría de las preguntas se responden por lógica una vez entendida la regla. Luego haga exámenes de práctica cortos, de 20 preguntas, y lea la explicación de cada error. Cuando acierte de forma constante por encima de la nota de su estado, pase a la duración real: el contador le dice cuántos errores le quedan antes de reprobar, como en el examen. Repita los temas que más falla con el repaso de errores. El día del examen, lleve los documentos que pide su estado (identidad, residencia y, para menores, el consentimiento de un padre o tutor) y revise en la página de la agencia si hace falta cita.</p>
+    <h2>Moto y licencia comercial</h2>
+    <p>El selector de examen incluye un examen de motocicleta, con preguntas sobre equipo de protección, posición en el carril y manejo en grupo escritas a partir de las publicaciones de la NHTSA, y un examen de conocimientos generales de la licencia comercial (CDL), escrito a partir de las reglas federales de 49 CFR. El permiso de aprendiz comercial obliga a esperar 14 días antes del examen práctico y vence al año; la <Fragment set:html={h.a('cdl', 'página de CDL')} /> lo explica.</p>
+    <h2>De dónde salen las cifras</h2>
+    <p>Cada regla estatal se leyó en la página oficial de la agencia de vehículos del estado o en su manual del conductor, cuya dirección se cita en la página del estado; la lista de agencias está en <Fragment set:html={h.src('handbooks', 'USA.gov')} />. Una cifra que no encontramos en una página oficial aparece como no confirmada. Un programa vuelve a leer las páginas cada mes. La <a href={route('method', lang)}>página de método</a> explica cómo se escriben las preguntas y qué queda fuera.</p>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <h2>What the test asks</h2>
+    <p>All state handbooks cover the same broad topics, because signs, signals and pavement markings follow one federal manual, the <Fragment set:html={h.src('mutcd', 'MUTCD')} />, and traffic rules differ little from state to state. The practice test spreads its {num(signTopics)} general questions over seven topics:</p>
+    <ul>
+      <li><strong>Road signs.</strong> Shape and color give half the answer: a red octagon for stop, a downward triangle for yield, a yellow diamond for warnings, a pentagon for school zones, a round yellow sign for a railroad crossing ahead.</li>
+      <li><strong>Signals and officers.</strong> Green arrows, flashing red, flashing yellow, a signal that is dark.</li>
+      <li><strong>Pavement markings.</strong> Yellow lines between opposite directions, white lines between lanes going the same way, shared center turn lanes.</li>
+      <li><strong>Right of way.</strong> Uncontrolled intersections, roundabouts, emergency vehicles, pedestrians, stopped school buses.</li>
+      <li><strong>Safe driving.</strong> Following distance, speed for conditions, rain, fog, blind spots, parking on a hill.</li>
+      <li><strong>Alcohol and drugs.</strong> Blood alcohol limits, implied consent, the effects on driving.</li>
+      <li><strong>License rules.</strong> Seat belts, phones, teen restrictions, what to do after a crash.</li>
+    </ul>
+    <p>On top of these come each state's own questions, generated from its confirmed rules: permit age, holding period, supervised hours, pass mark, the alcohol limit under 21. A California practice test and a Texas one are not the same. To focus on signs, choose "Road signs only" in the test selector; the <Fragment set:html={h.a('road-signs', 'road signs guide')} /> goes through every shape and color.</p>
+    <h2>From permit to full license</h2>
+    <p>The permit is the first stage of graduated licensing, a system <Fragment set:html={h.src('nhtsa_teen', 'NHTSA')} /> recommends and every state applies in some form. {S(youngest.code).nameL} issues the permit from {h.ageLabel(youngest.permitAge)}, the youngest in our data; {S(mostHours.code).nameL} asks for {mostHours.hours} hours of supervised practice, the most. In California the permit comes at {ca.permitAgeL}, is held {ca.holdL} with {ca.hours ?? h.nc} hours of practice, {ca.nightHours ?? h.nc} of them at night, and the provisional license follows at {ca.interAgeL}. The <Fragment set:html={h.a('permit-age', 'date calculator')} /> does the sums from a date of birth.</p>
+    <h2>How to prepare without wasting time</h2>
+    <p>Read your state's handbook once, end to end, without trying to memorize it: most questions answer themselves once the rule makes sense. Then take short practice tests of 20 questions and read the explanation of every mistake. When you score above your state's pass mark every time, switch to the real length: the counter tells you how many mistakes you have left before failing, as on the day. Go back to the topics you miss most with the mistake review. On test day, bring the documents your state lists (identity, residency and, for minors, a parent's or guardian's consent) and check on the agency's page whether you need an appointment.</p>
+    <h2>Motorcycle and commercial license</h2>
+    <p>The test selector also offers a motorcycle test, with questions on protective gear, lane position and group riding written from NHTSA publications, and a CDL general knowledge test written from the federal rules in 49 CFR. The commercial learner's permit must be held 14 days before the skills test and expires after one year; the <Fragment set:html={h.a('cdl', 'CDL page')} /> explains it.</p>
+    <h2>Where the figures come from</h2>
+    <p>Each state rule was read on the official page of the state's motor vehicle agency or in its driver handbook, whose address is cited on the state's page; the list of agencies is on <Fragment set:html={h.src('handbooks', 'USA.gov')} />. A figure we could not find on an official page is shown as not confirmed. A script re-reads the pages every month. The <a href={route('method', lang)}>method page</a> explains how the questions are written and what is left out.</p>
+  </div>
+  )}
+
+  <section class="mt-12" aria-labelledby="guides-title">
+    <h2 id="guides-title" class="text-2xl font-bold text-navy-900">{es ? 'Guías' : 'Guides'}</h2>
+    <div class="mt-4 grid gap-x-10 gap-y-6 md:grid-cols-2">
+      {groups.map(({ g, pages }) => (
+        <div>
+          <h3 class="border-b border-navy-200 pb-1 text-sm font-semibold uppercase tracking-wide text-navy-600">{groupLabel(g, lang)}</h3>
+          <ul class="mt-2 space-y-2">{pages.map((p) => <li><a href={route(p.id, lang)} class="font-medium text-accent-700 underline-offset-2 hover:underline">{T(p).nav}</a><span class="block text-sm text-navy-600">{T(p).card}</span></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    {states.length > 0 && <h3 class="mt-8 border-b border-navy-200 pb-1 text-sm font-semibold uppercase tracking-wide text-navy-600">{es ? 'Examen de práctica por estado' : 'Practice test by state'}</h3>}
+    {states.length > 0 && <p class="mt-2 text-sm leading-7">{states.map((p, i) => <Fragment><a href={route(p.id, lang)} class="text-accent-700 hover:underline">{T(p).nav}</a>{i < states.length - 1 ? ' · ' : ''}</Fragment>)}</p>}
+  </section>
+</PageLayout>

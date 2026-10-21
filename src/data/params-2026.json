@@ -1,0 +1,114 @@
+{
+ "_lisezmoi": "Federal and general sources of the site. State figures and their official URLs live in src/data/states.json (built by scripts/build-states.py from data/raw/states-*.json).",
+ "year": 2026,
+ "retrieved_at": "2026-10-22",
+ "valid_from": "2026-01-01",
+ "valid_to": "2026-12-31",
+ "sources": {
+  "mutcd": {
+   "url": "https://mutcd.fhwa.dot.gov/kno_11th_Edition.htm",
+   "label": {
+    "en": "FHWA, Manual on Uniform Traffic Control Devices, 11th edition (December 2023)",
+    "es": "FHWA, Manual de dispositivos uniformes de control de tránsito (MUTCD), 11.ª edición (diciembre de 2023)"
+   }
+  },
+  "handbooks": {
+   "url": "https://www.usa.gov/state-motor-vehicle-services",
+   "label": {
+    "en": "USA.gov: motor vehicle services of each state (links to every DMV and its handbook)",
+    "es": "USA.gov: servicios de vehículos de cada estado (enlaces a cada DMV y su manual)"
+   }
+  },
+  "nhtsa_teen": {
+   "url": "https://www.nhtsa.gov/road-safety/teen-driving",
+   "label": {
+    "en": "NHTSA, Teen driving",
+    "es": "NHTSA, Manejo de adolescentes"
+   }
+  },
+  "nhtsa_alcohol": {
+   "url": "https://www.nhtsa.gov/risky-driving/drunk-driving",
+   "label": {
+    "en": "NHTSA, Drunk driving",
+    "es": "NHTSA, Manejar ebrio"
+   }
+  },
+  "nhtsa_drowsy": {
+   "url": "https://www.nhtsa.gov/risky-driving/drowsy-driving",
+   "label": {
+    "en": "NHTSA, Drowsy driving",
+    "es": "NHTSA, Manejar con sueño"
+   }
+  },
+  "nhtsa_moto": {
+   "url": "https://www.nhtsa.gov/road-safety/motorcycle-safety",
+   "label": {
+    "en": "NHTSA, Motorcycle safety",
+    "es": "NHTSA, Seguridad en motocicleta"
+   }
+  },
+  "nhtsa_helmet": {
+   "url": "https://www.nhtsa.gov/motorcycle-safety/choosing-right-motorcycle-helmet",
+   "label": {
+    "en": "NHTSA, Choosing the right motorcycle helmet (FMVSS No. 218)",
+    "es": "NHTSA, Cómo elegir el casco (FMVSS No. 218)"
+   }
+  },
+  "nhtsa_bus": {
+   "url": "https://www.nhtsa.gov/road-safety/school-bus-safety",
+   "label": {
+    "en": "NHTSA, School bus safety",
+    "es": "NHTSA, Seguridad del autobús escolar"
+   }
+  },
+  "cfr383": {
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383",
+   "label": {
+    "en": "49 CFR part 383, Commercial driver's license standards",
+    "es": "49 CFR parte 383, normas de la licencia comercial"
+   }
+  },
+  "cfr391": {
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-391",
+   "label": {
+    "en": "49 CFR part 391, Qualifications of drivers",
+    "es": "49 CFR parte 391, requisitos de los choferes"
+   }
+  },
+  "cfr392": {
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-392",
+   "label": {
+    "en": "49 CFR part 392, Driving of commercial motor vehicles",
+    "es": "49 CFR parte 392, manejo de vehículos comerciales"
+   }
+  },
+  "cfr395": {
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-395",
+   "label": {
+    "en": "49 CFR part 395, Hours of service of drivers",
+    "es": "49 CFR parte 395, horas de servicio"
+   }
+  },
+  "cfr380": {
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-380",
+   "label": {
+    "en": "49 CFR part 380, Entry-level driver training",
+    "es": "49 CFR parte 380, capacitación de nivel inicial"
+   }
+  },
+  "cfr382": {
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-382",
+   "label": {
+    "en": "49 CFR part 382, Drug and alcohol testing",
+    "es": "49 CFR parte 382, pruebas de drogas y alcohol"
+   }
+  },
+  "cfr396": {
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-396",
+   "label": {
+    "en": "49 CFR part 396, Inspection, repair and maintenance",
+    "es": "49 CFR parte 396, inspección y mantenimiento"
+   }
+  }
+ }
+}

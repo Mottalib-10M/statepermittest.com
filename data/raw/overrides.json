@@ -1,0 +1,341 @@
+{
+ "_doc": "Editorial layer on top of the raw readings: publishable fee notes (the raw notes keep the researcher's remarks), and states where one fee covers the permit and the first license (licenseFee set to 0, feeCombined true). Each entry restates what the official quote in states-*.json says.",
+ "AL": {
+  "rec": {
+   "feeNote": "Plus $5 for each knowledge test attempt. The Stage II license also costs $36.25.",
+   "handbookEdition": "November 2024"
+  }
+ },
+ "AK": {
+  "rec": {
+   "feeNote": "Standard cards; a REAL ID card costs $35 for the permit and $40 for the license.",
+   "handbookEdition": "rev. 10/2025"
+  }
+ },
+ "AR": {
+  "rec": {
+   "feeNote": "The learner license fee is prorated; each written exam costs $5.",
+   "handbookEdition": "Arkansas State Police study guide, September 2024"
+  }
+ },
+ "CA": {
+  "rec": {
+   "licenseFee": 0,
+   "feeCombined": true,
+   "feeNote": "One application fee covers the permit and the first license, and three knowledge test attempts within 12 months.",
+   "handbookEdition": "online edition, 2026"
+  }
+ },
+ "CT": {
+  "rec": {
+   "feeNote": "Plus a $40 testing fee covering the vision, knowledge and road tests.",
+   "handbookEdition": "revised March 2023"
+  }
+ },
+ "DE": {
+  "rec": {
+   "licenseFee": 0,
+   "feeCombined": true,
+   "feeNote": "The $50 Class D license fee is paid when applying for the permit and includes it.",
+   "handbookEdition": "July 2026"
+  }
+ },
+ "DC": {
+  "rec": {
+   "feeNote": "Plus $10 for the knowledge test at a service center. The provisional license costs $20 and the full license $47.",
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "FL": {
+  "rec": {
+   "feeNote": "Original Class E license fee set by statute; county tax collector offices may add a service fee.",
+   "handbookEdition": null,
+   "handbookUrl": null
+  },
+  "fields": {
+   "knowledge_test_questions": {
+    "value": 50,
+    "source_url": "https://www.flhsmv.gov/driver-licenses-id-cards/licensing-requirements-teens-graduated-driver-license-laws-driving-curfews/class-e-knowledge-exam-driving-skills-test/",
+    "quote": "50 multiple-choice questions",
+    "note": "Read 2026-10-22 through the search engine index of the FLHSMV page (the site refuses automated downloads)."
+   },
+   "knowledge_test_pass_correct": {
+    "value": 40,
+    "source_url": "https://www.flhsmv.gov/driver-licenses-id-cards/licensing-requirements-teens-graduated-driver-license-laws-driving-curfews/class-e-knowledge-exam-driving-skills-test/",
+    "quote": "40 correct",
+    "note": "idem"
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://www.flhsmv.gov/driver-licenses-id-cards/licensing-requirements-teens-graduated-driver-license-laws-driving-curfews/class-e-knowledge-exam-driving-skills-test/",
+    "quote": "80 percent",
+    "note": "idem"
+   }
+  }
+ },
+ "GA": {
+  "rec": {
+   "feeNote": "The permit fee is paid again for each testing attempt. The Class D license for teens costs $10.",
+   "handbookEdition": "current online edition"
+  }
+ },
+ "HI": {
+  "rec": {
+   "feeNote": "Fees of the City and County of Honolulu, where licensing is run by the county: $5 permit plus $2 test.",
+   "handbookEdition": "2023 edition"
+  }
+ },
+ "ID": {
+  "rec": {
+   "feeNote": "Plus $5 for the knowledge test. The teen license, valid 3 years, costs $30.",
+   "handbookEdition": "July 2026"
+  }
+ },
+ "IN": {
+  "rec": {
+   "feeNote": "Fee chart revised on 1 January 2026.",
+   "handbookEdition": "2026 edition"
+  }
+ },
+ "IA": {
+  "rec": {
+   "feeNote": "Class C licenses cost $4 per year of validity.",
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "MT": {
+  "rec": {
+   "feeNote": "Plus a 3 % administrative fee; the license fee is per year of validity.",
+   "handbookEdition": "revised October 2018"
+  }
+ },
+ "NE": {
+  "rec": {
+   "feeNote": "Permit: $8 plus a $5 security fee. Provisional operator's permit: $20.",
+   "handbookEdition": "January 2025"
+  }
+ },
+ "NV": {
+  "rec": {
+   "feeNote": "Plus $25 for the first knowledge and skills test and $10 for each retest. Converting the permit costs $22.50.",
+   "handbookEdition": "DMV 700, March 2024"
+  }
+ },
+ "NH": {
+  "rec": {
+   "feeNote": "New Hampshire issues no learner's permit. The license costs $10 per year until age 21.",
+   "handbookEdition": "DSMV 360, rev. 11/25"
+  }
+ },
+ "NJ": {
+  "rec": {
+   "feeNote": "Plus $4 for the two red GDL decals. The basic license costs $24, or $35 with REAL ID.",
+   "handbookEdition": "2026"
+  }
+ },
+ "NM": {
+  "rec": {
+   "feeNote": "The first teen license is the provisional license, $18.",
+   "handbookEdition": "version 11.19.19"
+  }
+ },
+ "NY": {
+  "rec": {
+   "licenseFee": 0,
+   "feeCombined": true,
+   "feeNote": "One fee covers the permit and the first license; it depends on age at application and is higher in the New York City metropolitan area.",
+   "handbookEdition": "MV-21, current edition"
+  }
+ },
+ "NC": {
+  "rec": {
+   "feeNote": "Level 1 permit $25.50, Level 2 provisional license $25.50.",
+   "handbookEdition": "current edition"
+  }
+ },
+ "ND": {
+  "rec": {
+   "feeNote": "Plus $5 for each knowledge test attempt and $5 for the road test.",
+   "handbookEdition": "2025-2027"
+  }
+ },
+ "OK": {
+  "rec": {
+   "feeNote": "Each fee is $4 for the application plus $38.50 for the card.",
+   "handbookEdition": "current edition, fee table of June 1, 2025"
+  }
+ },
+ "PA": {
+  "rec": {
+   "licenseFee": 0,
+   "feeCombined": true,
+   "feeNote": "One fee covers the learner's permit and the first 4-year license.",
+   "handbookEdition": "PUB 95 (4-21)"
+  }
+ },
+ "SC": {
+  "rec": {
+   "feeNote": "Fees set by the South Carolina Code of Laws, Title 56.",
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "SD": {
+  "rec": {
+   "feeNote": "The permit costs the same as an original license, set by SDCL 32-12-16.",
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "TX": {
+  "rec": {
+   "feeNote": "Texas Transportation Code 521.421: $15 for a learner license and $15 for a provisional license.",
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "UT": {
+  "rec": {
+   "feeNote": "Fees set by Utah Code 53-3-105.",
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "VT": {
+  "rec": {
+   "feeNote": "Plus $39 for each knowledge test attempt and $23 for the road test.",
+   "handbookEdition": "VN-007, 2025"
+  }
+ },
+ "VA": {
+  "rec": {
+   "feeNote": "The license costs $4 per year; $32 for 8 years.",
+   "handbookEdition": "DMV 39, current edition"
+  }
+ },
+ "WA": {
+  "rec": {
+   "feeNote": "The knowledge test fee is extra and varies by testing location.",
+   "handbookEdition": "current edition"
+  }
+ },
+ "WV": {
+  "rec": {
+   "feeNote": "The handbook's fee table charges it as a $7.50 knowledge test fee per attempt.",
+   "handbookEdition": "current edition"
+  }
+ },
+ "WI": {
+  "rec": {
+   "feeNote": "Skills test $15.",
+   "handbookEdition": "BDS126, 2026 edition"
+  }
+ },
+ "WY": {
+  "rec": {
+   "feeNote": "Plus a $5 technology fee on every license.",
+   "handbookEdition": "2021 edition"
+  }
+ },
+ "AZ": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "CO": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "IL": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "KS": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "KY": {
+  "rec": {
+   "handbookEdition": "October 11, 2023"
+  }
+ },
+ "LA": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "ME": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "MD": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "MA": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "MI": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "MN": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "MS": {
+  "rec": {
+   "handbookEdition": "revised January 15, 2025"
+  }
+ },
+ "MO": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "OH": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "OR": {
+  "rec": {
+   "handbookEdition": "2026-2027 edition"
+  }
+ },
+ "RI": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ },
+ "TN": {
+  "rec": {
+   "handbookEdition": null,
+   "handbookUrl": null
+  }
+ }
+}

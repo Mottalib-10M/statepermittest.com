@@ -1,0 +1,39 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema, articleSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { helpers } from '../../lib/helpers';
+import { M } from '../../lib/method-data';
+const lang = 'en';
+const h = helpers(lang);
+const s = (k: Parameters<typeof h.src>[0], t: string) => h.src(k, t);
+const ca = h.S('CA');
+---
+<PageLayout title="Permit Test Method: How Questions and State Rules Are Built" description="How State Permit Test writes its practice questions from official handbooks and federal rules, reads each state's rules, scores a test and dates a permit." lang={lang} jsonLd={[articleSchema({ title: 'How the questions and state rules are built', description: 'Method of State Permit Test', path: route('method', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Method', path: route('method', lang) }])]} breadcrumbs={[{ label: 'Method' }]}>
+  <header class="mb-6"><p class="kicker">Method</p><h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-4xl">How the questions and state rules are built</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <p>Every page and every tool reads the same three files: the question banks, the state file and a parameter file of federal sources. No pass mark or age is typed into a page. The state file was last read on {displayDate(M.retrieved, 'en-US')}; it holds {h.num(M.confirmed)} confirmed figures out of {h.num(M.fields)} fields for {M.states} jurisdictions, and the {h.num(M.nulls)} others are shown as "not confirmed".</p>
+    <h2>1. The general questions</h2>
+    <p>The {M.general} general questions were written by us. {M.mutcd} of them, on signs, signals and pavement markings, come from the federal <Fragment set:html={s('mutcd', 'Manual on Uniform Traffic Control Devices, 11th edition')} />, which every state follows. {M.handbook} cover traffic rules that every state handbook states in the same way: right of way, turns, passing, parking, school buses, crashes. {M.nhtsa} on safe driving and alcohol rest on NHTSA publications, such as its pages on <Fragment set:html={s('nhtsa_alcohol', 'impaired driving')} /> and <Fragment set:html={s('nhtsa_drowsy', 'drowsy driving')} />. A rule that differs from state to state, a speed limit near a school or a cell phone ban for example, is left to the state questions below rather than asked as if it were national.</p>
+    <p>Each question has four options and one right answer, and its explanation states the rule rather than just repeating the answer. The order of the options is shuffled for each test from a seed, so the same test can be shared and replayed. Sign images are drawn by us from the shapes and colors set in the MUTCD; they are not official artwork files.</p>
+    <h2>2. The state questions</h2>
+    <p>Each state also gets questions generated from its verified record: permit age, holding period, supervised hours, the number of correct answers needed, the alcohol limit under 21, the age of the provisional license and the motorcycle permit age. A field that is not confirmed produces no question. Across all states this adds {h.num(M.stateQ)} questions. A test draws about one question in five from its state's own set, so even a short test shows what is specific to the state.</p>
+    <h2>3. The state rules</h2>
+    <p>For each of the 50 states and DC, we read the agency's pages on the learner permit, graduated licensing, the knowledge test and fees, and its driver handbook. Each figure is stored with the address of the page and the sentence it was read in. {M.withAge} states have a confirmed permit age, {M.withQ} a confirmed number of questions, {M.withPass} a confirmed pass mark and {M.withFee} a confirmed permit fee. Where a state gives a percentage but not a count, the count is the percentage applied to the number of questions, rounded up; the page says so. Where one fee covers the permit and the license, as in California, it is counted once.</p>
+    <h2>4. How a practice test is scored</h2>
+    <p>A car test has the length of the state's real test when it is known, otherwise 20 questions. The pass mark is the state's own: the number of correct answers it publishes, or its percentage applied to the test length. CDL tests use 80 %, the federal minimum of <Fragment set:html={s('cfr383', '49 CFR 383.135')} />. Motorcycle and signs-only tests use 80 % as a practice target and say so. The panel counts the mistakes still allowed, so "at risk" means one more wrong answer would fail the test.</p>
+    <h2>5. How the dates are worked out</h2>
+    <p>The permit date is the day the person reaches the state's permit age, counted in calendar months from the birthday. The provisional date is the later of two: the permit date plus the holding period, and the day of the provisional age. The full license date is the later of the full license age and the provisional date. For a teen born on 1 March 2011 in California, the permit is possible from the day of {ca.permitAgeL}, the provisional license six months after the permit and not before {ca.interAgeL}. Public holidays, office hours and appointment waits are not modelled.</p>
+    <h2>6. Tests</h2>
+    <p>On every build: every question must have four distinct options and an explanation in both languages; no state record may have a pass count above its number of questions or a provisional age below its permit age; the dates of a set of known cases are checked; every page passes the editorial checks. A failing test stops the build.</p>
+    <h2>7. What the site does not do</h2>
+    <ul>
+      <li>It does not reproduce or claim to reproduce the official test, whose questions no state publishes.</li>
+      <li>It does not cover the road test (driving skills test) beyond its date, nor endorsements other than motorcycle and the CDL general knowledge test.</li>
+      <li>It does not book anything: appointments are made only with the state agency, listed on <Fragment set:html={s('handbooks', 'USA.gov')} />.</li>
+    </ul>
+    <p>Method version: {LAST_UPDATED}. A figure that looks wrong: <a href={route('contact', lang)}>contact</a>.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,32 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { PAGES } from '../../lib/guides';
+import { helpers } from '../../lib/helpers';
+const lang = 'es';
+const h = helpers(lang);
+const n = PAGES.filter((p) => p.es).length + 1;
+const nSrc = Object.keys(h.P.sources).length;
+---
+<PageLayout title="Examen del permiso de manejo: quién publica este sitio" description="Quién publica Examen del Permiso por Estado, por qué todas las preguntas y reglas son gratis, de dónde sale cada dato y lo que el sitio nunca le venderá." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Quiénes somos', path: route('about', lang) }])]} breadcrumbs={[{ label: 'Quiénes somos' }]}>
+  <header class="mb-6"><p class="kicker">Quiénes somos</p><h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-4xl">Quién escribe las preguntas de este sitio</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>Examen del Permiso por Estado es una publicación de Radif Partners, una empresa que crea herramientas gratuitas a partir de datos públicos. Esta es para los jóvenes que sacan su primer permiso de aprendizaje, los padres que los acompañan, los adultos que nunca tuvieron licencia y quienes se mudan a otro estado o pasan a la moto o al camión.</p>
+    <h2>Por qué existe este sitio</h2>
+    <p>En octubre de 2026, el primer resultado de «permit practice test» era un sitio que deja contestar unas cuantas preguntas, muestra luego «Premium Members Only» y pide pagar para desbloquear «más de 500 preguntas como las del examen». Su página en español de California tiene el mismo muro de pago. En su página de California en inglés, ese sitio daba dos fechas de «última verificación» distintas y una nota para aprobar que no cuadraba con su propio número de preguntas. Casi todos los demás resultados eran aplicaciones o copias del mismo formato. Los manuales estatales, fuente de todos ellos, son gratuitos pero largos, y ninguno le dice a un joven qué día podrá tener el permiso.</p>
+    <p>Por eso este sitio hace más que el primer resultado de Google: da gratis todas sus preguntas con la respuesta explicada, califica cada intento con la nota del estado que usted elija y calcula, a partir de una fecha de nacimiento, el día del permiso, de la licencia provisional y de la completa, con las horas que hay que registrar y las tarifas del estado.</p>
+    <h2>De dónde salen las preguntas y las reglas</h2>
+    <p>Escribimos nosotros mismos las {h.counts.general} preguntas generales, las {h.counts.cdl} de CDL y las {h.counts.moto} de motocicleta, cada una a partir de un dato de un manual estatal del conductor, del manual federal de dispositivos de control de tránsito, de una publicación de la NHTSA o de las reglas federales de transporte de carga. Las reglas estatales (edad del permiso, tiempo mínimo, horas, número de preguntas, nota para aprobar, espera para repetir, tarifas) se leyeron en la página oficial de cada agencia o en su manual, con la dirección de cada dato. Nuestro archivo de parámetros cita {nSrc} páginas federales, leídas el {displayDate(h.P.retrieved_at, 'es-US')}. La <a href={route('method', lang)}>página de método</a> da los detalles.</p>
+    <h2>Lo que no somos</h2>
+    <p>No somos un DMV, una agencia estatal, una autoescuela ni una empresa de aplicaciones. No podemos reservar un examen, otorgar un permiso ni ver su expediente, y nuestras preguntas no son las oficiales: ningún estado publica su banco de preguntas. El sitio no usa sellos ni logotipos estatales.</p>
+    <h2>Cómo se financia</h2>
+    <p>Es gratis y no pide cuenta ni correo. No vendemos cursos, aplicaciones, seguros ni guías de estudio, no cobramos comisiones y no enlazamos a empresas que lo hagan. Si algún día hay publicidad, nunca estará encima del examen y no podrá usar sus respuestas, que no salen de su navegador.</p>
+    <h2>Avísenos si algo está mal</h2>
+    <p>Escriba a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> con el estado y la regla, o con las primeras palabras de la pregunta. La <a href={route('editorial', lang)}>política editorial</a> explica cómo se corrige. El sitio tiene {n} páginas en español; la lista completa está en el menú.</p>
+    <p class="text-sm text-navy-600">Reglas estatales revisadas el <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'es-US')}</time>.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy of ${SITE_NAMES[lang]}: sources and fixes`} description="Which official handbooks and state pages State Permit Test uses, how its practice questions are written, which sources it refuses, how often rules are re-read and how errors are fixed." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial and corrections policy</h1>
+    <p>Teens, parents and adults use these pages to prepare a test that decides when they may drive. A wrong pass mark or an old permit age can cost them a trip to the DMV, so every state figure points back to the official page it was read on.</p>
+    <h2>Who is responsible</h2><p>{AUTHOR_NAME}, reachable at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>What we read</h2>
+    <ul>
+      <li>the official driver handbook of each state and of the District of Columbia, in its current edition;</li>
+      <li>the pages of each state's motor vehicle agency on permits, graduated licensing, the knowledge test and fees;</li>
+      <li>the federal Manual on Uniform Traffic Control Devices (MUTCD) for signs, signals and markings;</li>
+      <li>the federal motor carrier rules (49 CFR parts 380 to 396) for the commercial learner's permit, and NHTSA publications for teen driving, alcohol and motorcycles.</li>
+    </ul>
+    <h2>How the questions are written</h2><p>We write every question ourselves from a fact stated in those documents. We never copy a question from another practice site, an app, a book or a leaked test, and we do not claim our questions are the ones the DMV asks. Each question records the document it comes from.</p>
+    <h2>Sources we refuse</h2><p>Driving schools, insurers, app publishers and other practice-test sites never provide a figure here, however well they rank. A rule we cannot find on an official page is shown as "not confirmed", never filled in from memory or from another site.</p>
+    <h2>Review cycle</h2><p>A script re-reads every official page each month and flags any change; the handbooks are checked when a state publishes a new edition. Every page shows the date the rules were last checked.</p>
+    <h2>Corrections</h2>
+    <ol><li>We open the official page again.</li><li>We correct the data file or the question and add a test for the case.</li><li>The pages rebuild and show the new date.</li></ol>
+    <h2>Independence</h2><p>No driving school, insurer, app or state agency pays for or reviews what is published here, and the site carries no affiliate link. See also the <a href={route('method', lang)}>method page</a>. Version: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

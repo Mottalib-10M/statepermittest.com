@@ -1,0 +1,24 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'es';
+---
+<PageLayout title={`Contacto de ${SITE_NAMES[lang]}: reglas y preguntas`} description="Escriba a Examen del Permiso por Estado si una regla estatal parece desactualizada, si una pregunta de práctica le parece errónea o para insertar el examen gratuito en su sitio." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contacto' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contacto</h1>
+    <p>Correo: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Una persona lee cada mensaje.</p>
+    <h2>Una regla estatal parece desactualizada</h2>
+    <p>Indíquenos el estado, la regla y, si la tiene, la página de la agencia estatal o la edición del manual que dice otra cosa. Las legislaturas cambian edades, horas y tarifas, y algunas agencias actualizan su web antes que su manual. Volvemos a leer la página oficial, corregimos el archivo de datos y fechamos el cambio.</p>
+    <h2>Una pregunta de práctica parece errónea</h2>
+    <p>Envíenos las primeras palabras de la pregunta. Cada pregunta indica el capítulo del manual o la regla federal de la que sale; si la regla es distinta en su estado, lo decimos en la explicación o retiramos la pregunta del examen de ese estado.</p>
+    <h2>Lo que no podemos hacer</h2>
+    <p>No somos un DMV. No podemos reservar un examen, consultar un permiso, modificar un expediente ni responder por una agencia estatal. No nos envíe su número de licencia, su fecha de nacimiento ni su dirección.</p>
+    <h2>Usar el examen en su sitio</h2>
+    <p>Autoescuelas, escuelas secundarias, bibliotecas y centros comunitarios pueden mostrar el examen de práctica en un iframe sin costo. El código y las condiciones están en la <a href={route('widget', lang)}>página para insertar</a>.</p>
+    <h2>Editor</h2>
+    <LegalIdentity lang={lang} />
+    <p>Actualizado: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

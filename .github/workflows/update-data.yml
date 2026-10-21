@@ -1,0 +1,29 @@
+name: Re-check official state pages
+on:
+  schedule:
+    - cron: '0 6 3 * *'   # 3rd of each month, 06:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Look for each stored quote on its official page
+        id: run
+        run: python3 scripts/update-data.py || echo "changed=1" >> "$GITHUB_OUTPUT"
+      - name: Commit the new page hashes
+        run: |
+          git config user.name "Radif Partners"
+          git config user.email "amradif@gmail.com"
+          git add data/raw/page-hashes.json data/raw/changes.json
+          git diff --cached --quiet || git commit -m "Données : contrôle mensuel des pages officielles"
+          git push
+      - name: Open an issue when a rule may have changed
+        if: steps.run.outputs.changed == '1'
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: gh issue create --title "Règle d'État à relire ($(date +%Y-%m))" --body-file data/raw/changes.json

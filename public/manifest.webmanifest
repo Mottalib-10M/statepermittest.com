@@ -1,0 +1,21 @@
+{
+ "name": "State Permit Test",
+ "short_name": "Permit Test",
+ "description": "Free permit practice test for every state, written from each state's driver handbook, with the permit age, test length, passing score and fees for 50 states and DC.",
+ "start_url": "/en/",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#1F3A6E",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}

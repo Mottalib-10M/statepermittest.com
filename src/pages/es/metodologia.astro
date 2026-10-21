@@ -1,0 +1,39 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema, articleSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { helpers } from '../../lib/helpers';
+import { M } from '../../lib/method-data';
+const lang = 'es';
+const h = helpers(lang);
+const s = (k: Parameters<typeof h.src>[0], t: string) => h.src(k, t);
+const ca = h.S('CA');
+---
+<PageLayout title="Examen del permiso: método de preguntas y reglas estatales" description="Cómo escribe este sitio sus preguntas del permiso a partir de manuales oficiales y reglas federales, cómo lee las reglas de cada estado, califica y fecha." lang={lang} jsonLd={[articleSchema({ title: 'Cómo se construyen las preguntas y las reglas estatales', description: 'Método de Examen del Permiso por Estado', path: route('method', lang), lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Método', path: route('method', lang) }])]} breadcrumbs={[{ label: 'Método' }]}>
+  <header class="mb-6"><p class="kicker">Método</p><h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-4xl">Cómo se construyen las preguntas y las reglas estatales</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <p>Cada página y cada herramienta leen los mismos tres archivos: los bancos de preguntas, el archivo de estados y un archivo de fuentes federales. Ninguna nota para aprobar ni edad se escribe a mano en una página. El archivo de estados se leyó por última vez el {displayDate(M.retrieved, 'es-US')}; contiene {h.num(M.confirmed)} datos confirmados de {h.num(M.fields)} campos para {M.states} jurisdicciones, y los {h.num(M.nulls)} restantes aparecen como «no confirmado».</p>
+    <h2>1. Las preguntas generales</h2>
+    <p>Las {M.general} preguntas generales las escribimos nosotros. {M.mutcd} de ellas, sobre señales, semáforos y marcas viales, salen del <Fragment set:html={s('mutcd', 'manual federal de dispositivos de control de tránsito (MUTCD), 11.ª edición')} />, que siguen todos los estados. {M.handbook} tratan reglas de circulación que todos los manuales estatales formulan igual: derecho de paso, giros, rebasar, estacionar, autobuses escolares, choques. {M.nhtsa} sobre manejo seguro y alcohol se apoyan en publicaciones de la NHTSA, como sus páginas sobre <Fragment set:html={s('nhtsa_alcohol', 'manejo bajo los efectos del alcohol')} /> y <Fragment set:html={s('nhtsa_drowsy', 'manejo con sueño')} />. Una regla que cambia de un estado a otro, como el límite de velocidad cerca de una escuela o la prohibición del celular, se deja para las preguntas estatales y no se pregunta como si fuera nacional.</p>
+    <p>Cada pregunta tiene cuatro opciones y una sola respuesta correcta, y su explicación enuncia la regla en lugar de repetir la respuesta. El orden de las opciones se mezcla en cada examen a partir de una semilla, de modo que un mismo examen puede compartirse y repetirse. Las señales las dibujamos nosotros con las formas y colores del MUTCD; no son archivos oficiales.</p>
+    <h2>2. Las preguntas estatales</h2>
+    <p>Cada estado tiene además preguntas generadas a partir de su registro verificado: edad del permiso, tiempo mínimo, horas supervisadas, respuestas correctas necesarias, límite de alcohol para menores de 21, edad de la licencia provisional y edad del permiso de moto. Un campo no confirmado no genera pregunta. En total, eso suma {h.num(M.stateQ)} preguntas. Un examen toma alrededor de una de cada cinco preguntas del grupo propio de su estado, así que incluso un examen corto muestra lo específico del estado.</p>
+    <h2>3. Las reglas estatales</h2>
+    <p>Para cada uno de los 50 estados y DC leímos las páginas de la agencia sobre el permiso de aprendizaje, la licencia graduada, el examen teórico y las tarifas, además de su manual del conductor. Cada dato se guarda con la dirección de la página y la frase donde se leyó. {M.withAge} estados tienen la edad del permiso confirmada, {M.withQ} el número de preguntas, {M.withPass} la nota para aprobar y {M.withFee} la tarifa del permiso. Cuando un estado da un porcentaje pero no un número, el número es el porcentaje aplicado a las preguntas, redondeado hacia arriba; la página lo indica. Cuando una sola tarifa cubre el permiso y la licencia, como en California, se cuenta una vez.</p>
+    <h2>4. Cómo se califica un examen</h2>
+    <p>Un examen de auto tiene la duración real del examen del estado cuando se conoce; si no, 20 preguntas. La nota para aprobar es la del estado: el número de respuestas correctas que publica, o su porcentaje aplicado a la duración. Los exámenes de CDL usan el 80 %, mínimo federal de <Fragment set:html={s('cfr383', '49 CFR 383.135')} />. Los de moto y solo señales usan el 80 % como meta de práctica y lo dicen. El panel cuenta los errores que aún se permiten: «un error más y podría reprobar» significa que una respuesta incorrecta más haría reprobar.</p>
+    <h2>5. Cómo se calculan las fechas</h2>
+    <p>La fecha del permiso es el día en que la persona cumple la edad del permiso del estado, contada en meses de calendario desde su cumpleaños. La fecha provisional es la más tardía de dos: la fecha del permiso más el tiempo mínimo, y el día de la edad provisional. La licencia completa llega en la más tardía entre la edad de la licencia completa y la fecha provisional. Para un joven nacido el 1 de marzo de 2011 en California, el permiso es posible desde el día en que cumple {ca.permitAgeL}, y la licencia provisional seis meses después del permiso y no antes de los {ca.interAgeL}. Los feriados, horarios y esperas de cita no se modelan.</p>
+    <h2>6. Pruebas</h2>
+    <p>En cada compilación: cada pregunta debe tener cuatro opciones distintas y una explicación en los dos idiomas; ningún estado puede tener más respuestas necesarias que preguntas ni una edad provisional inferior a la del permiso; se comprueban las fechas de varios casos conocidos; cada página pasa los controles editoriales. Una prueba fallida detiene la compilación.</p>
+    <h2>7. Lo que el sitio no hace</h2>
+    <ul>
+      <li>No reproduce ni pretende reproducir el examen oficial, cuyas preguntas ningún estado publica.</li>
+      <li>No trata el examen de manejo práctico más allá de su fecha, ni otras categorías que la moto y los conocimientos generales de la CDL.</li>
+      <li>No reserva nada: las citas se piden solo a la agencia del estado, enumeradas en <Fragment set:html={s('handbooks', 'USA.gov')} />.</li>
+    </ul>
+    <p>Versión del método: {LAST_UPDATED}. Si un dato parece erróneo: <a href={route('contact', lang)}>contacto</a>.</p>
+  </div>
+</PageLayout>

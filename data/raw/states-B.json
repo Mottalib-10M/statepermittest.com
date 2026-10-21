@@ -1,0 +1,3402 @@
+[
+ {
+  "code": "MT",
+  "name": "Montana",
+  "agency": "Montana Department of Justice, Motor Vehicle Division (MVD)",
+  "agency_url": "https://mvdmt.gov/",
+  "handbook_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+  "handbook_edition": "Official Montana Driver Manual, revised October 2018 (copy hosted by the Montana Office of Public Instruction; mvdmt.gov blocks automated access, a Feb. 2025 Spanish edition exists there but could not be read). Values cross-checked against the Montana Code Annotated 2025.",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 14.5,
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0060/0610-0050-0010-0060.html",
+    "quote": "The department may issue a learner license, which is valid for 1 year from the date of issuance, to any person who is at least 14 1/2 years of age and who has successfully completed or is successfully participating in a traffic education course",
+    "note": "14½ only with an approved (school) traffic education course. 2018 manual: otherwise 'at least 16 years of age (without traffic education) or 15 years of age and successfully completed an approved driver education course'."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0320/0610-0050-0010-0320.html",
+    "quote": "(a) has held a learner license or traffic education permit for a period of not less than 6 months;",
+    "note": "MCA 61-5-132 (Montana Code Annotated 2025)."
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0320/0610-0050-0010-0320.html",
+    "quote": "has successfully completed a traditional traffic education course ... that states that the person has had at least 50 hours of driving experience, 10 of which were at night",
+    "note": "With an alternative traffic education course approved by DOJ: 75 hours, 15 at night (MCA 61-5-132(1)(c)(ii))."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0320/0610-0050-0010-0320.html",
+    "quote": "at least 50 hours of driving experience, 10 of which were at night",
+    "note": "15 at night with the alternative course."
+   },
+   "intermediate_min_age_years": {
+    "value": 15,
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0050/0610-0050-0010-0050.html",
+    "quote": "The department may not issue a license under this chapter to a person: (1) who is under 15 years of age unless the person is at least 13 years of age and, because of individual hardship",
+    "note": "First-year restricted license: earliest at 15 (learner at 14½ + 6 months). Derived from MCA 61-5-105, 61-5-106(2) and 61-5-132."
+   },
+   "full_license_min_age_years": {
+    "value": 16,
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0330/0610-0050-0010-0330.html",
+    "quote": "A driver's license issued to a person who is under 18 years of age is subject to the following restrictions for 1 year from the date of issuance of the license or until the person is 18 years of age, whichever occurs first",
+    "note": "Earliest 16 (restricted license at 15 + 1 year)."
+   },
+   "drivers_ed_required": {
+    "value": "Required for licensing under 18: an approved traffic education course (traditional or DOJ-approved alternative) per MCA 61-5-132",
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0320/0610-0050-0010-0320.html",
+    "quote": "(c) (i) has successfully completed a traditional traffic education course approved pursuant to 20-7-503 (1) ... or (ii) has successfully completed an alternative traffic education course approved by the department of justice",
+    "note": "2018 manual adds that online or third-party courses are not approved (may have changed with the 2021 'alternative course' amendment)."
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "",
+    "note": "Not stated in any official source read; mvdmt.gov inaccessible (Cloudflare 403). Third-party sites say 33 questions, not accepted."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "",
+    "note": "Not confirmed on an official source (third parties conflict: 80% vs 82%)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/2023.Revision.Adapted.Illustrated.Montana.Driver.Manual.pdf",
+    "quote": "Driver license receipts are good for one year and three test attempts are permitted within that one-year period.",
+    "note": "No waiting period stated; OPI 2023 adapted manual says 3 attempts per one-year receipt."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "https://mvdmt.gov/wp-content/uploads/2023/11/25-0100S-Montana-Driving-Manual-SPANISH.pdf",
+    "quote": "",
+    "note": "An official Spanish manual (rev. Feb 2025) is published on mvdmt.gov, but the site blocked access and no official text read confirms the test is offered in Spanish."
+   },
+   "permit_fee_usd": {
+    "value": 5,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "Any Class D basic license or a learner license listed.............................................................. $5.00 per year",
+    "note": "Learner license valid 1 year = $5, plus 3% administrative fee (2018 manual: 'Fees in this manual are subject to change')."
+   },
+   "license_fee_usd": {
+    "value": 5,
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0110/0610-0050-0010-0110.html",
+    "quote": "driver's license, except a commercial driver's license -- $5 a year or fraction of a year;",
+    "note": "Per year. A license issued under 21 expires on the 21st birthday (MCA 61-5-111(4)(c)), so about $25-30 for a teen; plus MVD 3% administrative fee and REAL ID fee if chosen."
+   },
+   "night_restriction": {
+    "value": "First-year restricted license (under 18): no driving 11 p.m. to 5 a.m. unless with a licensed driver 18+, or for work, school, religious events, emergencies, farm work, or parent authorization",
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0330/0610-0050-0010-0330.html",
+    "quote": "A restricted licensee may not operate a motor vehicle between the hours of 11 p.m. and 5 a.m. unless the restricted licensee is: (i) accompanied by a licensed driver who is 18 years of age or older",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "First 6 months: max 1 passenger under 18 (non-family) unless supervised by licensed driver 18+; next 6 months: max 3 passengers under 18",
+    "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0050/part_0010/section_0330/0610-0050-0010-0330.html",
+    "quote": "For the first 6 months of the 1-year restriction period, a restricted licensee may not operate a motor vehicle with more than one passenger who is under 18 years of age unless",
+    "note": "Second 6 months: 'more than three passengers who are under 18'."
+   },
+   "teen_phone_ban": {
+    "value": false,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "Most Montana cities have passed laws against texting and talking on cell phones while driving.",
+    "note": "No statewide (teen or general) cellphone ban found in official sources; MCA 61-5-133 first-year restrictions contain no phone rule. Local ordinances apply."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "The BAC for a driver under 21 years of age is 0.02.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": null,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "A motorcycle learner license is obtained by paying the licensing fee and passing the motorcycle written test.",
+    "note": "Minimum age for the motorcycle learner license not stated explicitly; general statutory floor is 15 (MCA 61-5-105), 14½ with traffic education."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "",
+    "note": "Not stated on official sources read."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "https://opi.mt.gov/Portals/182/Page%20Files/Driver%20Education/Curriculum/Resources%20and%20Extras/Montana-Driver-Manual.pdf",
+    "quote": "",
+    "note": "Not stated on official sources read."
+   }
+  }
+ },
+ {
+  "code": "NE",
+  "name": "Nebraska",
+  "agency": "Nebraska Department of Motor Vehicles",
+  "agency_url": "https://dmv.nebraska.gov/",
+  "handbook_url": "https://dmv.nebraska.gov/sites/dmv.nebraska.gov/files/doc/manuals/engdrivermanual.pdf",
+  "handbook_edition": "January 2025",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://dmv.nebraska.gov/dl/learners-permit",
+    "quote": "Minimum Age 15 You may apply 60 days before 15th birthday. However, the Learner's Permit cannot be issued until the day of your 15th birthday",
+    "note": "Standard Learner's Permit (LPD). A School Learner's Permit (LPE) is available at 14 (manual 1C-2: 'Minimum Age: 14') for rural students eligible for a School Permit (SCP, from 14 years 2 months), which allows unsupervised driving to/from school only."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://dmv.nebraska.gov/dl/provisional-operator%E2%80%99s-permit-pop",
+    "quote": "Have held a School Learner's Permit (LPE), School Permit (SCP) or Learner's Permit (LPD) for at least six months and not accumulated three or more points",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://dmv.nebraska.gov/dl/provisional-operator%E2%80%99s-permit-pop",
+    "quote": "Complete a 50 hour certification form signed by a parent, guardian or licensed driver who is at least 21. The certification form must indicate that at least 10 hours of motor vehicle operation was between sunset and sunrise.",
+    "note": "Alternative: completing a DMV-approved driver safety course replaces the 50-hour certification."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://dmv.nebraska.gov/dl/provisional-operator%E2%80%99s-permit-pop",
+    "quote": "at least 10 hours of motor vehicle operation was between sunset and sunrise",
+    "note": "Only for the 50-hour certification route."
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://dmv.nebraska.gov/dl/provisional-operator%E2%80%99s-permit-pop",
+    "quote": "16. You may apply 60 days before your 16th birthday, however the permit will not be issued until on or after your 16th birthday.",
+    "note": "Provisional Operator's Permit (POP)."
+   },
+   "full_license_min_age_years": {
+    "value": 17,
+    "source_url": "https://dmv.nebraska.gov/dl/operators-license-class-o",
+    "quote": "Minimum Age 17 ... Who have held a Provisional Operator's Permit (POP) for at least 12 months and who have not accumulated three or more points ... are eligible for an operator's license.",
+    "note": "Earliest at 17 after 12 months on the POP with fewer than 3 points."
+   },
+   "drivers_ed_required": {
+    "value": "Not required: a DMV-approved driver safety course OR a 50-hour supervised driving certification (10 at night) is required for the POP/School Permit",
+    "source_url": "https://dmv.nebraska.gov/dl/provisional-operator%E2%80%99s-permit-pop",
+    "quote": "Successfully complete a Department of Motor Vehicles approved Nebraska driver safety course , or Complete a 50 hour certification form",
+    "note": "Completing the approved course also waives the written and drive tests."
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "https://dmv.nebraska.gov/sites/dmv.nebraska.gov/files/doc/manuals/engdrivermanual.pdf",
+    "quote": "",
+    "note": "Number of questions not stated in the official manual or on dmv.nebraska.gov pages read; third-party sites say 25 but that is not accepted."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "https://dmv.nebraska.gov/sites/dmv.nebraska.gov/files/doc/manuals/engdrivermanual.pdf",
+    "quote": "",
+    "note": "Not stated on an official source read."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "https://dmv.nebraska.gov/sites/dmv.nebraska.gov/files/doc/manuals/engdrivermanual.pdf",
+    "quote": "",
+    "note": "Not stated on an official source read (third-party: 80%)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "Not the same day (next day at the earliest)",
+    "source_url": "https://dmv.nebraska.gov/sites/dmv.nebraska.gov/files/doc/manuals/engdrivermanual.pdf",
+    "quote": "Any test failed may not be retaken the same day.",
+    "note": "Manual section 1D-4 Test Failure."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "https://dmv.nebraska.gov/dl/manuals",
+    "quote": "Spanish Driver's Manual (Car)",
+    "note": "An official Spanish manual is published, but no official page read states that the written test itself is offered in Spanish."
+   },
+   "permit_fee_usd": {
+    "value": 13,
+    "source_url": "https://dmv.nebraska.gov/dl/learners-permit",
+    "quote": "Learner's Permit (LPD) Fees ... Original $8.00 $5.00 $13.00",
+    "note": "$8 fee + $5 security fee for the original LPD (valid 1 year)."
+   },
+   "license_fee_usd": {
+    "value": 29,
+    "source_url": "https://dmv.nebraska.gov/dl/operators-license-class-o",
+    "quote": "Operator's License (Class O) Fees ... Valid for 5 years $24.00 $5.00 $29.00",
+    "note": "5-year Class O ($24 + $5 security fee). A teen first gets the POP: $20 ($15 + $5)."
+   },
+   "night_restriction": {
+    "value": "POP: no unsupervised driving from midnight to 6 a.m. unless to/from home and work or a school activity",
+    "source_url": "https://dmv.nebraska.gov/dl/provisional-operator%E2%80%99s-permit-pop",
+    "quote": "Individual may only drive unsupervised between 12 midnight and 6 a.m. if they are driving to or from home to work or a school activity.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "POP, first 6 months: no more than one passenger under 19 who is not an immediate family member",
+    "source_url": "https://dmv.nebraska.gov/dl/provisional-operator%E2%80%99s-permit-pop",
+    "quote": "During the first six months of the POP, the holder can only operate a motor vehicle with no more than one passenger who is not an immediate family member and who is under nineteen years of age.",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://dmv.nebraska.gov/sites/dmv.nebraska.gov/files/doc/manuals/engdrivermanual.pdf",
+    "quote": "Cell Phones – No use of any type of interactive wireless communication device while operating a motor vehicle while in motion.",
+    "note": "Listed among GDL restrictions (manual 1B)."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://dmv.nebraska.gov/sites/dmv.nebraska.gov/files/doc/manuals/engdrivermanual.pdf",
+    "quote": ".02% Under Age Drinking (Age 20 and Younger) and Driving For a conviction of .02% the license will be impounded by the court for 30 days",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://dmv.nebraska.gov/dl/learners-permit",
+    "quote": "The Learner's Permit (LPD) is issued to allow a person to legally practice driving for a Provisional Operator's Permit (POP) , Operator's (Class O) or Motorcycle (Class M) License. ... Minimum Age 15",
+    "note": "Rural students may get a Class M School Learner's Permit (LPE) at 14 (manual 1C-3)."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "https://dmv.nebraska.gov/dl/motorcycle-license-class-m",
+    "quote": "",
+    "note": "Not stated on official pages read."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "https://dmv.nebraska.gov/dl/motorcycle-license-class-m",
+    "quote": "",
+    "note": "Not stated on official pages read."
+   }
+  }
+ },
+ {
+  "code": "NV",
+  "name": "Nevada",
+  "agency": "Nevada Department of Motor Vehicles",
+  "agency_url": "https://dmv.nv.gov/",
+  "handbook_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+  "handbook_edition": "DMV 700, March 2024",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15.5,
+    "source_url": "https://dmv.nv.gov/dlipteens.htm",
+    "quote": "Nevada residents can apply for an instruction permit at age 15½.",
+    "note": "Permit valid one year."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "If you are under the age of 18, you must hold an instruction permit for at least 6 months prior to applying for a driver license.",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "Nevada teens within a 30 miles of a DMV-approved driver's education school are required to complete 50 hours of supervised experience behind the wheel, 10 of which must be completed at night.",
+    "note": "Teens more than 30 miles from an approved school and without internet access for an online course must instead log 100 hours (10 in the dark). Logged on DMV form DLD-130."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "50 hours of supervised experience behind the wheel, 10 of which must be completed at night.",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "Applicants who are 16 or 17 years old when they receive their driver's license will not be allowed to carry passengers under the age of 18 (except for immediate family members) for the first 6 months",
+    "note": "Nevada has no separate provisional license class; minors receive a minor (vertical) license with restrictions. 15.5 + 6 months = 16."
+   },
+   "full_license_min_age_years": {
+    "value": 18,
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "This curfew remains in effect until the driver turns 18, regardless of when the driver license was issued.",
+    "note": "Passenger restriction ends after 6 months; curfew lasts until 18."
+   },
+   "drivers_ed_required": {
+    "value": "Required for applicants under 18 (DMV-approved classroom or online course); if no approved school within 30 miles and no internet access, 100 hours of logged driving instead",
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "you will be required to present a Certificate of Completion of a course in driver's education and a Beginning Driver Experience Log, DMV Form DLD-130.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 25,
+    "source_url": "https://dmv.nv.gov/wtestteens.htm",
+    "quote": "Test Format 25 Questions Multiple choice format 80% Passing Score 20 correct answers needed",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 20,
+    "source_url": "https://dmv.nv.gov/wtestteens.htm",
+    "quote": "80% Passing Score 20 correct answers needed",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://dmv.nv.gov/wtestteens.htm",
+    "quote": "80% Passing Score 20 correct answers needed",
+    "note": ""
+   },
+   "knowledge_test_retake_wait": {
+    "value": "Next day ($10 retest fee)",
+    "source_url": "https://dmv.nv.gov/wtestteens.htm",
+    "quote": "If you fail, you can retake the test the next day. If you're disqualified, you can retake the test after 24 hours.",
+    "note": "Statement given for the online (KnowTo Drive) test; 'A $10 retest fee applies to all retakes.'"
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://dmv.nv.gov/wtestteens.htm",
+    "quote": "In-Person at DMV Offices Administered on touch-screen computers Available in English, Spanish, and audio format",
+    "note": ""
+   },
+   "permit_fee_usd": {
+    "value": 22.5,
+    "source_url": "https://dmv.nv.gov/dlfees.htm",
+    "quote": "Instruction Permit $22.50 ... Initial Knowledge and Skills Test $25 Each Retest $10",
+    "note": "Permit $22.50 plus a separate $25 initial knowledge/skills testing fee."
+   },
+   "license_fee_usd": {
+    "value": 22.5,
+    "source_url": "https://dmv.nv.gov/dlfees.htm",
+    "quote": "Original 8-Year Non-Commercial License $41.50 ... Completion of Instruction Permit $22.50",
+    "note": "A teen converting a permit pays the 'Completion of Instruction Permit' fee $22.50 (also on dmv.nv.gov/getdlteens.htm: 'Fee: $22.50'). An original 8-year non-commercial license is $41.50."
+   },
+   "night_restriction": {
+    "value": "Drivers under 18: no driving between 10 p.m. and 5 a.m. unless going to/from a scheduled event (school or work)",
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "a minor shall not operate a motor vehicle between the hours of 10 p.m. and 5 a.m. unless he/she is driving to or from a scheduled event.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "First 6 months of license (16-17): no passengers under 18 except immediate family",
+    "source_url": "https://dmv.nv.gov/getdlteens.htm",
+    "quote": "For the first 6 months: No passengers under 18 (except immediate family)",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": false,
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "The use of a cellular phone or other handheld wireless communications device to engage in voice communications is prohibited unless the device is used with a hands-free accessory.",
+    "note": "No teen-specific all-device ban found in official sources; the handheld ban applies to all drivers (hands-free allowed)."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://dmv.nv.gov/getdlteens.htm",
+    "quote": "02 BAC limit for drivers under 21",
+    "note": "Handbook: revoked 185 days if test shows at least 0.02% but less than 0.08%."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 15.5,
+    "source_url": "https://dmv.nv.gov/pdfforms/dlbook.pdf",
+    "quote": "If you want an instruction permit for driving a motorcycle, you must: • Be at least 15½ years old;",
+    "note": "Also requires the general knowledge test plus the motorcycle knowledge test."
+   },
+   "motorcycle_test_questions": {
+    "value": 25,
+    "source_url": "https://dmv.nv.gov/motorcycle.htm",
+    "quote": "you must pass the written motorcycle knowledge test (25 questions, 80% passing score)",
+    "note": ""
+   },
+   "motorcycle_test_pass": {
+    "value": "80% (20 of 25)",
+    "source_url": "https://dmv.nv.gov/motorcycle.htm",
+    "quote": "written motorcycle knowledge test (25 questions, 80% passing score)",
+    "note": ""
+   }
+  }
+ },
+ {
+  "code": "NH",
+  "name": "New Hampshire",
+  "agency": "New Hampshire Department of Safety, Division of Motor Vehicles",
+  "agency_url": "https://www.dmv.nh.gov/",
+  "handbook_url": "https://www.dmv.nh.gov/sites/g/files/ehbemt416/files/inline-documents/nhdm.pdf",
+  "handbook_edition": "DSMV 360, Rev. 11/25",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15.5,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/apply-your-first-drivers-licensenon-driver-id/driver-education/learning-to-drive",
+    "quote": "New Hampshire does not issue learner's permits; however, a person learning to drive ... is permitted to drive under certain conditions ... The driver must be at least 15½ years old and must carry proof of age in the vehicle.",
+    "note": "NO learner's permit exists in NH: supervised practice driving (adult 25+, front seat) is allowed from 15½ with proof of age."
+   },
+   "permit_holding_months": {
+    "value": null,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-requirements-minors",
+    "quote": "New Hampshire residents can start learning to drive at the age of 15½ but must be at least 16 years old to apply for a driver license.",
+    "note": "No permit, so no legal holding period; in practice 15½ to 16 = 6 months of possible practice."
+   },
+   "supervised_hours_total": {
+    "value": 40,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/apply-your-first-drivers-licensenon-driver-id/driver-education",
+    "quote": "each student must log forty (40) additional hours of supervised driving time with a parent, guardian, or other responsible adult prior to applying for a driver license.",
+    "note": "In addition to the 10 hours behind the wheel in driver education."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/apply-your-first-drivers-licensenon-driver-id/driver-education",
+    "quote": "Included in the requirements for the forty (40) additional hours of supervised driving time is at least ten (10) hours to be completed at night.",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-requirements-minors",
+    "quote": "Any person over 16 years old and under 21 years of age who meets the requirements for a New Hampshire driver license, will be issued a Youth Operator License.",
+    "note": "Youth Operator License (vertical), expires on 21st birthday."
+   },
+   "full_license_min_age_years": {
+    "value": 18,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-requirements-minors",
+    "quote": "In addition to any other restrictions, the holder of a Youth Operator License who is under 18 years of age: Shall not operate a motor vehicle between the hours of 1:00 a.m. and 4:00 a.m.",
+    "note": "Hour/passenger/phone restrictions apply under 18; the Youth Operator License itself (with stricter violation suspensions under 20) runs until 21."
+   },
+   "drivers_ed_required": {
+    "value": "Required for all applicants under 18 (30 h classroom, 10 h behind the wheel, 6 h observation)",
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/apply-your-first-drivers-licensenon-driver-id/driver-education",
+    "quote": "Persons under 18 years old must take an approved driver education program.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 40,
+    "source_url": "https://www.dmv.nh.gov/sites/g/files/ehbemt416/files/inline-documents/nhdm.pdf",
+    "quote": "The knowledge test consists of 40 multiple choice questions pertaining to the rules of the road and general driving conditions. Testers have 40 minutes to complete the test.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 32,
+    "source_url": "https://www.dmv.nh.gov/sites/g/files/ehbemt416/files/inline-documents/nhdm.pdf",
+    "quote": "If more than 8 questions are answered incorrectly, the test will automatically end.",
+    "note": "Derived: 40 - 8 = 32 (consistent with 80%)."
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-testing-requirements",
+    "quote": "All knowledge exams require a passing grade of 80%.",
+    "note": ""
+   },
+   "knowledge_test_retake_wait": {
+    "value": "10 calendar days",
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-testing-requirements",
+    "quote": "Operator and Motorcycle applicants will have to wait ten (10) calendar days before they are allowed to retest",
+    "note": ""
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-testing-requirements",
+    "quote": "Knowledge tests are available in English, French, Spanish, Arabic, Mandarin, Portuguese, Farsi and American sign language",
+    "note": ""
+   },
+   "permit_fee_usd": {
+    "value": null,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/apply-your-first-drivers-licensenon-driver-id/driver-education/learning-to-drive",
+    "quote": "New Hampshire does not issue learner's permits",
+    "note": "Not applicable: no learner's permit, so no permit fee."
+   },
+   "license_fee_usd": {
+    "value": 10,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/licensing-fees",
+    "quote": "Youth Operator $10.00 per year up to age 21",
+    "note": "Per year until the 21st birthday (about $50 for a license issued at 16). Adult Operator license: $50 (non-REAL ID) / $60 REAL ID."
+   },
+   "night_restriction": {
+    "value": "Youth operators under 18: no driving between 1:00 a.m. and 4:00 a.m.",
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-requirements-minors",
+    "quote": "Shall not operate a motor vehicle between the hours of 1:00 a.m. and 4:00 a.m.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Under 18, first 6 months: no more than one passenger under 25 who is not family, unless accompanied by a licensed adult 25+",
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-requirements-minors",
+    "quote": "Shall not operate a motor vehicle with more than one passenger less than 25 years of age who is not a member of the driver's family unless accompanied by a licensed, responsible adult who is at least 25 years of age during the first six (6) months holding the license.",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://www.dmv.nh.gov/sites/g/files/ehbemt416/files/inline-documents/nhdm.pdf",
+    "quote": "Drivers under the age of 18 years of age shall not use a cellular or mobile telephone or other mobile electronic device, whether hands-free or not, while driving",
+    "note": "Emergency calls excepted."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://www.dmv.nh.gov/sites/g/files/ehbemt416/files/inline-documents/nhdm.pdf",
+    "quote": "It is illegal for an operator under 21 years of age ... or while having an alcohol concentration 0.02 or more.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/motorcycle-license-endorsement",
+    "quote": "the DMV shall issue a motorcycle learner's permit to a New Hampshire resident 18 years of age or older or 16 years of age or older and under 18 years of age who has successfully completed an approved driver education course and has a valid New Hampshire driver's license.",
+    "note": "Under 18 must also complete a motorcycle Basic Rider Class. Permit fee $30, valid 45 days."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/motorcycle-license-endorsement",
+    "quote": "",
+    "note": "Number of motorcycle knowledge test questions not stated on official pages read."
+   },
+   "motorcycle_test_pass": {
+    "value": "80%",
+    "source_url": "https://www.dmv.nh.gov/drivers-licensenon-driver-ids/driver-licensing-testing-requirements",
+    "quote": "All knowledge exams require a passing grade of 80%.",
+    "note": ""
+   }
+  }
+ },
+ {
+  "code": "NJ",
+  "name": "New Jersey",
+  "agency": "New Jersey Motor Vehicle Commission (NJMVC)",
+  "agency_url": "https://www.nj.gov/mvc/",
+  "handbook_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+  "handbook_edition": "2026 (cover '2026', pages dated 4/9/26)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "GDL: OPTION A STEP 1 Get a Special Learner Permit • Must be at least 16 years old ... • Must be enrolled in approved behind-the-wheel driver training course",
+    "note": "16 = Special Learner Permit, only through an approved 6-hour behind-the-wheel course (instructor buys the permit). Without a driving school: Examination Permit at 17 (Option B)."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "Must have completed six months of super-vised driving without any suspensions or postponements • Must pass the MVC's road test • Must be at least 17 years old",
+    "note": "3 months for applicants 21+ (Option C)."
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "Must complete a minimum of 50 practice driving hours, including 10 hours during darkness",
+    "note": "Certified on a Certification of Supervised Driving form presented at licensure (Options A and B)."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "including 10 hours during darkness",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 17,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "STEP 3 Get a Probationary License ... • Must be at least 17 years old",
+    "note": "Probationary license."
+   },
+   "full_license_min_age_years": {
+    "value": 18,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "STEP 5 Get the Basic Driver License • Must be at least 18 years old • Must have completed one year of unsupervised driving with probationary driver license restrictions",
+    "note": "Requires 1 year on the probationary license; probationary restrictions on hours/passengers/decals do not apply at 21+."
+   },
+   "drivers_ed_required": {
+    "value": "Not required for the age-17 examination permit route; a 6-hour behind-the-wheel course is required only for the age-16 Special Learner Permit",
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "An approved course is six full hours of behind-the-wheel instruction in a dual-controlled vehicle.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 50,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "The knowledge test consists of 50 questions: plus, a survey question about organ donation.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 40,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "Written 80 percent, or 40 of the 50 questions, must have correct answers.",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "Written 80 percent, or 40 of the 50 questions, must have correct answers.",
+    "note": ""
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "https://www.nj.gov/mvc/license/knowledgetest.htm",
+    "quote": "",
+    "note": "No waiting period stated in the 2026 manual or the MVC knowledge-test page."
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://www.nj.gov/mvc/license/knowledgetest.htm",
+    "quote": "The written tests are offered in the following languages: English, Arabic, Chinese (Mandarin), French, Spanish, ... Oral tests are offered in English and Spanish.",
+    "note": ""
+   },
+   "permit_fee_usd": {
+    "value": 10,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "Probationary Automobile License ... Minimum Age: 17 (Permit: 16) Permit Fee: $10 + $4 Red reflectorized decals",
+    "note": "$10 permit plus $4 for the two mandatory red GDL decals (teen total $14)."
+   },
+   "license_fee_usd": {
+    "value": 24,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "Basic Automobile License (Standard/REAL ID) ... Expiration: 4 Years ... License Fee(s): $24/$35",
+    "note": "Basic license $24 standard / $35 REAL ID, valid 4 years. The same manual lists the Probationary Automobile License fee as '$63'."
+   },
+   "night_restriction": {
+    "value": "Permit and probationary drivers under 21: no driving between 11:01 p.m. and 5:00 a.m. (work/religion exemptions)",
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "PROBATIONARY DRIVER LICENSE RESTRICTIONS No driving between 11:01 pm and 5:00 am",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Permit and probationary: dependents plus one additional passenger, unless accompanied by a parent/guardian",
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "Passengers are limited to dependents of the probationary license holder and one additional person, unless accompanied by a parent/guardian.",
+    "note": "Does not apply at 21+."
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "No using hand-held or hands-free cell phones or any other electronic devices.",
+    "note": "Applies to special learner, examination permit and probationary license holders."
+   },
+   "under21_bac": {
+    "value": 0.01,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "younger than 21, it is illegal to drive with a BAC of 0.01 percent or higher.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 17,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "Step 1: Get A Motorcycle Examination Permit ... • Must be at least 17 years old; parent/guardian consent required under age 18.",
+    "note": "Under 18 must take the MSEP Basic Rider Course; MVC road test without a course requires age 18."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "",
+    "note": "Not stated in the official manual."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "https://www.nj.gov/mvc/pdf/license/drivermanual.pdf",
+    "quote": "",
+    "note": "Not stated in the official manual."
+   }
+  }
+ },
+ {
+  "code": "NM",
+  "name": "New Mexico",
+  "agency": "New Mexico Motor Vehicle Division (Taxation and Revenue Department)",
+  "agency_url": "https://www.mvd.newmexico.gov/",
+  "handbook_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+  "handbook_edition": "New Mexico Driver Manual ver. 11.19.19 (latest posted on MVD site)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "The minimum age for an instructional permit is 15 years of age.",
+    "note": "Must be enrolled in or have completed an approved driver education course."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "The driver must retain the instructional permit for at least six months.",
+    "note": "Extended 30 days per traffic conviction (SB 9, 2011)."
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "The driver must complete not less than 50 hours of practice driving, including not less than 10 hours of nighttime driving.",
+    "note": ""
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "including not less than 10 hours of nighttime driving",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 15.5,
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "The minimum age to receive a provisional license is 15 years and 6 months if the driver has held an instructional permit for 6 months.",
+    "note": ""
+   },
+   "full_license_min_age_years": {
+    "value": 16.5,
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "The driver must have held a provisional license for the 12- month period immediately preceding the date of application for a driver license.",
+    "note": "Derived: provisional at 15.5 + 12 months = 16.5 earliest."
+   },
+   "drivers_ed_required": {
+    "value": "Required under 18: TSB-approved driver education with a 3-hour DWI component.",
+    "source_url": "https://www.mvd.newmexico.gov/nm-drivers-licenses-ids/drivers-license/apply-for-a-learners-permit/",
+    "quote": "Complete and pass a TSB “approved” ‘driver education’ program which includes a 3-hour DWI component",
+    "note": "Applicants 18-24 have separate rules (not covered). Page read via Wayback Machine copy (web.archive.org) of the official MVD page because mvd.newmexico.gov blocks automated access."
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": 70,
+    "source_url": "https://www.mvd.newmexico.gov/chapter-11-road-and-written-test-requirements/",
+    "quote": "All class D and M written test scores must be 70% or better to pass.",
+    "note": "MVD Driver Procedures Manual, chapter 11. Page read via Wayback Machine copy (web.archive.org) of the official MVD page because mvd.newmexico.gov blocks automated access."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://www.mvd.newmexico.gov/chapter-11-road-and-written-test-requirements/",
+    "quote": "Knowledge exams are available in English, Spanish, Tagalog, Italian, German, French, Vietnamese, and Chinese.",
+    "note": "Page read via Wayback Machine copy (web.archive.org) of the official MVD page because mvd.newmexico.gov blocks automated access."
+   },
+   "permit_fee_usd": {
+    "value": 10,
+    "source_url": "https://www.mvd.newmexico.gov/nm-drivers-licenses-ids/drivers-license/apply-for-a-learners-permit/",
+    "quote": "Instructional Permit – $10.00",
+    "note": "Page read via Wayback Machine copy (web.archive.org) of the official MVD page because mvd.newmexico.gov blocks automated access."
+   },
+   "license_fee_usd": {
+    "value": 18,
+    "source_url": "https://www.mvd.newmexico.gov/nm-drivers-licenses-ids/drivers-license/apply-for-a-learners-permit/",
+    "quote": "Provisional License – $18.00Full-Unrestricted License – 4-year license is $18.00; 8-year license is $34.00",
+    "note": "Teen first license = provisional $18; full unrestricted 4-year $18 / 8-year $34. Page read via Wayback Machine copy (web.archive.org) of the official MVD page because mvd.newmexico.gov blocks automated access."
+   },
+   "night_restriction": {
+    "value": "Provisional: no driving midnight-5 a.m. unless with licensed driver 21+; exceptions for school, work, family/medical need, religious functions.",
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "The driver may not operate a motor vehicle upon public highways between the hours of midnight and 5:00 AM.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Provisional: no more than one passenger under 21 who is not immediate family, unless a licensed driver 21+ is in the vehicle.",
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "you may not have more than one other passenger under the age of 21 who is not a member of your immediate family in the vehicle.",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://www.mvd.newmexico.gov/wp-content/uploads/2020/12/English-Drivers-Manualver11.19.19.pdf",
+    "quote": "In New Mexico, if you are under 21, you also can be arrested for BAC at .02%.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": "70%",
+    "source_url": "https://www.mvd.newmexico.gov/chapter-11-road-and-written-test-requirements/",
+    "quote": "All class D and M written test scores must be 70% or better to pass.",
+    "note": "Page read via Wayback Machine copy (web.archive.org) of the official MVD page because mvd.newmexico.gov blocks automated access."
+   }
+  }
+ },
+ {
+  "code": "NY",
+  "name": "New York",
+  "agency": "New York State Department of Motor Vehicles",
+  "agency_url": "https://dmv.ny.gov/",
+  "handbook_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+  "handbook_edition": "MV-21 Driver's Manual (current PDF on dmv.ny.gov, read 2026-10; no edition date printed in extracted text)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://dmv.ny.gov/driver-license/get-learner-permit",
+    "quote": "New York State residents 16 and older can apply for a New York learner permit.",
+    "note": ""
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "Your permit must be held, in valid status for a minimum of six months in order to take the road test.",
+    "note": "Applies to junior (under-18) permit holders."
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "your parent or guardian certifies that you completed at least 50 hours of practice driving, including at least 15 hours after sunset",
+    "note": "Certified on form MV-262 for under-18 road test."
+   },
+   "supervised_hours_night": {
+    "value": 15,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "at least 50 hours of practice driving, including at least 15 hours after sunset",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16.5,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "Junior Operator, Class DJ - Minimum age is 16. ... Your permit must be held, in valid status for a minimum of six months in order to take the road test.",
+    "note": "Class DJ minimum age is 16 but the 6-month permit holding period (permit from 16) means the junior license comes at 16.5 at the earliest (derived)."
+   },
+   "full_license_min_age_years": {
+    "value": 17,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "Operator, Class D - Minimum age is 18, or age 17 with a driver education Certificate of Completion",
+    "note": "17 with approved driver education (MV-285 certificate); otherwise junior restrictions apply until 18."
+   },
+   "drivers_ed_required": {
+    "value": "Not required; a 5-hour pre-licensing course (or a driver education course) is required before the road test. Driver education allows the senior Class D license at 17.",
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "Before you can make a road test appointment, you must first complete an approved safe driver course. This requirement is automatically fulfilled as part of every high school or college driver education course.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 20,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "To pass the written test, you must correctly answer at least 14 of the 20 questions asked, but you must correctly answer two of the four questions about road signs.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 14,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "you must correctly answer at least 14 of the 20 questions asked, but you must correctly answer two of the four questions about road signs.",
+    "note": "Also at least 2 of the 4 road-sign questions."
+   },
+   "knowledge_test_pass_percent": {
+    "value": 70,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "you must correctly answer at least 14 of the 20 questions asked",
+    "note": "14/20 = 70% (computed)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "The test is given in an easy-to-use format and is offered in English and Spanish.",
+    "note": "Quote is about the OKTA school online test; manual also says 'Class D knowledge tests are offered in multiple languages'. NY DMV motorcycle page lists Spanish among 20 test languages."
+   },
+   "permit_fee_usd": {
+    "value": 80,
+    "source_url": "https://dmv.ny.gov/driver-license/fees-refunds",
+    "quote": "16 to 16½ | $80.00 | $90.00 (* Includes MCTD)",
+    "note": "Class D/DJ fee by age at application; $80 outside MCTD / $90 inside MCTD (NYC metro) for age 16-16½. Fee varies by age bracket ($76.75-$102.50 for teens). NY charges one fee for the permit and first license (fee covers 'your first New York State driver license or permit')."
+   },
+   "license_fee_usd": {
+    "value": 80,
+    "source_url": "https://dmv.ny.gov/driver-license/fees-refunds",
+    "quote": "the total fee is for 'your first New York State driver license or permit'",
+    "note": "Same combined fee as the permit (no separate first-license fee); validity not stated on page (~5 years, ends on a birthday). Value shown for age 16-16½ outside MCTD."
+   },
+   "night_restriction": {
+    "value": "Junior permit/license: no driving 9 PM-5 AM in New York City (5 boroughs); Long Island: 9 PM-5 AM only directly between home and work-study/college/driver-ed/farm work; Upstate: 9 PM-5 AM only home-work/school or with parent/guardian.",
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "REGIONAL RESTRICTIONS FOR A JUNIOR LICENSE ... 9PM – 5AM ... You must NOT drive.",
+    "note": "NYC: junior license holders may not drive at all in NYC (5 boroughs) at any time (chart). Permit holders may not drive in NYC 9PM-5AM."
+   },
+   "passenger_restriction": {
+    "value": "Junior license: no more than one passenger under 21 unless immediate family. Junior permit: same, and only the supervising driver may sit in front.",
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "You cannot drive with more than one passenger under the age of 21 unless they are members of your immediate family.",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": false,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "your junior permit, license or privileges will be suspended for 120 days when you are convicted of a texting or cell phone violation.",
+    "note": "No separate all-device ban for teens; all drivers are banned from hand-held phone use/texting, with a 120-day suspension for junior drivers."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "Under the state's 'Zero Tolerance Law,' a driver under age 21 will have thier license suspended for six months if found to have a BAC from .02 to .07.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://dmv.ny.gov/brochure/mv21.pdf",
+    "quote": "Junior Motorcycle, Class MJ - Minimum age is 16.",
+    "note": "Class MJ (junior) motorcycle; Class M at 18 or 17 with driver ed."
+   },
+   "motorcycle_test_questions": {
+    "value": 20,
+    "source_url": "https://dmv.ny.gov/driver-license/get-a-motorcycle-learner-permit-and-license",
+    "quote": "To pass, you must get at least 14 of the 20 multiple-choice questions correct",
+    "note": ""
+   },
+   "motorcycle_test_pass": {
+    "value": "14 of 20 (incl. 2 of 4 road-sign questions)",
+    "source_url": "https://dmv.ny.gov/driver-license/get-a-motorcycle-learner-permit-and-license",
+    "quote": "To pass, you must get at least 14 of the 20 multiple-choice questions correct",
+    "note": ""
+   }
+  }
+ },
+ {
+  "code": "NC",
+  "name": "North Carolina",
+  "agency": "North Carolina Division of Motor Vehicles (NCDMV, NCDOT)",
+  "agency_url": "https://www.ncdot.gov/dmv/",
+  "handbook_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/nc-driver-handbook.pdf",
+  "handbook_edition": "NC Driver Handbook (current PDF, mentions May 7, 2025 REAL ID date); GDL handout DL-214 Rev. 06-26",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://www.ncdot.gov/dmv/downloads/Documents/DL-214.pdf",
+    "quote": "A person who is at least 15 years old but less than 18 years old may obtain a limited learner's permit.",
+    "note": "Level 1 Limited Learner Permit; requires approved driver education first (enrollment from 14.5)."
+   },
+   "permit_holding_months": {
+    "value": 9,
+    "source_url": "https://www.ncdot.gov/dmv/downloads/Documents/DL-214.pdf",
+    "quote": "A Level I must be at least 16 years old and held the limited learner's permit 9 months from the issuance date before being eligible for a Level II",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 60,
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/nc-driver-handbook.pdf",
+    "quote": "You will be given a Driving Log to be completed detailing a minimum of 60 hours of operation. At least 10 hours must occur during nighttime hours.",
+    "note": ""
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/nc-driver-handbook.pdf",
+    "quote": "At least 10 hours must occur during nighttime hours.",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.ncdot.gov/dmv/downloads/Documents/DL-214.pdf",
+    "quote": "A person who is at least 16 years old but less than 18 years old may obtain a limited provisional license.",
+    "note": "Level 2 Limited Provisional License. Level 3 Full Provisional after 6 more months (earliest 16.5)."
+   },
+   "full_license_min_age_years": {
+    "value": 18,
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Pages/level3.aspx",
+    "quote": "once you turn 18, you can upgrade to a Class C driver license online",
+    "note": "Level 3 (Full Provisional, earliest 16.5) lifts night/passenger limits, but the under-18 mobile phone ban applies until 18; restrictions fully end at 18."
+   },
+   "drivers_ed_required": {
+    "value": "Required for all permit applicants under 18: approved course of at least 30 hours classroom + 6 hours behind the wheel.",
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/nc-driver-handbook.pdf",
+    "quote": "You must present a certificate showing you have passed an approved driver education course consisting of at least 30 hours classroom instruction and six hours behind-the wheel instruction",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "7 calendar days",
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Pages/driver-license-tests.aspx",
+    "quote": "may retake the test in seven calendar days",
+    "note": ""
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/driver-handbook-spanish.pdf",
+    "quote": "CAROLINA DEL NORTE MANUAL DEL CONDUCTOR",
+    "note": "Tests page says knowledge tests are 'offered in different languages' without naming Spanish; NCDMV publishes an official Spanish handbook. Spanish test availability inferred, not explicitly stated."
+   },
+   "permit_fee_usd": {
+    "value": 25.5,
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Pages/level1.aspx",
+    "quote": "Level 1 Limited Learner Permit: $25.50",
+    "note": ""
+   },
+   "license_fee_usd": {
+    "value": 25.5,
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Pages/level2.aspx",
+    "quote": "Level 2 Limited Provisional License: $25.50",
+    "note": "Level 2 is the first license for teens; Level 3 Full Provisional costs $32.50 at age 16 / $26 at 17 and expires at 21 (level3 page)."
+   },
+   "night_restriction": {
+    "value": "Level 1: 5 a.m.-9 p.m. only (with supervisor) for first 6 months. Level 2: no unsupervised driving 9 p.m.-5 a.m. except to/from work or volunteer fire/rescue/EMS.",
+    "source_url": "https://www.ncdot.gov/dmv/downloads/Documents/DL-214.pdf",
+    "quote": "The license holder may drive without supervision in any of the following circumstances: a. From 5 a.m. until 9 p.m. b. When driving to or from work",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Level 1: no one but supervising driver in front seat. Level 2 unsupervised: max one non-household passenger under 21 (plus one student driven to/from school); no limit if all under-21 passengers are household members.",
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/nc-driver-handbook.pdf",
+    "quote": "When driving unsupervised, there may be one passenger that is under 21 that is not a member of the same household as the driver.",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://www.ncdot.gov/dmv/downloads/Documents/DL-214.pdf",
+    "quote": "It is unlawful for the driver of a motor vehicle under the age of 18 to use a mobile/cellular telephone for any purpose",
+    "note": "Applies to all drivers under 18; emergency/parent call exceptions."
+   },
+   "under21_bac": {
+    "value": 0.0,
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/nc-driver-handbook.pdf",
+    "quote": "If a driver who is less than 21 years old is convicted for an offense of driving with any amount of alcohol or drugs in their body, their license will be revoked for one year.",
+    "note": "Any amount (zero tolerance)."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/nc-driver-handbook.pdf",
+    "quote": "If an applicant is at least 16 years old but less than 18 years old, the applicant must possess a full provisional license issued by the division.",
+    "note": "Under 18 also needs MSF/NCMSEP Basic Rider Course; full provisional (Level 3) is reachable at 16.5 earliest."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "ND",
+  "name": "North Dakota",
+  "agency": "North Dakota Department of Transportation (NDDOT), Driver License Division",
+  "agency_url": "https://www.dot.nd.gov/",
+  "handbook_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+  "handbook_edition": "Noncommercial Driver License Manual 2025-2027 (Revised 2025)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 14,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "All applicants must be at least 14 years of age.",
+    "note": ""
+   },
+   "permit_holding_months": {
+    "value": 12,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "Individuals who are 14 or 15 years old must hold the instruction permit for 12 months or to the age of 16, whichever comes first, but no less than six months",
+    "note": "14-15: 12 months or until 16 (min 6); 16-17: 6 months or until 18."
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "Individuals under 16 must complete a minimum of 50 hours of supervised practice driving in variable conditions.",
+    "note": "Required only for applicants under 16."
+   },
+   "supervised_hours_night": {
+    "value": null,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "Individuals under 16 must complete a minimum of 50 hours of supervised practice driving in variable conditions.",
+    "note": "No night-hour minimum stated."
+   },
+   "intermediate_min_age_years": {
+    "value": 15,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "Upon successful completion of the road test, a 15 year old will be issued a restricted Class D operator's license.",
+    "note": ""
+   },
+   "full_license_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "At age 16 the restricted Class D Operator's License transitions to an unrestricted license.",
+    "note": "Under-18 electronic device ban still applies until 18."
+   },
+   "drivers_ed_required": {
+    "value": "Required for applicants under 16 (driver education Certificate of Training for the road test: 30 h classroom + 6 h behind the wheel via DPI, or 6 h behind the wheel at an approved commercial school).",
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "Applicants less than 16 years of age are required to present a driver's education Certificate of Training.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "One attempt per day (next day)",
+    "source_url": "https://www.dot.nd.gov/driver/how-apply-learners-permit",
+    "quote": "Knowledge Test: $5 per attempt (one attempt allowed per day)",
+    "note": ""
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "The noncommercial (Class D) knowledge test is offered in English, Arabic, Spanish, Somali, Russian, Vietnamese, Turkish, Swahili, Nepali, Serbo-Croatian, French, Pashto, Dari and Chinese.",
+    "note": ""
+   },
+   "permit_fee_usd": {
+    "value": 15,
+    "source_url": "https://www.dot.nd.gov/driver/how-apply-learners-permit",
+    "quote": "Permit: $15",
+    "note": "Plus $5 per knowledge test attempt."
+   },
+   "license_fee_usd": {
+    "value": 15,
+    "source_url": "https://www.dot.nd.gov/driver/driver-education/driver-license-requirements",
+    "quote": "$15.00 for a non-commercial permit or license",
+    "note": "Plus $5 road test. Validity not stated on page."
+   },
+   "night_restriction": {
+    "value": "Restricted license (age 15): no driving between the later of sunset or 9:00 p.m. and 5:00 a.m. without parent/guardian or person 18+, except directly to/from work, official school or religious activity.",
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "the individual is not allowed to operate a vehicle without his or her parent, legal guardian, or an individual at least 18 years of age between the later of sunset or 9:00 p.m. and 5:00 a.m.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "No passenger limit for the restricted license; permit holders: nobody but the supervising driver in the front seat. Restricted license limited to vehicles of parent/guardian/grandparent/sibling/aunt/uncle.",
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "An individual other than the supervising driver and the permit holder may not be in the front seat unless the vehicle has only a front seat",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "Anyone, regardless of age who is operating a vehicle with an instruction permit and licensed drivers under the age of 18 are prohibited from using electronic communication devices while driving.",
+    "note": ""
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "If you have an alcohol concentration (AC) of .08 percent or more or .02 percent or more if you are under age 21, your license will be suspended",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 14,
+    "source_url": "https://www.dot.nd.gov/sites/www/files/documents/Drivers%20-%20documents/noncommercial-manual.pdf",
+    "quote": "Motorcycle: If you are 14 or 15 years old, you may receive a license to operate a motorcycle by successfully completing an approved motorcycle safety course and passing the motorcycle knowledge test.",
+    "note": "Under 16 must show MSF Basic Rider Course enrollment before testing (motorcycle-license page). Motorcycle permit fee $8."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "OH",
+  "name": "Ohio",
+  "agency": "Ohio Bureau of Motor Vehicles (Ohio Department of Public Safety)",
+  "agency_url": "https://www.bmv.ohio.gov/",
+  "handbook_url": "https://publicsafety.ohio.gov/links/hsy7607.pdf",
+  "handbook_edition": "Digest of Ohio Motor Vehicle Laws (HSY 7607) - not read: official PDF URL returned 404; values taken from BMV GDL page",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15.5,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "At age 15 years and six months, an applicant may complete the knowledge test online ... to begin the temporary permit process.",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "Driver must hold the TIPIC for at least six months.",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "Driver must complete 50 hours of driving, with at least 10 hours of night driving, in addition to the driver education requirements.",
+    "note": "Certified on BMV 5791 Fifty-Hour Affidavit. Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "with at least 10 hours of night driving",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "Temporary Permit / Probationary Driver Licensing – Under Age 18",
+    "note": "Probationary license at 16 (TIPIC at 15.5 + 6 months; Ohio license minimum age 16). The '16' is not stated verbatim in the excerpt read; derived from 15.5 + 6 months. Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "full_license_min_age_years": {
+    "value": 18,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "After the First 12 Months of Holding a License and Under Age 18 ... You may not operate a vehicle from 1 - 5 a.m.",
+    "note": "Probationary restrictions apply until 18. Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "drivers_ed_required": {
+    "value": "Required under 18 (and also for first-time applicants 18-20): licensed driver training school, 24 hours classroom/online + 8 hours driving.",
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "Driver must complete a driver education class at a licensed driver training school, which includes 24 hours of classroom or online instruction and 8 hours of driving time.",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "knowledge_test_questions": {
+    "value": 40,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "The knowledge test is 40 multiple-choice questions about motor vehicle regulations and traffic signs.",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "knowledge_test_pass_correct": {
+    "value": 30,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "Applicants must answer 75 percent of the questions correctly to pass.",
+    "note": "75% of 40 = 30 (computed). Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "knowledge_test_pass_percent": {
+    "value": 75,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "Applicants must answer 75 percent of the questions correctly to pass.",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "24 hours (online: max 2 attempts per 6 months)",
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "Applicants who fail the knowledge test must wait at least 24 hours before retesting.",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "The knowledge test is available in the following languages in both text, and audio: Arabic, Chinese, English, French, Haitian Creole, Japanese, Russian, Somali, and Spanish.",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "permit_fee_usd": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "license_fee_usd": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "night_restriction": {
+    "value": "Probationary, first 12 months: no driving midnight-6 a.m.; after 12 months and under 18: no driving 1-5 a.m.; exceptions with parent/guardian/designated 21+ driver, work, school or religious event. Permit holders 16+: midnight-6 a.m. only with parent/guardian/designated driver.",
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "You may not operate a vehicle from midnight - 6 a.m. unless: Accompanied by a parent, guardian, or custodian",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "passenger_restriction": {
+    "value": "First 12 months of probationary license: no more than one non-family passenger unless accompanied by parent or guardian.",
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "You may not operate a vehicle with more than one non-family member as a passenger unless accompanied by a parent or guardian.",
+    "note": "Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://www.bmv.ohio.gov/dl-gdl.aspx",
+    "quote": "Driver may not use any mobile devices, including cellular phones.",
+    "note": "Applies to probationary license holders under 18. Read from the Wayback Machine copy of the official BMV page dated 2025-10-07 (bmv.ohio.gov refuses automated connections)."
+   },
+   "under21_bac": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "OK",
+  "name": "Oklahoma",
+  "agency": "Service Oklahoma (SOK)",
+  "agency_url": "https://oklahoma.gov/service.html",
+  "handbook_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+  "handbook_edition": "Oklahoma Driver Manual (current PDF; fee table effective 6-01-2025, mentions REAL ID May 7, 2025)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "Class D Learner Permit 15 You must be taking or have passed an approved driver education course and show a completed driver education certificate",
+    "note": "15 with driver education (school, commercial or parent-taught); 16 without driver education."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "Must have held learner permit for at least 180-days.",
+    "note": "Manual also: 'Must be 16 years old and have had your permit for at least 6 months to take the driving test.'"
+   },
+   "supervised_hours_total": {
+    "value": null,
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "",
+    "note": "No supervised-hours log requirement found in the Oklahoma Driver Manual; parent-taught driver ed requires 55 behind-the-wheel hours (part of the course, not a GDL log). Not confirmed."
+   },
+   "supervised_hours_night": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "Class D Intermediate License 16 16 ½ 16 – ... Must show completion certificate from an approved driver education course. 16 1/2 – Driver education completion not required.",
+    "note": "16 with driver ed, 16.5 without."
+   },
+   "full_license_min_age_years": {
+    "value": 16.5,
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "Can have intermediate restriction removed after 6months if you completed driver education and 1 year if no driver education.",
+    "note": "Derived: 16 + 6 months with driver ed = 16.5; without driver ed 16.5 + 1 year = 17.5. 'T' restriction does not apply at 18+."
+   },
+   "drivers_ed_required": {
+    "value": "Not required; driver education (school, commercial or parent-taught) allows permit at 15, intermediate at 16 and earlier removal of restrictions.",
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "16 1/2 – Driver education completion not required.",
+    "note": "Work Zone Safe course certificate is required for the intermediate license under 18 (teen-driving page)."
+   },
+   "knowledge_test_questions": {
+    "value": 20,
+    "source_url": "https://oklahoma.gov/service/popular-services/written-test.html",
+    "quote": "To pass, you must correctly answer 15 out of 20 questions.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 15,
+    "source_url": "https://oklahoma.gov/service/popular-services/written-test.html",
+    "quote": "To pass, you must correctly answer 15 out of 20 questions.",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 75,
+    "source_url": "https://oklahoma.gov/service/popular-services/written-test.html",
+    "quote": "To pass, you must correctly answer 15 out of 20 questions.",
+    "note": "15/20 = 75% (computed)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "No waiting period stated; may retake as many times as needed (online max 2 attempts), $4 per failed attempt",
+    "source_url": "https://oklahoma.gov/service/popular-services/written-test.html",
+    "quote": "While the Written Exam can be taken as many times as needed, you may take the Written Exam online two times.",
+    "note": ""
+   },
+   "knowledge_test_spanish": {
+    "value": false,
+    "source_url": "https://oklahoma.gov/service/popular-services/written-test.html",
+    "quote": "At this time, the written test is only available in English.",
+    "note": "Statement is in the FAQ on the online written exam."
+   },
+   "permit_fee_usd": {
+    "value": 42.5,
+    "source_url": "https://oklahoma.gov/service/popular-services/written-test.html",
+    "quote": "The fee to issue and print a Learner Permit is $42.50.",
+    "note": "Manual Table 3 (effective 6-01-2025): $4 application + $38.50 license = $42.50 (4-year)."
+   },
+   "license_fee_usd": {
+    "value": 42.5,
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "Class D License $ 4 $38.50 $42.50 $4 $25",
+    "note": "4-year Class D license (application $4 + license $38.50)."
+   },
+   "night_restriction": {
+    "value": "Intermediate ('T' restriction): driving allowed only 5 a.m.-10 p.m. unless for school, church or work activities or accompanied by licensed driver 21+.",
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "Restriction “T” = Graduated driver license Driving allowed from 5 a.m. to 10 p.m. Unless for activities related to school, church or work",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Intermediate: one passenger, or only household members, unless a licensed driver 21+ is in the front passenger seat.",
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "One passenger or only people who live in the driver's home or any passenger if accompanied by licensed driver at least 21 years old in the front passenger seat.",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": "Hand-held electronic devices banned for learner permit and intermediate license holders (texting banned for all drivers)",
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "Learner's Permit or Intermediate License holders can be suspended or have their license canceled for using a hand-held electronic device while operating a motor vehicle",
+    "note": ""
+   },
+   "under21_bac": {
+    "value": 0.0,
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "BAC level is 0.08 or more (or any measurable amount if you are under 21 years old), your driver license will be revoked",
+    "note": "Zero tolerance: any measurable amount."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 14,
+    "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/OklahomaDriverManual.pdf",
+    "quote": "Motorcycle License Permit 14",
+    "note": "14-15: restricted to 300cc, 4:30 a.m.-9 p.m., no passengers; under 18 must complete a basic rider course."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "OR",
+  "name": "Oregon",
+  "agency": "Oregon Department of Transportation, Driver and Motor Vehicle Services (DMV)",
+  "agency_url": "https://www.oregon.gov/odot/dmv/",
+  "handbook_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+  "handbook_edition": "2026-2027 Oregon Driver Manual (form 37, printed May 2025)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "Be at least 15 years of age to apply for an instruction permit.",
+    "note": ""
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "You must have had an instruction permit for at least 6 months.",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 100,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "You must have 100 hours of supervised driving experience or 50 hours of supervised driving experience and have taken an ODOT-approved traffic safety education course.",
+    "note": "50 hours if an ODOT-approved traffic safety education course is completed."
+   },
+   "supervised_hours_night": {
+    "value": null,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "",
+    "note": "No night-hour minimum stated in the manual."
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "Be at least 16 years of age to apply for a license.",
+    "note": "Under-18 license is a provisional license."
+   },
+   "full_license_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "drivers_ed_required": {
+    "value": "Not required; ODOT-approved traffic safety education reduces supervised hours from 100 to 50.",
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "100 hours of supervised driving experience or 50 hours of supervised driving experience and have taken an ODOT-approved traffic safety education course.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 35,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "It has 35 multiple-choice questions. You must answer 28 questions correctly to receive a passing score.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 28,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "You must answer 28 questions correctly to receive a passing score.",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "It has 35 multiple-choice questions. You must answer 28 questions correctly",
+    "note": "28/35 = 80% (computed)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "Same day possible at a DMV office (resource permitting); online max 2 attempts per 24 hours, 4 total",
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "If you fail a knowledge test, you may test again the same day, depending on the DMV office testing resource availability.",
+    "note": ""
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "The test is available in several languages, with or without audio assistance.",
+    "note": "Languages not named; Spanish not explicitly confirmed."
+   },
+   "permit_fee_usd": {
+    "value": null,
+    "source_url": "https://www.oregon.gov/odot/DMV/Pages/Fees/Driver.aspx",
+    "quote": "",
+    "note": "Fee table not retrievable. Oregon DMV web pages (fees, teen) load their content dynamically and ORS (oregonlegislature.gov) refused connections, so this could not be confirmed."
+   },
+   "license_fee_usd": {
+    "value": null,
+    "source_url": "https://www.oregon.gov/odot/DMV/Pages/Fees/Driver.aspx",
+    "quote": "",
+    "note": "Fee table not retrievable. Oregon DMV web pages (fees, teen) load their content dynamically and ORS (oregonlegislature.gov) refused connections, so this could not be confirmed."
+   },
+   "night_restriction": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Oregon DMV web pages (fees, teen) load their content dynamically and ORS (oregonlegislature.gov) refused connections, so this could not be confirmed."
+   },
+   "passenger_restriction": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Oregon DMV web pages (fees, teen) load their content dynamically and ORS (oregonlegislature.gov) refused connections, so this could not be confirmed."
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "It is illegal for drivers under 18 years of age to use a cell phone or other mobile electronic device while operating a vehicle.",
+    "note": ""
+   },
+   "under21_bac": {
+    "value": 0.0,
+    "source_url": "https://www.oregon.gov/odot/forms/dmv/37.pdf",
+    "quote": "If you are under 21, you will fail the test if you have a blood alcohol concentration of any amount. Oregon has a zero tolerance law.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "PA",
+  "name": "Pennsylvania",
+  "agency": "Pennsylvania Department of Transportation (PennDOT), Driver & Vehicle Services",
+  "agency_url": "https://www.pa.gov/agencies/dmv",
+  "handbook_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+  "handbook_edition": "PUB 95 (4-21) - current PDF linked from pa.gov; Young Driver Law fact sheet (March 2015)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "You cannot apply for your permit before your 16th birthday.",
+    "note": ""
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-fact-sheets/fs-wy.pdf",
+    "quote": "A six-month skill-building period to practice and gain experience is required before a young driver may take the road test for a junior license.",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 65,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-fact-sheets/fs-wy.pdf",
+    "quote": "65 hours of adult-supervised skill building. Except for a motorcycle learners permit, this requirement includes no less than ten hours of nighttime driving and five (5) hours of bad weather driving.",
+    "note": "Includes 5 hours bad-weather driving; certified on DL-180C."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-fact-sheets/fs-wy.pdf",
+    "quote": "no less than ten hours of nighttime driving",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16.5,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-fact-sheets/fs-wy.pdf",
+    "quote": "A six-month skill-building period ... is required before a young driver may take the road test for a junior license.",
+    "note": "Derived: permit at 16 + 6 months = junior license at 16.5."
+   },
+   "full_license_min_age_years": {
+    "value": 17.5,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-fact-sheets/fs-wy.pdf",
+    "quote": "A young driver cannot obtain an unrestricted license before age 18 unless he or she has maintained a crash-and conviction-free record for 12 months and has completed an approved driver's education course.",
+    "note": "17.5 earliest (16.5 junior + 12 months clean + driver ed, form DL-59); otherwise 18."
+   },
+   "drivers_ed_required": {
+    "value": "Not required; approved driver education only allows an unrestricted license before 18.",
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-fact-sheets/fs-wy.pdf",
+    "quote": "unless he or she has maintained a crash-and conviction-free record for 12 months and has completed an approved driver's education course.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 18,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "The Knowledge Test consists of 18 multiple choice questions.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 15,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "You must answer 15 questions correctly to pass the test.",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 83.3,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "You must answer 15 questions correctly to pass the test.",
+    "note": "15/18 = 83.3% (computed)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "Next business day",
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "If you fail the Knowledge Test, you will be permitted to retake the test the following business day.",
+    "note": ""
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "The Knowledge Test can be given in both written and audio format in the following languages Spanish, Arabic, Chinese (Mandarin), French",
+    "note": ""
+   },
+   "permit_fee_usd": {
+    "value": 45.5,
+    "source_url": "https://www.pa.gov/agencies/dmv/resources/payments-and-fees",
+    "quote": "Initial Permit and Four-Year License: $45.50",
+    "note": "Single fee covers the learner's permit and the first 4-year license."
+   },
+   "license_fee_usd": {
+    "value": 45.5,
+    "source_url": "https://www.pa.gov/agencies/dmv/resources/payments-and-fees",
+    "quote": "Initial Permit and Four-Year License: $45.50",
+    "note": "Same combined fee; 4-year license."
+   },
+   "night_restriction": {
+    "value": "Permit and junior license: no driving 11 p.m.-5 a.m. (exceptions: employment, volunteer/charitable service with documentation).",
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-fact-sheets/fs-wy.pdf",
+    "quote": "Even with a junior license, a young driver may not be behind the wheel between the hours of 11 p.m. and 5 a.m.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Junior license: max 1 non-family passenger under 18 unless a parent/guardian is in the vehicle; after 6 months (no crash/conviction) up to 3. Passengers never exceed seat belts (under 18).",
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-fact-sheets/fs-wy.pdf",
+    "quote": "You may not carry more than one (1) passenger under the age of 18 who is not an immediate family member unless one (1) of your parents or guardians is in the vehicle with you.",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": null,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "",
+    "note": "No teen-specific all-device ban found in PUB 95 or the young driver fact sheet; not confirmed either way."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "If you are under 21, you are considered to be driving under the influence if your blood alcohol level is .02 or greater.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bdl/bdl-manuals/pa-drivers-manual-non-commercial/english/pub%2095.pdf",
+    "quote": "CLASS M (minimum age 16): A Class M driver's license will be issued to those persons 16 years of age or older",
+    "note": "Motorcycle permit age not stated separately; under 18 must hold motorcycle permit 6 months with 65 hours (motorcycle permit FAQ) and complete the PAMSP Basic Rider Course."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "RI",
+  "name": "Rhode Island",
+  "agency": "Rhode Island Division of Motor Vehicles",
+  "agency_url": "https://dmv.ri.gov/",
+  "handbook_url": "",
+  "handbook_edition": "not retrieved",
+  "fields": {
+   "permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "permit_holding_months": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "supervised_hours_total": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "supervised_hours_night": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "intermediate_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "full_license_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "drivers_ed_required": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "permit_fee_usd": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "license_fee_usd": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "night_restriction": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "passenger_restriction": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "teen_phone_ban": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "under21_bac": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not verified: dmv.ri.gov is behind a Cloudflare challenge (HTTP 403) and the RI General Laws site (webserver.rilegislature.gov) refused connections on 2026-10-22; web search quota was exhausted, so no other official copy could be located."
+   }
+  }
+ },
+ {
+  "code": "SC",
+  "name": "South Carolina",
+  "agency": "South Carolina Department of Motor Vehicles (SCDMV)",
+  "agency_url": "https://www.scdmvonline.com/",
+  "handbook_url": "",
+  "handbook_edition": "not retrieved (scdmvonline.com refused connections)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "(A) A person who is at least fifteen years of age may apply to the department for a beginner's permit.",
+    "note": "§56-1-50(A). scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "held a beginner's permit for at least one hundred eighty days",
+    "note": "§56-1-175(A)(1) / §56-1-180(A)(1); 180 days. scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "supervised_hours_total": {
+    "value": 40,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "completed at least forty hours of driving practice, including at least ten hours of driving practice during darkness",
+    "note": "§56-1-175(A)(3). scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "including at least ten hours of driving practice during darkness",
+    "note": "§56-1-175(A)(3). scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "intermediate_min_age_years": {
+    "value": 15.5,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "may issue a conditional driver's license to a person who is at least fifteen years of age and less than sixteen years of age, who has: (1) held a beginner's permit for at least one hundred eighty days",
+    "note": "Derived: permit at 15 + 180 days = conditional license at 15.5; special restricted license from 16 (§56-1-180). scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "full_license_min_age_years": {
+    "value": null,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "is not eligible to be issued a regular driver's license until one year from the date of the last traffic offense or accident in which he was at fault or until he is seventeen years of age.",
+    "note": "§56-1-185(A) only covers drivers with offenses; general earliest age for a regular license not confirmed. scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "drivers_ed_required": {
+    "value": "Required for the conditional (15) and special restricted (16) licenses: driver's education course from a licensed driving school or high school.",
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "passed a driver's education course as defined in subsection (D)",
+    "note": "§56-1-175(A)(2), §56-1-180(A)(2). scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "permit_fee_usd": {
+    "value": 2.5,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "The fee for every beginner's or renewal permit is two dollars and fifty cents",
+    "note": "§56-1-50(D); valid 12 months. scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "license_fee_usd": {
+    "value": 25,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "Upon payment of a fee of twenty-five dollars for a license that is valid for eight years",
+    "note": "§56-1-140(A); 8-year license. scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "night_restriction": {
+    "value": "Conditional/special restricted license: daylight driving only alone; after 6 p.m. (8 p.m. during DST) must be accompanied by licensed adult 21+; no driving midnight-6 a.m. unless accompanied by a parent/guardian-type licensed individual. Permit: 6 a.m.-midnight with 21+ driver.",
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "The holder of a conditional license must be accompanied by a licensed adult twenty-one years of age or older after six o'clock p.m. or eight o'clock p.m. during daylight saving time.",
+    "note": "§56-1-175(B), §56-1-180(B). scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "passenger_restriction": {
+    "value": "Conditional/special restricted: no more than two passengers under 21 unless accompanied by a licensed adult 21+ (family members and students to/from school exempt).",
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "may not transport more than two passengers who are under twenty-one years of age unless accompanied by a licensed adult who is twenty-one years of age or older.",
+    "note": "scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "teen_phone_ban": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "a person under the age of twenty-one who drives a motor vehicle and has an alcohol concentration of two one-hundredths of one percent or more",
+    "note": "§56-1-286. scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://www.scstatehouse.gov/code/t56c001.php",
+    "quote": "A person who is at least fifteen years of age may apply to the department for a beginner's permit. ... The permit is valid only in the operation of: ... (2) motorcycles.",
+    "note": "§56-1-50. scdmvonline.com refused connections (handbook and DMV pages unreadable); value from the S.C. Code of Laws, Title 56 Chapter 1, on the Legislature's official site."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "SD",
+  "name": "South Dakota",
+  "agency": "South Dakota Department of Public Safety, Driver Licensing Program",
+  "agency_url": "https://dps.sd.gov/driver-licensing",
+  "handbook_url": "https://dps.sd.gov/application/files/2516/9264/8016/SD_Drivers_Manual.pdf",
+  "handbook_edition": "Not read (official site returned a JavaScript portal instead of the PDF); statutes used",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 14,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-11",
+    "quote": "Any person who is at least fourteen years of age but less than eighteen years of age applying for a South Dakota operator's license, restricted minor's permit, or instruction permit ... shall apply ... for an instruction permit.",
+    "note": "dps.sd.gov / sd.gov pages are a JavaScript portal that could not be read; values from South Dakota Codified Laws (official legislature site)."
+   },
+   "permit_holding_months": {
+    "value": 9,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-11",
+    "quote": "may apply for a restricted minor's permit after holding a valid instruction permit for at least ... two hundred seventy-five days if issued after July 1, 2020.",
+    "note": "275 days (~9 months); 180 days (6 months) with approved driver education (SDCL 32-12-12)."
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-11",
+    "quote": "shall drive a minimum of fifty hours under the supervision of a parent, legal guardian, or licensed driver over the age of eighteen",
+    "note": "Also 10 hours in inclement weather."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-11",
+    "quote": "Ten of the mandated hours must be in inclement weather and no less than ten hours must be during night time hours.",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 14.5,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-12",
+    "quote": "For any such minor who has successfully completed a driver education course ... the required minimum time period for holding the instruction permit ... is ... one hundred eighty continuous days if issued on or after July 1, 2020.",
+    "note": "Restricted minor's permit: 14.5 with driver ed (permit at 14 + 180 days); ~14.75 without (275 days). Derived."
+   },
+   "full_license_min_age_years": {
+    "value": 16,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-12",
+    "quote": "An operator's license may be issued to a minor at least sixteen years of age but less than eighteen years of age who ... has held a restricted minor's permit for at least six months",
+    "note": ""
+   },
+   "drivers_ed_required": {
+    "value": "Not required; approved driver education shortens the instruction-permit holding period from 275 to 180 days.",
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-12",
+    "quote": "For any such minor who has successfully completed a driver education course that has been approved by the Department of Education ... the required minimum time period ... is ... one hundred eighty continuous days",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "permit_fee_usd": {
+    "value": 38,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-11",
+    "quote": "paid a fee which is equal in amount to the fee prescribed for a license in § 32-12-16",
+    "note": "SDCL 32-12-16 (amended SL 2025): 'The application fee for an original driver license or a renewal of a driver license is thirty-eight dollars.'"
+   },
+   "license_fee_usd": {
+    "value": 38,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-16",
+    "quote": "The application fee for an original driver license or a renewal of a driver license is thirty-eight dollars.",
+    "note": "Amended by SL 2025, ch 120. Validity not stated in this section."
+   },
+   "night_restriction": {
+    "value": "Instruction permit and restricted minor's permit: driving 10 p.m.-6 a.m. only with parent/guardian in the seat beside (restricted permit exceptions: school, religious, work/farm routes).",
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-12",
+    "quote": "during the hours of 10 p.m. to 6 a.m. if the motor vehicle is being operated under the direction of the holder's parent or guardian who is occupying a seat beside the holder.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "None stated in statute for the restricted minor's permit.",
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-12",
+    "quote": "A restricted minor's permit entitles the holder ... to operate a motor vehicle during the hours of 6 a.m. to 10 p.m. standard time if the motor vehicle is being operated with the permission of the holder's parent or guardian",
+    "note": "Absence of a passenger limit inferred from the statute text; not stated explicitly."
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-12",
+    "quote": "No holder of a restricted minor's permit may use any type of wireless communication device while operating a motor vehicle upon the public highways.",
+    "note": "Same ban for instruction permit holders (32-12-11); secondary enforcement (32-12-12.4)."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://sdlegislature.gov/Statutes/32-23-21",
+    "quote": "It is a Class 2 misdemeanor for any person under the age of twenty-one to drive ... If there is physical evidence of 0.02 percent or more by weight of alcohol in the person's blood",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 14,
+    "source_url": "https://sdlegislature.gov/Statutes/32-12-11.1",
+    "quote": "Any person who is at least fourteen years of age but less than eighteen years of age applying for a South Dakota motorcycle operator's license ... shall apply ... for a motorcycle instruction permit.",
+    "note": ""
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "TN",
+  "name": "Tennessee",
+  "agency": "Tennessee Department of Safety and Homeland Security, Driver Services Division",
+  "agency_url": "https://www.tn.gov/safety/driver-services.html",
+  "handbook_url": "https://www.tn.gov/content/dam/tn/safety/documents/DL_Manual.pdf",
+  "handbook_edition": "Not read: tn.gov, sos.tn.gov, publications.tnsosfiles.com and capitol.tn.gov all refused automated access (HTTP 403 / connection refused); WebSearch budget exhausted",
+  "fields": {
+   "permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "permit_holding_months": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "supervised_hours_total": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "supervised_hours_night": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "intermediate_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "full_license_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "drivers_ed_required": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "permit_fee_usd": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "license_fee_usd": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "night_restriction": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "passenger_restriction": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "teen_phone_ban": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "under21_bac": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "TX",
+  "name": "Texas",
+  "agency": "Texas Department of Public Safety, Driver License Division",
+  "agency_url": "https://www.dps.texas.gov/section/driver-license",
+  "handbook_url": "https://www.dps.texas.gov/internetforms/forms/dl-7.pdf",
+  "handbook_edition": "Not read (dps.texas.gov unreachable); Texas statutes + TDLR pages used",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+    "quote": "The department may issue a learner license ... to a person who: (1) is 15 years of age or older but under 18 years of age; (2) has satisfactorily completed and passed the classroom phase of an approved driver education course",
+    "note": "Transp. Code 521.222. Driver ed classroom may start at 14 (TDLR). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+    "quote": "The department may not issue a Class A, B, or C driver's license other than a hardship license to an applicant under 18 years of age unless the applicant has held a learner license or hardship license for at least six months",
+    "note": "Transp. Code 521.204(b). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "supervised_hours_total": {
+    "value": 30,
+    "source_url": "https://www.tdlr.texas.gov/driver/education/parent-taught/",
+    "quote": "30 hours of behind-the-wheel instruction, including at least 10 hours of nighttime instruction",
+    "note": "Part of the 44 in-car hours of teen driver ed (7 observation + 7 behind-the-wheel + 30 practice) per TDLR."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.tdlr.texas.gov/driver/education/parent-taught/",
+    "quote": "including at least 10 hours of nighttime instruction",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+    "quote": "The department may issue a Class C driver's license to an applicant under 18 years of age only if the applicant: (1) is 16 years of age or older",
+    "note": "Provisional license; also requires Impact Texas Teen Drivers (ITTD) within 90 days of the skills test (TDLR provisional page). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "full_license_min_age_years": {
+    "value": 18,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.545.htm",
+    "quote": "A person under 18 years of age may not operate a motor vehicle: (1) after midnight and before 5 a.m. ...",
+    "note": "Transp. Code 545.424: restrictions tied to age under 18. DPS describes the night/passenger limits as applying for the first 12 months; that page could not be read. Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "drivers_ed_required": {
+    "value": "Required for all applicants under 25 (teens: 24 h classroom + 44 h in-car, via school, provider or parent-taught program; 18-24: 6-hour adult course).",
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+    "quote": "the department may not issue a driver's license to a person who is younger than 25 years of age unless the person submits to the department a driver education certificate",
+    "note": "Transp. Code 521.1601; parent-taught option per TDLR. Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+    "quote": "On payment of the required fee, an applicant is entitled to three examinations of each element under Subsection (b) for each application",
+    "note": "No waiting period found in statute; 3 attempts per application fee. Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+    "quote": "The department shall design and administer in each county of this state an alternate examination for Spanish-speaking applicants who are unable to take the regular examination in English.",
+    "note": "Transp. Code 521.162 (sign text stays in English). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "permit_fee_usd": {
+    "value": 15,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+    "quote": "(c) The fee for issuance of a provisional license or learner license is $15.",
+    "note": "Transp. Code 521.421(c). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "license_fee_usd": {
+    "value": 15,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+    "quote": "The fee for issuance of a provisional license or learner license is $15.",
+    "note": "First teen license is the provisional license ($15); standard license $32 (521.421(a)). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "night_restriction": {
+    "value": "Under 18: no driving midnight-5 a.m. unless for work, school-related activity or medical emergency (not applicable when accompanied as a learner).",
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.545.htm",
+    "quote": "A person under 18 years of age may not operate a motor vehicle: (1) after midnight and before 5 a.m. unless the operation of the vehicle is necessary for the operator to attend or participate in employment or a school-related activity or because of a medical emergency",
+    "note": "Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "passenger_restriction": {
+    "value": "Under 18: no more than one passenger under 21 who is not a family member.",
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.545.htm",
+    "quote": "(2) with more than one passenger in the vehicle under 21 years of age who is not a family member.",
+    "note": "Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.545.htm",
+    "quote": "A person under 18 years of age may not operate a motor vehicle while using a wireless communication device, except in case of emergency.",
+    "note": "Includes hands-free devices (545.424(f)). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "under21_bac": {
+    "value": 0.0,
+    "source_url": "https://statutes.capitol.texas.gov/Docs/AL/htm/AL.106.htm",
+    "quote": "A minor commits an offense if the minor operates a motor vehicle in a public place, or a watercraft, while having any detectable amount of alcohol in the minor's system.",
+    "note": "Alcoholic Beverage Code 106.041 (minor = under 21). Any detectable amount. Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "UT",
+  "name": "Utah",
+  "agency": "Utah Driver License Division (Department of Public Safety)",
+  "agency_url": "https://dld.utah.gov/",
+  "handbook_url": "https://dld.utah.gov/handbooks/",
+  "handbook_edition": "Not read (dld.utah.gov blocked, HTTP 403); Utah Code used",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "may issue a learner permit effective for 18 months to an applicant who is at least 15 years old.",
+    "note": "Utah Code 53-3-210.5(2). dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "an applicant who is 17 years old or younger shall hold a learner permit for six months before applying for a provisional class D license.",
+    "note": "53-3-210.5(7)(b). dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "supervised_hours_total": {
+    "value": 40,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "has completed at least 40 hours of driving a motor vehicle, of which at least 10 hours shall be during night hours after sunset.",
+    "note": "53-3-211(7): certified by the person signing the minor's application; may include driver-ed hours and up to 5 simulator hours. dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "of which at least 10 hours shall be during night hours after sunset.",
+    "note": "53-3-211(7). dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "the applicant may be issued an original or provisional class D license from the division upon: ... reaching 16 years old",
+    "note": "53-3-210.5(7)(a). dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "full_license_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "drivers_ed_required": {
+    "value": "Required for applicants under 19: driver education at a licensed commercial driver training school or approved program (19+ may substitute 3-month permit + 40 certified hours).",
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "completing a driver education course in: a commercial driver training school licensed under Part 5 ... or a driver education program approved by the State Board of Education or the division",
+    "note": "53-3-210.5(7)(a),(c). dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "An application and fee for a learner permit entitle the applicant to: not more than three attempts to pass the knowledge test for a class D license within one year",
+    "note": "No waiting period found; statute limits to 3 attempts per application/year. dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "permit_fee_usd": {
+    "value": 19,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P1_1800010118000101.html",
+    "quote": "A learner permit application under Section 53-3-210.5 is $19.",
+    "note": "Utah Code 53-3-105 (amended 2026). dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "license_fee_usd": {
+    "value": 39,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P1_1800010118000101.html",
+    "quote": "An original provisional license application for a class D license under Section 53-3-205 is $39.",
+    "note": "Original (adult) class D license $52. Validity not stated here. dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "night_restriction": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "passenger_restriction": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "teen_phone_ban": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "under21_bac": {
+    "value": 0.0,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "An individual younger than 21 years old may not operate or be in actual physical control of a vehicle or motorboat with any measurable blood, breath, or urine alcohol concentration",
+    "note": "Utah Code 53-3-231 ('Not a Drop'). Any measurable amount. dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://le.utah.gov/xcode/Title53/Chapter3/C53-3-P2_1800010118000101.html",
+    "quote": "may issue a motorcycle learner permit effective for six months to an applicant who: holds an original or provisional class D license",
+    "note": "53-3-210.6: requires a class D (or provisional) license, available at 16 at the earliest (derived). dld.utah.gov returns HTTP 403 to automated access; value from Utah Code (le.utah.gov, official), version current Oct 2026."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "VT",
+  "name": "Vermont",
+  "agency": "Vermont Department of Motor Vehicles (Agency of Transportation)",
+  "agency_url": "https://dmv.vermont.gov/",
+  "handbook_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+  "handbook_edition": "Vermont Driver's Manual VN-007 (2025 cover; form code 07/2024)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://dmv.vermont.gov/licenses/new/learners-permit",
+    "quote": "You must be at least 15 years old to take the test.",
+    "note": ""
+   },
+   "permit_holding_months": {
+    "value": 12,
+    "source_url": "https://dmv.vermont.gov/licenses/types-of-licenses-ids/junior-drivers-license/graduated-license-laws",
+    "quote": "An individual must possess a Learner's Permit for at least one (1) year prior to obtaining a Junior Driver's License.",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 40,
+    "source_url": "https://dmv.vermont.gov/licenses/types-of-licenses-ids/junior-drivers-license/graduated-license-laws",
+    "quote": "an individual must complete an additional forty hours of practice behind the wheel, with at least ten hours being nighttime driving",
+    "note": "'Additional' = on top of the driver education course."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://dmv.vermont.gov/licenses/types-of-licenses-ids/junior-drivers-license/graduated-license-laws",
+    "quote": "with at least ten hours being nighttime driving",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+    "quote": "A Junior Driver's License is issued to persons 16 or 17 years old who pass the required examination.",
+    "note": ""
+   },
+   "full_license_min_age_years": {
+    "value": 18,
+    "source_url": "https://dmv.vermont.gov/licenses/types-of-licenses-ids/junior-drivers-license/graduated-license-laws",
+    "quote": "An individual must be 18 years of age to obtain a Driver's License",
+    "note": "Junior passenger limits end after 6 months; junior license status (and recall rules) lasts until 18."
+   },
+   "drivers_ed_required": {
+    "value": "Required for all 16-17 year-olds: state-approved course of 30 h classroom, 6 h behind the wheel, 6 h observation.",
+    "source_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+    "quote": "all 16- and 17-year old's must have passed a state approved driver education and training course consisting of 30 hours of classroom study, 6 hours behind the wheel training and 6 hours of observation.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 20,
+    "source_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+    "quote": "The knowledge test is online and has 20 questions.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 16,
+    "source_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+    "quote": "You must answer at least 16 questions correctly to pass the test.",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+    "quote": "You must answer at least 16 questions correctly to pass the test.",
+    "note": "16/20 = 80% (computed)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "1 day",
+    "source_url": "https://dmv.vermont.gov/licenses/new/learners-permit",
+    "quote": "If you fail a knowledge test you must wait at least one day before retaking the test.",
+    "note": "Test fee ($39) is paid again each attempt."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "permit_fee_usd": {
+    "value": 24,
+    "source_url": "https://dmv.vermont.gov/licenses/fees",
+    "quote": "Learner's Permit | 2 Years | $24.00",
+    "note": "Plus knowledge test fee $39.00 ('Knowledge Test (Learner's Permit): $39.00'), paid per attempt."
+   },
+   "license_fee_usd": {
+    "value": 39,
+    "source_url": "https://dmv.vermont.gov/licenses/fees",
+    "quote": "Junior License | 2 Years | $39.00",
+    "note": "Junior license, 2 years; standard license $39 (2 yr) or $62 (4 yr). Road test $23 extra."
+   },
+   "night_restriction": {
+    "value": "None (no night curfew for junior licenses).",
+    "source_url": "https://dmv.vermont.gov/licenses/types-of-licenses-ids/junior-drivers-license/graduated-license-laws",
+    "quote": "During the first three months of operation under a Junior Driver's License, the individual is restricted to driving alone, or with one of the individuals indicated above.",
+    "note": "The official GDL page lists no night-time restriction; 'none' inferred from its absence."
+   },
+   "passenger_restriction": {
+    "value": "Junior license: first 3 months drive alone (or with parent/guardian, instructor or licensed person 25+); months 4-6 may also carry family members; none after 6 months.",
+    "source_url": "https://dmv.vermont.gov/licenses/types-of-licenses-ids/junior-drivers-license/graduated-license-laws",
+    "quote": "During the second three months of operation under a Junior Driver's License the individual may begin transporting immediate family members (siblings). After holding a Junior Driver's License for six months there are no passenger restrictions.",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": null,
+    "source_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+    "quote": "A person shall not use any portable electronic device while operating a motor vehicle. This includes reading, and the manual composing or sending of electronic communications",
+    "note": "Stated in the junior license section but phrased as the general hand-held ban; an explicit under-18 all-use (incl. hands-free) ban could not be confirmed on the pages read."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+    "quote": "People under the age of 21 who operate a vehicle with an alcohol concentration of .02 or more can receive a civil traffic violation.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://dmv.vermont.gov/sites/dmv/files/documents/VN-007-Drivers_Manual.pdf",
+    "quote": "Any person 16 years old or older who has a license may get a motorcycle endorsement or a motorcycle permit by passing a test.",
+    "note": "Requires a (junior) license; 16-17 need parent signature."
+   },
+   "motorcycle_test_questions": {
+    "value": 25,
+    "source_url": "https://dmv.vermont.gov/licenses/types-of-licenses-ids/motorcycle-endorsement",
+    "quote": "You must pass a 25-question, multiple-choice knowledge exam (80% or better) based on the material in the motorcycle manual.",
+    "note": ""
+   },
+   "motorcycle_test_pass": {
+    "value": "80% (20 of 25)",
+    "source_url": "https://dmv.vermont.gov/licenses/types-of-licenses-ids/motorcycle-endorsement",
+    "quote": "You must pass a 25-question, multiple-choice knowledge exam (80% or better)",
+    "note": ""
+   }
+  }
+ },
+ {
+  "code": "VA",
+  "name": "Virginia",
+  "agency": "Virginia Department of Motor Vehicles (DMV)",
+  "agency_url": "https://www.dmv.virginia.gov/",
+  "handbook_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv39.pdf",
+  "handbook_edition": "Virginia Driver's Manual (DMV 39, current PDF); Parents in the Driver's Seat DMV 16 (07/01/2025); fee chart DMV 201 (08/10/2026)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15.5,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "Your teen must be at least 15 years, six months of age before they can apply for a learner's permit.",
+    "note": ""
+   },
+   "permit_holding_months": {
+    "value": 9,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "Your teen must be at least 16 years, 3 months of age and have held their learner's permit for at least nine months before they can apply for a driver's license.",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 45,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "you must certify that they have 45 hours of behind-the-wheel driving experience, 15 hours of which must be after sunset.",
+    "note": ""
+   },
+   "supervised_hours_night": {
+    "value": 15,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "15 hours of which must be after sunset.",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16.25,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "Your teen must be at least 16 years, 3 months of age",
+    "note": "Provisional driver's license for under 18 (16 years 3 months)."
+   },
+   "full_license_min_age_years": {
+    "value": 18,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "The passenger limits and curfew restrictions under this section are lifted on the driver's license holder's eighteenth birthday.",
+    "note": ""
+   },
+   "drivers_ed_required": {
+    "value": "Required under 18: state-approved driver education (36 classroom periods + 14 in-car periods: 7 driving, 7 observation). From Jan 1, 2027 new training requirements also apply to first-time applicants 18-20.",
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "If your teen is under age 18, they must complete a state-approved driver education program. The program must present 36 classroom periods.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 40,
+    "source_url": "https://www.dmv.virginia.gov/licenses-ids/exams/know-exam",
+    "quote": "Part one: 10 road sign questions All ten questions must be answered correctly Part two: 30 general knowledge questions You must correctly answer 24 questions to pass",
+    "note": "Two-part exam: 10 sign questions (all must be correct) + 30 general knowledge questions (24 correct)."
+   },
+   "knowledge_test_pass_correct": {
+    "value": 34,
+    "source_url": "https://www.dmv.virginia.gov/licenses-ids/exams/know-exam",
+    "quote": "All ten questions must be answered correctly ... You must correctly answer 24 questions to pass",
+    "note": "10/10 signs + 24/30 general knowledge (sum 34 computed)."
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv39.pdf",
+    "quote": "You must answer at least 80 percent of these questions correctly to pass part two.",
+    "note": "Part two 80%; part one (signs) requires 100%."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "Under 18: a full 15 days; 18+: once per day",
+    "source_url": "https://www.dmv.virginia.gov/licenses-ids/exams/know-exam",
+    "quote": "If you are under the age of 18 , you must wait a full 15 days before you can retake the exam.",
+    "note": ""
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://www.dmv.virginia.gov/licenses-ids/exams/know-exam",
+    "quote": "the Driver, CDL and Motorcycle knowledge exams are available in the following languages: English ... Spanish",
+    "note": ""
+   },
+   "permit_fee_usd": {
+    "value": 3,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv201.pdf",
+    "quote": "Combined learner's permit/driver's license **(plus the yearly cost of the driver's license) $3.00",
+    "note": "$3 plus the yearly license cost ($4/year) per learners/apply page."
+   },
+   "license_fee_usd": {
+    "value": 32,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv201.pdf",
+    "quote": "Driver's license only ($4 per year) (minimum $20) $32.00",
+    "note": "$4 per year; 8-year license = $32."
+   },
+   "night_restriction": {
+    "value": "Learner's permit and under-18 license: no driving midnight-4 a.m. (license exceptions: emergency, work, supervised school/civic/religious activity, or with parent/adult in front seat).",
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "If your teen is under age 18, they may not operate a motor vehicle between the hours of midnight and 4 a.m. except:",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Permit: max one passenger under 21 (family excepted). Under-18 license: one passenger under 21 during the first year; after one year up to three under 21 only for school activities, with 21+ licensed driver in front, or emergency. Family/household exempt.",
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "If your teen is under age 18, they may carry only one passenger under age 21, unless accompanied by a licensed parent",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": null,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "A second or subsequent conviction for a violation of the passenger, curfew or cell phone/wireless communication device restrictions may result in a court suspension of your teen's driver's license",
+    "note": "DMV 16 refers to teen 'cell phone/wireless communication device restrictions' but only spells out the all-driver hand-held ban; teen all-use ban not confirmed verbatim."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv16.pdf",
+    "quote": "If your teen is convicted of driving after illegally consuming alcohol and was found to have a BAC of 0.02 and less than 0.08, the court penalty will include a suspension",
+    "note": "Under-21 law: illegal to drive 'after illegally consuming alcohol'; penalties tied to BAC 0.02-<0.08."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_questions": {
+    "value": 25,
+    "source_url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv2.pdf",
+    "quote": "The motorcycle knowledge exam consists of 25 questions based on information found in this publication.",
+    "note": ""
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "WA",
+  "name": "Washington",
+  "agency": "Washington State Department of Licensing (DOL)",
+  "agency_url": "https://dol.wa.gov/",
+  "handbook_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+  "handbook_edition": "Washington Driver Guide (current PDF on dol.wa.gov, read 2026-10)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/get-your-first-license-or-permit/get-your-learner-permit",
+    "quote": "If you want to get your license before you turn 18, you must complete an approved driver training course. You can apply for a permit as soon as you turn 15.",
+    "note": "15 if enrolled in driver training; 15.5 otherwise (then no license before 18)."
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "Have your instruction permit for at least 6 months.",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "Complete at least 40 hours of day driving and 10 hours of night driving with a licensed driver who has 3 or more years of experience.",
+    "note": "40 day + 10 night = 50; parent certifies 'at least 50 hours of driving experience'."
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "10 hours of night driving",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "Be at least 16 years old and a Washington resident.",
+    "note": "Intermediate driver license for ages 16-17."
+   },
+   "full_license_min_age_years": {
+    "value": 17,
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "From 6 months to age 18 or one year (whichever comes first) ... Nighttime restrictions expire after one year of safe driving",
+    "note": "Derived: intermediate at 16 + one year without crash/offense = restrictions lifted at 17; otherwise at 18. Phone restriction applies to intermediate license holders."
+   },
+   "drivers_ed_required": {
+    "value": "Required to get a license before 18: approved driver training course (30 h classroom + 6 h behind the wheel).",
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "Complete a traffic safety course at an approved driver training school.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 40,
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/driver-training-and-testing/do-i-need-take-test",
+    "quote": "You must get 32 out of 40 correct answers to pass the test.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 32,
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/driver-training-and-testing/do-i-need-take-test",
+    "quote": "You must get 32 out of 40 correct answers to pass the test.",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/driver-training-and-testing/do-i-need-take-test",
+    "quote": "You must get 32 out of 40 correct answers to pass the test.",
+    "note": "32/40 = 80% (computed)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "Possible waiting period (not specified; set by testing location)",
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/driver-training-and-testing/do-i-need-take-test",
+    "quote": "If you do not pass, there may be a waiting period before you can retest.",
+    "note": ""
+   },
+   "knowledge_test_spanish": {
+    "value": true,
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/driver-training-and-testing/do-i-need-take-test",
+    "quote": "The knowledge test is available in 12 languages: ... Español (Spanish)",
+    "note": "Check with the driver training school that it offers the language."
+   },
+   "permit_fee_usd": {
+    "value": 35,
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/driver-licensing-fees",
+    "quote": "First instruction (learner's) permit ... $35 for 1 year",
+    "note": "Knowledge test fee extra, varies by location."
+   },
+   "license_fee_usd": {
+    "value": 111,
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/driver-licensing-fees",
+    "quote": "$50 application fee + $10 per year issuance fee + $1 technology fee = ... $111 for 6 years or $131 for 8 years",
+    "note": "6-year first license $111 (8-year $131)."
+   },
+   "night_restriction": {
+    "value": "Intermediate license: no driving 1 a.m.-5 a.m. unless with parent, guardian or licensed driver 25+; expires after one year of safe driving.",
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "No driving between 1 a.m. and 5 a.m. unless accompanied by a parent, guardian, or licensed driver at least age 25",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Intermediate: first 6 months no passengers under 20 except immediate family; then max 3 passengers under 20 until 18 or one year of safe driving.",
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "No passengers under age 20 except immediate family members ... No more than 3 passengers under age 20 except immediate family members",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "If you have an instruction permit or intermediate license, you cannot use a cell phone or any mobile electronic device while driving, even if it is hands-free.",
+    "note": ""
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://dol.wa.gov/media/pdf/4745/driver-guidepdf",
+    "quote": "Drivers under age 21 have the same potential consequences for having a BAC of 0.02%.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://dol.wa.gov/driver-licenses-and-permits/motorcycle/get-2-wheel-motorcycle-permit-or-endorsement",
+    "quote": "Be at least 16 years old.",
+    "note": ""
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "WV",
+  "name": "West Virginia",
+  "agency": "West Virginia Division of Motor Vehicles (WV DMV)",
+  "agency_url": "https://dmv.wv.gov/",
+  "handbook_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+  "handbook_edition": "WV Driver's Licensing Handbook (current PDF linked from dmv.wv.gov; revision date illegible in PDF)",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "To obtain a Level 1 GDL instruction permit, you must be at least 15 years old, pass a vision screening, pass a knowledge test",
+    "note": ""
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "Have a minimum of 180 consecutive days of conviction-free driving at Level 1 GDL immediately preceding the date of your Level 2 application",
+    "note": "180 days. (Handbook PDF uses an obfuscated font; text decoded by character offset.)"
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "Have a parent or legal guardian certification (log sheet) of a minimum of 50 hours behind the wheel, including the minimum of 10 hours at night or complete a driver's education course approved by the West Virginia Department of Education",
+    "note": "Waived if a WV Department of Education-approved driver education course is completed. (Handbook PDF uses an obfuscated font; text decoded by character offset.)"
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "including the minimum of 10 hours at night",
+    "note": "(Handbook PDF uses an obfuscated font; text decoded by character offset.)"
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "Be at least 16 years of age",
+    "note": "Level 2 GDL intermediate driver's license. (Handbook PDF uses an obfuscated font; text decoded by character offset.)"
+   },
+   "full_license_min_age_years": {
+    "value": 17,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "To be eligible for a Level 3 GDL, you must have completed 12 months of conviction-free driving under a Level 2 GDL, be at least 17 years old",
+    "note": "Level 3 (until 21) has no GDL restrictions; under-18 wireless device ban still applies."
+   },
+   "drivers_ed_required": {
+    "value": "Not required; an approved driver education course can replace the 50-hour log.",
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "or complete a driver's education course approved by the West Virginia Department of Education",
+    "note": "(Handbook PDF uses an obfuscated font; text decoded by character offset.)"
+   },
+   "knowledge_test_questions": {
+    "value": 25,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "The knowledge examination has at least 25 questions based on the basic knowledge, traffic rules, regulations, signs, and markings found in the handbook.",
+    "note": ""
+   },
+   "knowledge_test_pass_correct": {
+    "value": 19,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "You must answer 19 out of the 25 questions correctly to pass the test.",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 76,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "You must answer 19 out of the 25 questions correctly to pass the test.",
+    "note": "19/25 = 76% (computed)."
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "permit_fee_usd": {
+    "value": 7.5,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "The fee for a Level 1 GDL is $7.50.",
+    "note": "Conflict in the same handbook: the fee table lists Level 1 as '$0 permit fee' plus $7.50 test fee per attempt. Knowledge test $7.50 per attempt. (Handbook PDF uses an obfuscated font; text decoded by character offset.)"
+   },
+   "license_fee_usd": {
+    "value": 5.0,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "16 Level Two (2) Until age 18 $5.00 $7.50 per attempt",
+    "note": "Level 2 intermediate license $5 (valid until 18) + $7.50 test fee; Level 3 $2.50/year until 21; adult Class E $5/year."
+   },
+   "night_restriction": {
+    "value": "Level 1 and Level 2: no driving 10 p.m.-5 a.m. (Level 2 may drive then with a licensed adult 21+; exceptions for work, school-sanctioned or religious activity, emergency).",
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "Level 2 GDL intermediate driver's license must drive with a supervising, licensed adult driver who is age 21 or older between the hours of 10:00 pm and 5:00 am.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Level 2: no non-family passengers under 20 for the first 6 months; max one non-family passenger under 20 in the second 6 months. Level 1: max 2 non-family passengers besides the supervisor.",
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "may not operate a motor vehicle during their first six months with any non-family members under the age of 20 as a passenger",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "Drivers under the age of 18 may not use a wireless communication device while operating a motor vehicle, unless the cell phone is used for contacting a 9-1-1 system",
+    "note": "(Handbook PDF uses an obfuscated font; text decoded by character offset.)"
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "For drivers under the age of 21, it is against the law to drive if the BAC is 0.02% or higher",
+    "note": "Handbook also describes a zero-tolerance law ('any measurable alcohol') for under-21 drivers."
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "Any person 16 or older may apply for an instruction permit.",
+    "note": "Under 18 must first meet Level 2 requirements."
+   },
+   "motorcycle_test_questions": {
+    "value": 25,
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "Pass a 25-question motorcycle knowledge examination with a grade of 80% or better.",
+    "note": ""
+   },
+   "motorcycle_test_pass": {
+    "value": "80% (20 of 25)",
+    "source_url": "https://webapps.transportation.wv.gov/TWS/DMV/Drivers_Licensing_Handbook.pdf",
+    "quote": "Pass a 25-question motorcycle knowledge examination with a grade of 80% or better.",
+    "note": ""
+   }
+  }
+ },
+ {
+  "code": "WI",
+  "name": "Wisconsin",
+  "agency": "Wisconsin Department of Transportation, Division of Motor Vehicles (WisDOT DMV)",
+  "agency_url": "https://wisconsindot.gov/Pages/dmv/",
+  "handbook_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+  "handbook_edition": "Wisconsin Motorists' Handbook BDS126, 2026 edition",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "being at least 15 years old, you must be enrolled in a driver education program, including the behind-the-wheel portion.",
+    "note": ""
+   },
+   "permit_holding_months": {
+    "value": 6,
+    "source_url": "https://wisconsindot.gov/Pages/dmv/teen-driver/yr-frst-lcns/permit.aspx",
+    "quote": "You must hold your instruction permit at least six months before you can get a probationary license if you are under 18 years old.",
+    "note": ""
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "you must practice driving for at least 40 hours during daylight and 10 hours during darkness (50 total hours).",
+    "note": ""
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "Your sponsor must verify that you have driven a total of 50 hours, 10 of which must be during hours of darkness.",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "You need to have your instruction permit for at least six months and turn 16 years old.",
+    "note": "Probationary license."
+   },
+   "full_license_min_age_years": {
+    "value": 16.75,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "These restrictions are required for the first nine months, unless you turn 18 years old before then.",
+    "note": "Derived: probationary at 16 + 9 months GDL restrictions = 16.75 earliest (extended 6 months per violation). Probationary license itself runs until 2 years from next birthday; cell phone ban applies to all probationary holders."
+   },
+   "drivers_ed_required": {
+    "value": "Required under 18: enrollment in driver education (incl. behind-the-wheel) to get the permit, completion before the probationary license.",
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "You will need to provide proof that you completed a driver training/driver education program.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": 50,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "The knowledge test will include 50 questions. You need to answer 40 questions (80%) correctly to pass the test.",
+    "note": "Separate highway signs test: 15 questions, 12 correct (80%)."
+   },
+   "knowledge_test_pass_correct": {
+    "value": 40,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "You need to answer 40 questions (80%) correctly to pass the test.",
+    "note": ""
+   },
+   "knowledge_test_pass_percent": {
+    "value": 80,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "You need to answer 40 questions (80%) correctly to pass the test.",
+    "note": ""
+   },
+   "knowledge_test_retake_wait": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_spanish": {
+    "value": null,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "These tests are also available in many different languages. Visit our website for a list of languages we offer.",
+    "note": "Languages not named in the handbook; Spanish not explicitly confirmed."
+   },
+   "permit_fee_usd": {
+    "value": 35,
+    "source_url": "https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/dmv-fees.aspx",
+    "quote": "Instruction permit (Class D) (18 months) $35",
+    "note": ""
+   },
+   "license_fee_usd": {
+    "value": 28,
+    "source_url": "https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/dmv-fees.aspx",
+    "quote": "Original probationary (Class D) (expires 2 years from next birthday) $28",
+    "note": "Regular Class D original (8 year) is $42.50; skills exam $15 if not canceled 24 h ahead."
+   },
+   "night_restriction": {
+    "value": "First 9 months of probationary license (under 18): midnight-5 a.m. only between home, school and/or work, or with a qualified licensed adult.",
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "From 12 a.m. to 5 a.m., you can drive: Alone only IF driving between home, school and/or work.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "First 9 months (under 18): immediate family plus one qualified licensed adult (instructor/spouse 19+ or person 21+) and one other person.",
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "Any number of immediate family members can ride along ... One other person",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": true,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "Instruction permit and probationary license holders can only use a cell phone to report an emergency.",
+    "note": ""
+   },
+   "under21_bac": {
+    "value": 0.0,
+    "source_url": "https://wisconsindot.gov/Documents/dmv/shared/bds126-motorists-handbook.pdf",
+    "quote": "The legal alcohol concentration allowed for drivers under the age of 21 is 0.00%.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 16,
+    "source_url": "https://wisconsindot.gov/pages/dmv/motorcycles/mc-how-aply/mc-md-lic.aspx",
+    "quote": "Under age 18 (at least 16 years old)",
+    "note": "Under 18 must show enrollment in a basic rider course (permit page)."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ },
+ {
+  "code": "WY",
+  "name": "Wyoming",
+  "agency": "Wyoming Department of Transportation (WYDOT), Driver Services",
+  "agency_url": "https://www.dot.state.wy.us/driverservices",
+  "handbook_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021_DriverManual_web_ClassC_w%20cover.pdf",
+  "handbook_edition": "2021 Wyoming Driver License Manual (Class C) - latest linked on WYDOT driver manuals page",
+  "fields": {
+   "permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021%20MotorcycleManual_web_Moto_w%20cover.pdf",
+    "quote": "An instruction permit may be obtained at 15.",
+    "note": "Learner-permits page: 'A regular learner's permit is generally issued to a minor, 15-16 years of age'. Hardship restricted permit/license available at 14-15 (restricted to 5 a.m.-8 p.m., 50-mile radius)."
+   },
+   "permit_holding_months": {
+    "value": 0.33,
+    "source_url": "https://www.dot.state.wy.us/home/driver_license_records/driver-license/learner-permits.html",
+    "quote": "You have held a learner's permit for at least 10 days;",
+    "note": "Only 10 days (0.33 month) before the intermediate permit."
+   },
+   "supervised_hours_total": {
+    "value": 50,
+    "source_url": "https://www.dot.state.wy.us/home/driver_license_records/driver-license/learner-permits.html",
+    "quote": "You have completed 50 actual driving hours behind the wheel of a vehicle, including 10 hours of night driving.",
+    "note": ""
+   },
+   "supervised_hours_night": {
+    "value": 10,
+    "source_url": "https://www.dot.state.wy.us/home/driver_license_records/driver-license/learner-permits.html",
+    "quote": "including 10 hours of night driving.",
+    "note": ""
+   },
+   "intermediate_min_age_years": {
+    "value": 16,
+    "source_url": "https://www.dot.state.wy.us/home/driver_license_records/driver-license/learner-permits.html",
+    "quote": "Requirements to be eligible for an intermediate permit are: You are 16 years old;",
+    "note": ""
+   },
+   "full_license_min_age_years": {
+    "value": 16.5,
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021%20MotorcycleManual_web_Moto_w%20cover.pdf",
+    "quote": "For full driving privileges, an applicant must be at least 17 or be 16-1/2 and have completed a qualifying driver education course and held an intermediate license.",
+    "note": "16.5 with driver ed + 6 months intermediate; otherwise 17."
+   },
+   "drivers_ed_required": {
+    "value": "Not required; driver education allows full privileges at 16.5 instead of 17 and can waive the skills test.",
+    "source_url": "https://www.dot.state.wy.us/home/driver_license_records/driver-license/learner-permits.html",
+    "quote": "If you are under the age of 17 years, and have not completed a driver education course, you are not eligible for full driving privileges.",
+    "note": ""
+   },
+   "knowledge_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_correct": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_pass_percent": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "knowledge_test_retake_wait": {
+    "value": "May take the written test twice in one day; applicants who miss 13 or more questions wait 3 days",
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021_DriverManual_web_ClassC_w%20cover.pdf",
+    "quote": "Applicants for a driver's license are allowed to take the written test twice in one day.",
+    "note": "Manual also: 'Applicants who miss 13 or more questions must wait three days to be retested.' (placed under the skills test heading)."
+   },
+   "knowledge_test_spanish": {
+    "value": false,
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021_DriverManual_web_ClassC_w%20cover.pdf",
+    "quote": "All tests are given in English only, so if a person cannot speak or write the English language, an interpreter may be used.",
+    "note": ""
+   },
+   "permit_fee_usd": {
+    "value": 40,
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021_DriverManual_web_ClassC_w%20cover.pdf",
+    "quote": "Instruction Permit $40",
+    "note": "Plus $5 technology fee on all license classes (manual note). 2021 manual; fees 'subject to change'."
+   },
+   "license_fee_usd": {
+    "value": 30,
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021_DriverManual_web_ClassC_w%20cover.pdf",
+    "quote": "Intermediate License $30",
+    "note": "Teen first license = intermediate $30; original Wyoming license $40; plus $5 technology fee."
+   },
+   "night_restriction": {
+    "value": "Intermediate permit: driving only 5 a.m.-11 p.m. unless a licensed adult 18+ with full privileges is in the front seat; exceptions for work, school/youth sports/religious activities with signed form.",
+    "source_url": "https://www.dot.state.wy.us/home/driver_license_records/driver-license/learner-permits.html",
+    "quote": "You can only legally drive between the hours of 5 a.m. and 11 p.m.",
+    "note": ""
+   },
+   "passenger_restriction": {
+    "value": "Intermediate permit: no more than one passenger under 18 who is not immediate family (unless a licensed adult 18+ is in the front seat).",
+    "source_url": "https://www.dot.state.wy.us/home/driver_license_records/driver-license/learner-permits.html",
+    "quote": "You are not allowed to drive with more than one passenger under the age of 18 years who is not a member of your immediate family;",
+    "note": ""
+   },
+   "teen_phone_ban": {
+    "value": false,
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021_DriverManual_web_ClassC_w%20cover.pdf",
+    "quote": "Wyoming law prohibits reading or sending a text message from a cell phone or other device while operating a vehicle.",
+    "note": "Only an all-driver texting ban; no teen-specific all-device ban found."
+   },
+   "under21_bac": {
+    "value": 0.02,
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021_DriverManual_web_ClassC_w%20cover.pdf",
+    "quote": "If you are younger than 21 years of age and are in actual physical control of a vehicle with an alcohol concentration of two one-hundredths of one percent (0.02 percent) or more, you will be suspended for DWUI.",
+    "note": ""
+   },
+   "motorcycle_permit_min_age_years": {
+    "value": 15,
+    "source_url": "https://www.dot.state.wy.us/files/live/sites/wydot/files/shared/Driver_Services/Help%20Documents%20and%20Manuals/2021%20MotorcycleManual_web_Moto_w%20cover.pdf",
+    "quote": "An instruction permit may be obtained at 15.",
+    "note": "Motorcycle manual age statement; motorcycle permit requires written knowledge test and vision screening."
+   },
+   "motorcycle_test_questions": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   },
+   "motorcycle_test_pass": {
+    "value": null,
+    "source_url": "",
+    "quote": "",
+    "note": "Not confirmed on an official source."
+   }
+  }
+ }
+]

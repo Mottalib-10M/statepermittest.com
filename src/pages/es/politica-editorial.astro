@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'es';
+---
+<PageLayout title={`Política editorial de ${SITE_NAMES[lang]}`} description="Qué manuales y páginas oficiales usa Examen del Permiso por Estado, cómo se escriben sus preguntas, qué fuentes rechaza, cada cuánto revisa las reglas y cómo corrige los errores." lang={lang} noindex={true} breadcrumbs={[{ label: 'Política editorial' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Política editorial y de correcciones</h1>
+    <p>Adolescentes, padres y adultos usan estas páginas para preparar un examen que decide cuándo podrán manejar. Una nota para aprobar equivocada o una edad del permiso antigua puede costarles un viaje inútil al DMV; por eso cada dato estatal remite a la página oficial donde se leyó.</p>
+    <h2>Responsable</h2><p>{AUTHOR_NAME}, en <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Lo que leemos</h2>
+    <ul>
+      <li>el manual oficial del conductor de cada estado y del Distrito de Columbia, en su edición vigente;</li>
+      <li>las páginas de la agencia de vehículos de cada estado sobre permisos, licencias graduadas, examen teórico y tarifas;</li>
+      <li>el manual federal de dispositivos de control de tránsito (MUTCD) para señales, semáforos y marcas viales;</li>
+      <li>las reglas federales de transporte de carga (49 CFR, partes 380 a 396) para el permiso de aprendiz comercial, y las publicaciones de la NHTSA sobre conductores jóvenes, alcohol y motocicletas.</li>
+    </ul>
+    <h2>Cómo se escriben las preguntas</h2><p>Escribimos cada pregunta nosotros mismos a partir de un dato de esos documentos. Nunca copiamos preguntas de otro sitio de práctica, de una aplicación, de un libro ni de un examen filtrado, y no afirmamos que sean las del DMV. Cada pregunta indica el documento del que sale.</p>
+    <h2>Fuentes que rechazamos</h2><p>Autoescuelas, aseguradoras, aplicaciones y otros sitios de práctica nunca aportan una cifra aquí. Una regla que no encontramos en una página oficial aparece como «no confirmado»; nunca la rellenamos de memoria ni con otro sitio.</p>
+    <h2>Revisión</h2><p>Un programa vuelve a leer cada página oficial cada mes y señala los cambios; los manuales se revisan cuando el estado publica una nueva edición. Cada página muestra la fecha de la última revisión.</p>
+    <h2>Correcciones</h2>
+    <ol><li>Volvemos a abrir la página oficial.</li><li>Corregimos el archivo de datos o la pregunta y añadimos una prueba para ese caso.</li><li>Las páginas se regeneran con la nueva fecha.</li></ol>
+    <h2>Independencia</h2><p>Ninguna autoescuela, aseguradora, aplicación ni agencia estatal paga ni revisa lo que se publica aquí, y el sitio no tiene enlaces de afiliación. Vea también la <a href={route('method', lang)}>página de método</a>. Versión: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>
