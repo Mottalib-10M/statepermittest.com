@@ -12,7 +12,7 @@ const s = (k: Parameters<typeof h.src>[0], t: string) => h.src(k, t);
 const ca = h.S('CA');
 ---
 <PageLayout title="Examen del permiso: método de preguntas y reglas estatales" description="Cómo escribe este sitio sus preguntas del permiso a partir de manuales oficiales y reglas federales, cómo lee las reglas de cada estado, califica y fecha." lang={lang} jsonLd={[articleSchema({ title: 'Cómo se construyen las preguntas y las reglas estatales', description: 'Método de Examen del Permiso por Estado', path: route('method', lang), lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Método', path: route('method', lang) }])]} breadcrumbs={[{ label: 'Método' }]}>
-  <header class="mb-6"><p class="kicker">Método</p><h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-4xl">Cómo se construyen las preguntas y las reglas estatales</h1></header>
+  <header class="mb-6"><p class="kicker">Método</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">Cómo se construyen las preguntas y las reglas estatales</h1></header>
   <div class="prose prose-slate max-w-none">
     <p>Cada página y cada herramienta leen los mismos tres archivos: los bancos de preguntas, el archivo de estados y un archivo de fuentes federales. Ninguna nota para aprobar ni edad se escribe a mano en una página. El archivo de estados se leyó por última vez el {displayDate(M.retrieved, 'es-US')}; contiene {h.num(M.confirmed)} datos confirmados de {h.num(M.fields)} campos para {M.states} jurisdicciones, y los {h.num(M.nulls)} restantes aparecen como «no confirmado».</p>
     <h2>1. Las preguntas generales</h2>

@@ -12,7 +12,7 @@ const s = (k: Parameters<typeof h.src>[0], t: string) => h.src(k, t);
 const ca = h.S('CA');
 ---
 <PageLayout title="Permit Test Method: How Questions and State Rules Are Built" description="How State Permit Test writes its practice questions from official handbooks and federal rules, reads each state's rules, scores a test and dates a permit." lang={lang} jsonLd={[articleSchema({ title: 'How the questions and state rules are built', description: 'Method of State Permit Test', path: route('method', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Method', path: route('method', lang) }])]} breadcrumbs={[{ label: 'Method' }]}>
-  <header class="mb-6"><p class="kicker">Method</p><h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-4xl">How the questions and state rules are built</h1></header>
+  <header class="mb-6"><p class="kicker">Method</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">How the questions and state rules are built</h1></header>
   <div class="prose prose-slate max-w-none">
     <p>Every page and every tool reads the same three files: the question banks, the state file and a parameter file of federal sources. No pass mark or age is typed into a page. The state file was last read on {displayDate(M.retrieved, 'en-US')}; it holds {h.num(M.confirmed)} confirmed figures out of {h.num(M.fields)} fields for {M.states} jurisdictions, and the {h.num(M.nulls)} others are shown as "not confirmed".</p>
     <h2>1. The general questions</h2>

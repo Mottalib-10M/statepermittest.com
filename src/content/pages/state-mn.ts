@@ -40,6 +40,7 @@ export default definePage({
 <p>Minnesota loosens its limits in steps instead of lifting them all at once. The tool below summarizes them; it starts on Minnesota but accepts any state.</p>
 <!--tool:mini:restrictions|{"state":"MN"}-->
 <p>Night rule: ${s.nightL.replace(/^Provisional, first 6 months: /, 'for the first six months, ')}. Passenger rule: ${s.passengersL.replace(/^Provisional: /, '')}.</p>
+<p>The two rules relax on different schedules, which is the part most families miss. The curfew covers only the first six months of the provisional license, while the passenger cap continues in a softer form for the second half of the year.</p>
 <h2>How Minnesota compares</h2>
 ${h.table(['Requirement', 'Minnesota', 'Wisconsin', 'Iowa', 'North Dakota'], [
   ['Instruction permit', s.permitAgeL, wi.permitAgeL, ia.permitAgeL, nd.permitAgeL],
@@ -50,6 +51,7 @@ ${h.table(['Requirement', 'Minnesota', 'Wisconsin', 'Iowa', 'North Dakota'], [
 <p>${h.sl('IA')} starts younger, at ${ia.permitAgeL}, but asks for far fewer hours. ${h.sl('WI')} matches Minnesota's ${s.hours ?? h.nc}-hour total with less night driving.</p>
 <h2>Building the 50 hours</h2>
 <p>The supervising driver signs off the log before the road test. A practical way to plan: one hour of daylight practice and one hour after dark each weekend, plus short weekday drives, finishes the requirement within the ${s.holdL} holding period. Vary the conditions on purpose: rain, the first snow, a parking lot after a storm, a stretch of interstate, a small town with four-way stops. Each one matches a chapter of the knowledge test.</p>
+<p>The timeline itself is short. A learner who gets the permit at ${s.permitAgeL} and holds it ${s.holdL} can take the road test at ${s.interAgeL}, and the provisional limits are gone by ${s.fullAgeL}. That pace leaves little slack: the ${s.hours ?? h.nc} hours, the ${s.nightHours ?? h.nc} at night and driver education all have to fit before the sixteenth birthday for a teen who wants a license on that day. Families who start the log the week the permit is issued rarely run short. Those who leave it to the last two months often do, especially for night hours, which are hard to collect in June when darkness comes late.</p>
 <h2>Topics on the Minnesota test</h2>
 <p>The Minnesota driver's manual covers traffic laws, signs and signals, sharing the road with bicycles, motorcycles and snowplows, winter driving, and alcohol, including the zero tolerance rule for drivers under 21. Signs follow the federal ${h.src('mutcd', 'MUTCD')}. Federal research on teen crash risk, summarized by ${h.src('nhtsa_teen', 'NHTSA')}, explains why the first months of a provisional license carry the strictest limits.</p>
 <p>Figures on this page were read on ${h.os(C, 'permitFee', 'the Minnesota DVS site')}; this site is independent of Driver and Vehicle Services.</p>`;

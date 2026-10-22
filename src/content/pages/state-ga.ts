@@ -59,7 +59,7 @@ ${h.table(['Stage', 'Georgia', 'Florida', 'South Carolina'], [
     nav: 'Georgia',
     card: 'Examen de conocimientos del DDS de Georgia: 40 preguntas, 30 correctas, $10 por intento.',
     title: 'Examen del permiso de Georgia 2026: práctica del DDS',
-    description: 'Examen de práctica del permiso de Georgia, gratis y en español: 40 preguntas calificadas con 30 correctas, el permiso Clase CP a los 15, la ley Joshua y el horario.',
+    description: 'Examen de práctica del permiso de Georgia, gratis y en español: 40 preguntas con 30 correctas, el permiso Clase CP a los 15, la ley Joshua y el horario.',
     h1: 'Examen de práctica del permiso de Georgia',
     intro: 'Practique el examen de conocimientos del permiso Clase CP de Georgia con su duración real y planifique el año con el permiso, la ley Joshua y la licencia Clase D.',
     resume: (h) => {

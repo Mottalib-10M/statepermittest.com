@@ -12,7 +12,7 @@ const n = PAGES.filter((p) => p.en).length + 1;
 const nSrc = Object.keys(h.P.sources).length;
 ---
 <PageLayout title="Permit practice test publisher: who runs State Permit Test" description="Who publishes State Permit Test, why every practice question and state rule here is free, where each figure comes from and what the site will never sell." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
-  <header class="mb-6"><p class="kicker">About</p><h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-4xl">Who writes the questions of State Permit Test</h1></header>
+  <header class="mb-6"><p class="kicker">About</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">Who writes the questions of State Permit Test</h1></header>
   <div class="prose prose-slate max-w-none">
     <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
     <p>State Permit Test is published by Radif Partners, a company that builds free tools on public data. This one is for teens getting their first learner permit, the parents who sit beside them, adults who never got a license, and drivers moving to a new state or to a motorcycle or a truck.</p>

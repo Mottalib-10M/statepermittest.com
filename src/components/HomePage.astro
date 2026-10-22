@@ -75,7 +75,7 @@ const T = (p: (typeof PAGES)[number]) => (es ? p.es! : p.en);
   </header>
   <div data-outil class="mb-4"><Tool tool={{ kind: 'quiz', props: { state: 'CA', type: 'car' } }} lang={lang} primary={true} /></div>
   <Clamp text={resume} id="clamp-home" lang={lang} class="mb-3" />
-  <p class="mb-8 text-sm text-navy-600">{es ? 'Reglas estatales revisadas el' : 'State rules checked on'} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, es ? 'es-US' : 'en-US')}</time> · {AUTHOR_NAME} · <a href={route('method', lang)} class="underline hover:text-navy-900">{es ? 'Cómo se escriben las preguntas' : 'How the questions are written'}</a> · <a href={route('about', lang)} class="underline hover:text-navy-900">{es ? 'Quiénes somos' : 'About this site'}</a></p>
+  <p class="mb-8 text-sm text-navy-600">{es ? 'Actualizado el' : 'Last updated'} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, es ? 'es-US' : 'en-US')}</time>{es ? ', reglas estatales revisadas en las páginas oficiales' : ', state rules checked on the official pages'} · {AUTHOR_NAME} · <a href={route('method', lang)} class="underline hover:text-navy-900">{es ? 'Cómo se escriben las preguntas' : 'How the questions are written'}</a> · <a href={route('about', lang)} class="underline hover:text-navy-900">{es ? 'Quiénes somos' : 'About this site'}</a></p>
 
   {es ? (
   <div class="prose prose-slate max-w-none">

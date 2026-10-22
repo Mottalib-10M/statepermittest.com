@@ -60,7 +60,7 @@ ${h.table(['', 'New York', 'New Jersey', 'Pennsylvania'], [
     nav: 'Nueva York',
     card: 'Examen escrito del DMV de Nueva York: 20 preguntas, 14 correctas con 2 de 4 de señales.',
     title: 'Examen del permiso de Nueva York 2026: práctica gratis',
-    description: 'Examen de práctica del permiso de Nueva York, gratis y en español: 20 preguntas calificadas con 14 correctas, el permiso a los 16 años, las 50 horas y los horarios.',
+    description: 'Examen de práctica del permiso de Nueva York, gratis y en español: 20 preguntas con 14 correctas, el permiso a los 16 años, las 50 horas y los horarios.',
     h1: 'Examen de práctica del permiso de Nueva York',
     intro: 'Veinte preguntas y catorce aciertos: practique el examen escrito de Nueva York con su duración real y vea cómo funciona la licencia junior en la ciudad y en el resto del estado.',
     resume: (h) => {

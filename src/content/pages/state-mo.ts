@@ -40,6 +40,7 @@ export default definePage({
 <p>Families in the Kansas City area often compare the two sides of the state line. The tool opens on Missouri and Kansas; change either state to compare any pair.</p>
 <!--tool:mini:compare|{"state":"MO","b":"KS"}-->
 <p>The gap is real: ${h.sl('KS')} opens the permit at ${ks.permitAgeL} and keeps learners on it ${ks.holdL}, while Missouri starts at ${s.permitAgeL} with ${s.holdL}. A teen must follow the rules of the state where they live, not the one where they go to school or work.</p>
+<p>The largest gap with Kansas is time, not age alone: a Kansas learner keeps the permit ${ks.holdL} and logs ${ks.hours ?? h.nc} hours, against ${s.holdL} and ${s.hours ?? h.nc} hours in Missouri. For a family that has lived in both states, the Missouri path feels short.</p>
 <h2>Four Midwest states compared</h2>
 ${h.table(['Step', 'Missouri', 'Kansas', 'Iowa', 'Nebraska'], [
   ['Learner permit', s.permitAgeL, ks.permitAgeL, ia.permitAgeL, ne.permitAgeL],
@@ -50,6 +51,7 @@ ${h.table(['Step', 'Missouri', 'Kansas', 'Iowa', 'Nebraska'], [
 <p>Missouri's ${s.hours ?? h.nc}-hour requirement is lighter than the 50 hours many states demand, but double the ${ia.hours ?? h.nc} hours of ${h.sl('IA')}.</p>
 <h2>How the Missouri path runs</h2>
 <p>At ${s.permitAgeL}, the learner passes the vision and written tests at a license office. With the permit, driving is allowed only with a qualified supervisor in the front seat. After ${s.holdL} without violations and with the ${s.hours ?? h.nc} hours signed off, the teen can take the driving test for the intermediate license at ${s.interAgeL}. That license carries the curfew and the passenger rule until ${s.fullAgeL}, when the full license becomes available.</p>
+<p>Most of the rules a new Missouri driver has to remember belong to the intermediate stage. The passenger rule moves in two steps: ${s.passengersL.replace(/^Intermediate: /, '')}, family members excluded. The curfew reads: ${s.nightL.replace(/^Intermediate: /, '')}. Alcohol is handled more strictly than for adults, with a ${s.u21bac != null ? s.u21bac.toFixed(2) : h.nc} limit under 21, so even one drink before driving can cost the license. None of these limits last forever. Write the key dates on a calendar the day the intermediate license is issued: the six-month mark for passengers and the birthday at ${s.fullAgeL} for the rest.</p>
 <h2>Topics to study</h2>
 <p>The written test pulls from the Missouri driver guide: traffic signs, signals, right of way, speed limits, safe following distance, railroad crossings, sharing the road with trucks and farm equipment on rural highways, and the effects of alcohol and drugs. Interstate merging around St. Louis and Kansas City, and winter storms across the state, explain why lane discipline and stopping distance come up often. Signs follow the federal ${h.src('mutcd', 'MUTCD')}.</p>
 <p>The figures here come from ${h.os(C, 'hours', 'the Missouri Department of Revenue')}; this site is independent of the Department of Revenue.</p>`;

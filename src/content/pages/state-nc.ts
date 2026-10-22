@@ -18,7 +18,7 @@ export default definePage({
     nav: 'North Carolina',
     card: 'NC Level 1 permit at 15: driver ed first, 60 logged hours and a 7-day wait after a fail.',
     title: 'North Carolina Permit Test 2026: Free NCDMV Practice',
-    description: 'North Carolina permit practice test, free: NCDMV-style questions with explained answers, the Level 1 permit at 15, driver ed, the 60-hour log and the 7-day retest wait.',
+    description: 'North Carolina permit practice test, free: NCDMV-style questions with explained answers, the Level 1 permit at 15, driver ed, 60 hours and the retest wait.',
     h1: 'North Carolina permit practice test',
     intro: 'Practice for the NCDMV knowledge test, then follow the three levels of the North Carolina teen license with their hours and hours of the day.',
     resume: (h) => {
@@ -58,7 +58,7 @@ ${h.table(['', 'North Carolina', 'Virginia', 'South Carolina', 'Georgia'], [
     nav: 'Carolina del Norte',
     card: 'Permiso de Nivel 1 de Carolina del Norte a los 15: educación vial, 60 horas y 7 días de espera.',
     title: 'Examen del permiso de Carolina del Norte 2026: práctica',
-    description: 'Examen de práctica del permiso de Carolina del Norte, gratis y en español: preguntas explicadas, el permiso de Nivel 1 a los 15, la educación vial y las 60 horas.',
+    description: 'Examen de práctica del permiso de Carolina del Norte, gratis y en español: preguntas explicadas, el permiso de Nivel 1 a los 15, educación vial y 60 horas.',
     h1: 'Examen de práctica del permiso de Carolina del Norte',
     intro: 'Practique para el examen de conocimientos del NCDMV y siga los tres niveles de la licencia juvenil de Carolina del Norte, con sus horas de práctica y sus horarios.',
     resume: (h) => {

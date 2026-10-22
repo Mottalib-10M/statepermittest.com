@@ -12,7 +12,7 @@ const n = PAGES.filter((p) => p.es).length + 1;
 const nSrc = Object.keys(h.P.sources).length;
 ---
 <PageLayout title="Examen del permiso de manejo: quién publica este sitio" description="Quién publica Examen del Permiso por Estado, por qué todas las preguntas y reglas son gratis, de dónde sale cada dato y lo que el sitio nunca le venderá." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Quiénes somos', path: route('about', lang) }])]} breadcrumbs={[{ label: 'Quiénes somos' }]}>
-  <header class="mb-6"><p class="kicker">Quiénes somos</p><h1 class="mt-1 text-3xl font-bold text-navy-900 md:text-4xl">Quién escribe las preguntas de este sitio</h1></header>
+  <header class="mb-6"><p class="kicker">Quiénes somos</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">Quién escribe las preguntas de este sitio</h1></header>
   <div class="prose prose-slate max-w-none">
     <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
     <p>Examen del Permiso por Estado es una publicación de Radif Partners, una empresa que crea herramientas gratuitas a partir de datos públicos. Esta es para los jóvenes que sacan su primer permiso de aprendizaje, los padres que los acompañan, los adultos que nunca tuvieron licencia y quienes se mudan a otro estado o pasan a la moto o al camión.</p>

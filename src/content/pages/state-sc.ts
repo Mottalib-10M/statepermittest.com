@@ -40,6 +40,7 @@ export default definePage({
 <p>Enter an age to see how many months remain before a South Carolina beginner permit, and when the next steps open.</p>
 <!--tool:mini:permitage|{"state":"SC"}-->
 <p>The final age at which all limits disappear is not stated on the SCDMV pages we read, so the tool shows it as not confirmed.</p>
+<p>The South Carolina sequence has more steps than most. The beginner permit comes first, at ${s.permitAgeL}; the conditional license follows at ${s.interAgeL} for a teen who has completed driver education; the special restricted license covers drivers from 16 who are still under the teen rules. Each stage keeps a supervising adult in the picture for evening driving, so the ${s.hours ?? h.nc}-hour log, with ${s.nightHours ?? h.nc} hours at night, is best started in the first weeks on the permit.</p>
 <h2>Carolinas and Georgia</h2>
 ${h.table(['', 'South Carolina', 'North Carolina', 'Georgia'], [
   ['Learner permit at', s.permitAgeL, nc.permitAgeL, ga.permitAgeL],
@@ -50,8 +51,10 @@ ${h.table(['', 'South Carolina', 'North Carolina', 'Georgia'], [
 <p>South Carolina lets a teen drive alone (in daylight) at ${s.interAgeL}, ${Math.round(((ga.interAge ?? 16) - (s.interAge ?? 15.5)) * 12)} months before ${h.sl('GA')} and ${h.sl('NC')} allow a first license at ${ga.interAgeL} and ${nc.interAgeL}. The trade-off is the tighter evening rule.</p>
 <h2>Evenings under a conditional license</h2>
 <p>${s.nightL.split('. Permit:')[0]}. In practice this means a teen driving to an evening job or game needs to plan who rides along, and the rule follows the clock change: the line moves from 6 p.m. to 8 p.m. in summer.</p>
+<p>Passengers are capped too. Under a conditional or special restricted license, ${s.passengersL.replace(/^Conditional\/special restricted: /, '').replace(/\.$/, '')}. Under 21, the alcohol limit is ${s.u21bac != null ? s.u21bac.toFixed(2) : h.nc}.</p>
 <h2>Studying for the SCDMV test</h2>
 <p>The knowledge test covers signs, signals, pavement markings, right of way, safe speed, following distance, and alcohol and drugs. South Carolina drivers meet heavy beach traffic along the coast in summer, sudden thunderstorms and long rural stretches inland, so questions on wet roads, visibility and passing on two-lane highways are worth extra review. Sign shapes and colors are those of the federal ${h.src('mutcd', 'MUTCD')}.</p>
+<p>Because the SCDMV does not publish the number of questions on the pages we read, it is safer to prepare for a long form than a short one. Two rounds of the 20-question practice test a day, with every mistake checked against the driver's manual, is a sustainable pace for the two or three weeks before the appointment.</p>
 <p>The rules quoted here come from ${h.os(C, 'interAge', 'the SCDMV')} and the fees from ${h.os(C, 'permitFee', 'its fee page')}; this site is independent of the SCDMV.</p>`;
     },
   },

@@ -11,6 +11,7 @@ const mPass = (h: Helpers, s: StateRec) => {
   const p = t.match(/(\d+)\s*%/);
   return p ? `${p[1]} %` : h.lang === 'en' ? t : null;
 };
+const tr = (h: Helpers, t: { en: string; es: string } | null | undefined) => (!t ? null : h.lang === 'en' ? t.en : t.es !== t.en ? t.es : null);
 const F = (h: Helpers) => {
   const withAge = h.STATES.filter((s) => s.motoAge != null);
   const any = h.STATES.filter((s) => s.motoAge != null || s.motoQ != null || s.motoPass != null);
@@ -111,7 +112,7 @@ ${notes.length ? `<p>${notes.map((s) => `${h.sl(s.code)}: ${h.S(s.code).note('mo
 <h2>Reglas del permiso de moto en cada estado</h2>
 <p>La tabla compara la edad del permiso de moto con la del permiso de auto del mismo estado, y muestra la duración del examen y la nota cuando la agencia las publica. Los estados van ordenados por la edad de la moto, de menor a mayor.</p>
 ${h.table(['Estado', 'Permiso de moto', 'Permiso de auto', 'Preguntas', 'Para aprobar'], rows, `Permiso de instrucción de motocicleta, ${f.any.length} jurisdicciones con al menos una cifra publicada. Edades en años.`, ['l', 'r', 'r', 'r', 'r'])}
-${notes.length ? `<p>Algunas edades tienen una condición propia, explicada en la fuente oficial: ${notes.map((s) => h.os(s.code, 'motoAge', h.S(s.code).nameL)).join(', ')}.</p>` : ''}
+${notes.length ? `<p>${notes.map((s) => (tr(h, s.notes.motoAge) ? `${h.sl(s.code)}: ${tr(h, s.notes.motoAge)}` : `${h.sl(s.code)}: ${h.os(s.code, 'motoAge', 'condición en la fuente oficial')}.`)).join(' ')}</p>` : ''}
 <p>Donde la casilla dice «sin dato», las páginas de la agencia que leímos no dan la cifra; no la completamos con la regla del auto. Las licencias de moto son el terreno donde más difieren los estados, desde la edad hasta la forma de capacitarse, así que el manual estatal es la única referencia segura.</p>
 <h2>Qué cubre el examen teórico de moto</h2>
 <p>Los manuales para motociclistas tienen una estructura común, y el examen la sigue:</p>

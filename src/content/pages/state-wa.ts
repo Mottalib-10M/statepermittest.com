@@ -18,7 +18,7 @@ export default definePage({
     nav: 'Washington',
     card: 'Washington DOL knowledge test: 40 questions, 32 right, driver training before 18.',
     title: 'Washington Permit Test 2026: Free DOL Knowledge Practice',
-    description: 'Washington permit practice test, free: 40 DOL-style questions scored at 32 correct, explained answers, the instruction permit at 15, driver training, fees and limits.',
+    description: 'Washington permit practice test, free: 40 DOL-style questions scored at 32 correct, explained answers, the permit at 15, driver training, fees and limits.',
     h1: 'Washington permit practice test',
     intro: 'Practice the Washington knowledge test at its real length of 40 questions, then see what driver training and the intermediate license ask of a teen.',
     resume: (h) => {
@@ -57,7 +57,7 @@ ${h.table(['', 'Washington', 'Oregon'], [
     nav: 'Washington',
     card: 'Examen del DOL de Washington: 40 preguntas, 32 correctas y educación vial antes de los 18.',
     title: 'Examen del permiso de Washington 2026: práctica gratis',
-    description: 'Examen de práctica del permiso de Washington, gratis y en español: 40 preguntas calificadas con 32 correctas, el permiso a los 15, la educación vial y las tarifas.',
+    description: 'Examen de práctica del permiso de Washington, gratis y en español: 40 preguntas con 32 correctas, el permiso a los 15, la educación vial y las tarifas.',
     h1: 'Examen de práctica del permiso de Washington',
     intro: 'Practique el examen de conocimientos de Washington con su duración real de 40 preguntas y vea qué exigen la educación vial y la licencia intermedia.',
     resume: (h) => {

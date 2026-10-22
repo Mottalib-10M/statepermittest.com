@@ -18,7 +18,7 @@ export default definePage({
     nav: 'Arizona',
     card: 'Arizona MVD permit at 15½: a $7 permit, 30 hours or driver ed, and full privileges at 16½.',
     title: 'Arizona Permit Test 2026: Free MVD Knowledge Practice',
-    description: 'Arizona permit practice test, free: MVD-style questions with explained answers, the permit at 15 and a half, the $7 fee, 30 hours or driver ed and the Class G license.',
+    description: 'Arizona permit practice test, free: MVD-style questions with explained answers, the permit at 15 and a half, the $7 fee, 30 hours or driver ed, Class G.',
     h1: 'Arizona permit practice test',
     intro: 'Practice for the Arizona knowledge test, then see how fast the Arizona path runs: a permit at 15½ and a Class G license six months later.',
     resume: (h) => {
@@ -58,7 +58,7 @@ ${h.table(['', 'Arizona', 'Nevada', 'California'], [
     nav: 'Arizona',
     card: 'Permiso del MVD de Arizona a los 15½: $7, 30 horas o educación vial y sin límites a los 16½.',
     title: 'Examen del permiso de Arizona 2026: práctica del MVD',
-    description: 'Examen de práctica del permiso de Arizona, gratis y en español: preguntas explicadas, el permiso a los 15 años y medio, la tarifa de $7, las 30 horas y la licencia Clase G.',
+    description: 'Examen de práctica del permiso de Arizona, gratis y en español: preguntas explicadas, el permiso a los 15 años y medio, la tarifa de $7 y las 30 horas.',
     h1: 'Examen de práctica del permiso de Arizona',
     intro: 'Practique para el examen de conocimientos de Arizona y vea lo rápido que es el camino en Arizona: permiso a los 15½ y licencia Clase G seis meses después.',
     resume: (h) => {

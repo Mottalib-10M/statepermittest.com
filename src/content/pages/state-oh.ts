@@ -18,7 +18,7 @@ export default definePage({
     nav: 'Ohio',
     card: 'Ohio BMV knowledge test: 40 questions, 30 right, the TIPIC at 15½ and two-stage curfews.',
     title: 'Ohio Permit Test 2026: Free BMV Knowledge Practice Test',
-    description: 'Ohio permit practice test, free: 40 BMV-style questions scored at 30 correct with explained answers, the temporary permit at 15 and a half, driver training and curfews.',
+    description: 'Ohio permit practice test, free: 40 BMV-style questions scored at 30 correct, explained answers, the permit at 15 and a half, driver training and curfews.',
     h1: 'Ohio permit practice test',
     intro: 'Forty questions, thirty right: the Ohio knowledge test at its real length, and the two curfews that follow the probationary license.',
     resume: (h) => {

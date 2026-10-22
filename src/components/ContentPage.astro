@@ -47,7 +47,7 @@ for (let i = 0; i < parts.length; i += 3) { chunks.push({ html: parts[i] }); if 
   <article>
     <header class="mb-3">
       <p class="kicker">{groupLabel(page.group, lang)}</p>
-      <h1 class="mt-1 text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{T.h1}</h1>
+      <h1 class="mt-0 text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{T.h1}</h1>
       <p class="mt-2 text-base text-navy-700 sm:text-lg">{T.intro}</p>
     </header>
     {page.tool && <div data-outil class="mb-4"><Tool tool={page.tool} lang={lang} primary={true} state={page.state} /></div>}

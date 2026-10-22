@@ -18,7 +18,7 @@ export default definePage({
     nav: 'New Jersey',
     card: 'NJ MVC knowledge test: 50 questions, 40 right, red decals and a probationary year until 18.',
     title: 'New Jersey Permit Test 2026: Free MVC Practice Test',
-    description: 'New Jersey permit practice test, free: 50 MVC-style questions scored at 40 correct, explained answers, the special learner permit at 16, red decals and the 11 p.m. limit.',
+    description: 'New Jersey permit practice test, free: 50 MVC-style questions scored at 40 correct, explained answers, the special learner permit at 16 and red decals.',
     h1: 'New Jersey permit practice test',
     intro: 'Fifty questions, forty right: the New Jersey knowledge test at its real length, and the two routes to a probationary license.',
     resume: (h) => {
@@ -57,7 +57,7 @@ ${h.table(['', 'New Jersey', 'New York', 'Pennsylvania'], [
     nav: 'Nueva Jersey',
     card: 'Examen de la MVC de Nueva Jersey: 50 preguntas, 40 correctas, calcomanías rojas y un año probatorio.',
     title: 'Examen del permiso de Nueva Jersey 2026: práctica gratis',
-    description: 'Examen de práctica del permiso de Nueva Jersey, gratis y en español: 50 preguntas calificadas con 40 correctas, el permiso especial a los 16 y las calcomanías rojas.',
+    description: 'Examen de práctica del permiso de Nueva Jersey, gratis y en español: 50 preguntas con 40 correctas, el permiso especial a los 16 y las calcomanías rojas.',
     h1: 'Examen de práctica del permiso de Nueva Jersey',
     intro: 'Cincuenta preguntas y cuarenta aciertos: el examen de conocimientos de Nueva Jersey con su duración real, y los dos caminos hacia la licencia probatoria.',
     resume: (h) => {

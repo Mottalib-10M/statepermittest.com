@@ -18,7 +18,7 @@ export default definePage({
     nav: 'Pennsylvania',
     card: 'PennDOT knowledge test: 18 questions, 15 right, then 65 hours before the junior license.',
     title: 'Pennsylvania Permit Test 2026: Free PennDOT Practice',
-    description: 'Pennsylvania permit practice test, free: 18 PennDOT-style questions scored at 15 correct, explained answers, the permit at 16, the 65-hour log and the junior license.',
+    description: 'Pennsylvania permit practice test, free: 18 PennDOT-style questions scored at 15 correct, explained answers, the permit at 16, 65 hours and the junior license.',
     h1: 'Pennsylvania permit practice test',
     intro: 'Eighteen questions and only three mistakes allowed: practice the PennDOT knowledge test at its real length, then count the 65 hours of the learner\'s permit.',
     resume: (h) => {

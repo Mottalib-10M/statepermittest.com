@@ -18,7 +18,7 @@ export default definePage({
     nav: 'Nevada',
     card: 'Nevada DMV knowledge test: 25 questions, 20 right, retest the next day for $10.',
     title: 'Nevada Permit Test 2026: Free DMV Knowledge Practice',
-    description: 'Nevada permit practice test, free: 25 DMV-style questions scored at 20 correct, explained answers, the instruction permit at 15 and a half, 50 hours and the curfew.',
+    description: 'Nevada permit practice test, free: 25 DMV-style questions scored at 20 correct, explained answers, the permit at 15 and a half, 50 hours and the curfew.',
     h1: 'Nevada permit practice test',
     intro: 'Twenty-five questions, five mistakes allowed: practice the Nevada knowledge test at its real length, for a car or a motorcycle.',
     resume: (h) => {
@@ -56,7 +56,7 @@ ${h.table(['', 'Nevada', 'Arizona', 'Utah'], [
     nav: 'Nevada',
     card: 'Examen del DMV de Nevada: 25 preguntas, 20 correctas y repetir al día siguiente por $10.',
     title: 'Examen del permiso de Nevada 2026: práctica del DMV',
-    description: 'Examen de práctica del permiso de Nevada, gratis y en español: 25 preguntas calificadas con 20 correctas, el permiso a los 15 años y medio, las 50 horas y el horario.',
+    description: 'Examen de práctica del permiso de Nevada, gratis y en español: 25 preguntas calificadas con 20 correctas, el permiso a los 15 y medio, 50 horas y horario.',
     h1: 'Examen de práctica del permiso de Nevada',
     intro: 'Veinticinco preguntas y cinco errores permitidos: practique el examen de conocimientos de Nevada con su duración real, para auto o para moto.',
     resume: (h) => {

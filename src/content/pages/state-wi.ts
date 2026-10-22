@@ -40,6 +40,7 @@ export default definePage({
 <p>Wisconsin publishes both the length and the mark, which makes the score easy to read: ${s.need ?? h.nc} of ${s.testQ ?? h.nc}. The tool gives the same arithmetic for any state.</p>
 <!--tool:mini:passmark|{"state":"WI"}-->
 <p>The long format means the test samples nearly every chapter of the ${s.handbookEdition ?? 'current'} Motorists' Handbook. A gap in one topic is rarely fatal, but a gap in three or four is. Questions about signs and right of way are the most numerous, followed by speed, lane use and the rules for drivers under 18.</p>
+<p>A practical way to handle the long format is to split it. Take the first 25 practice questions, check every wrong answer against the handbook, then take the next 25. When both halves come back with five errors or fewer, a full run usually lands above the ${s.need ?? h.nc} mark. Teens who are already enrolled in driver education can line these sessions up with the classroom chapters.</p>
 <h2>Wisconsin and its region</h2>
 ${h.table(['', 'Wisconsin', 'Minnesota', 'Iowa'], [
   ['Permit age', s.permitAgeL, mn.permitAgeL, ia.permitAgeL],
@@ -51,7 +52,9 @@ ${h.table(['', 'Wisconsin', 'Minnesota', 'Iowa'], [
 <h2>Winter, deer and two-lane roads</h2>
 <p>Much of Wisconsin driving happens on rural highways, often in snow. The handbook gives these situations real weight: braking on ice, keeping headlights on in poor visibility, passing farm machinery and slow vehicles, and what to do when a deer steps onto the road. Expect at least a few questions on each. Urban topics such as roundabouts, which are common in the state, and freeway merging also appear.</p>
 <p>Federal sign shapes and colors are set by the ${h.src('mutcd', 'MUTCD')}, so the "Road signs only" mode above covers that part of the test.</p>
+<p>Alcohol is the other topic Wisconsin treats firmly: the limit under 21 is ${s.u21bac != null ? s.u21bac.toFixed(2) : h.nc}, so any measurable amount is a violation for a young driver.</p>
 <h2>Paying and booking</h2>
+<p>Timing matters more than cost. A teen who gets the permit at ${s.permitAgeL} and holds it ${s.holdL} can reach the road test at ${s.interAgeL}; the nine months of night and passenger limits then run to about ${s.fullAgeL}. Since the waiting periods are fixed, the step a learner really controls is passing the knowledge test on the first visit, which is what the full-length practice above is for.</p>
 <p>The DMV fee for the instruction permit is ${s.permitFeeL}, the probationary license ${s.licenseFeeL}. ${s.feeNoteL} Book the knowledge test at a DMV service center and bring proof of identity, of Wisconsin residency and of driver education enrollment. The figures on this page come from ${h.os(C, 'testQ', 'the Wisconsin DMV')} and its fee pages; this site is independent of WisDOT and the DMV.</p>`;
     },
   },
