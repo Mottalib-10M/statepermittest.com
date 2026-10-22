@@ -1771,137 +1771,138 @@
   "code": "IL",
   "name": "Illinois",
   "agency": "Illinois Secretary of State, Driver Services Department",
-  "agency_url": "https://www.ilsos.gov/departments/drivers/home.html",
-  "handbook_url": "https://www.ilsos.gov/publications/pdf_publications/dsd_a112.pdf",
-  "handbook_edition": null,
+  "agency_url": "https://www.ilsos.gov/departments/drivers.html",
+  "handbook_url": "https://www.ilsos.gov/content/dam/publications/pdf_publications/dsd_a112.pdf",
+  "handbook_edition": "2026 edition",
   "fields": {
    "permit_min_age_years": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 15,
+    "source_url": "https://www.ilsos.gov/content/dam/publications/pdf_publications/dsd_a112.pdf",
+    "quote": "If you are age 15-17, you may receive an instruction permit with acceptable proof from the authorized driver education provider.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-03 (ilsos.gov refuses automated access from our network). Illinois Rules of the Road 2026."
    },
    "permit_holding_months": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 9,
+    "source_url": "https://www.ilsos.gov/departments/drivers/teen-driver-safety/gdl.html",
+    "quote": "Permit must be held for a minimum of 9 months.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-05-28 (ilsos.gov refuses automated access from our network)."
    },
    "supervised_hours_total": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 50,
+    "source_url": "https://www.ilsos.gov/departments/drivers/teen-driver-safety/gdl.html",
+    "quote": "Must practice driving a minimum of 50 hours, including 10 hours at night, supervised by a parent or adult age 21 or older with a valid driver’s license.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-05-28 (ilsos.gov refuses automated access from our network). In addition to driver education (Rules of the Road 2026)."
    },
    "supervised_hours_night": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 10,
+    "source_url": "https://www.ilsos.gov/departments/drivers/teen-driver-safety/gdl.html",
+    "quote": "including 10 hours at night",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-05-28 (ilsos.gov refuses automated access from our network)."
    },
    "intermediate_min_age_years": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 16,
+    "source_url": "https://www.ilsos.gov/content/dam/publications/pdf_publications/dsd_a112.pdf",
+    "quote": "You must be at least age 16 to obtain an Illinois driver’s license.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-03 (ilsos.gov refuses automated access from our network). Illinois Rules of the Road 2026."
    },
    "full_license_min_age_years": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 18,
+    "source_url": "https://www.ilsos.gov/departments/drivers/teen-driver-safety/gdl.html",
+    "quote": "Full Licensing Phase — Drivers Ages 18-20",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-05-28 (ilsos.gov refuses automated access from our network). \"No age-related restrictions apply except in cases where a driver fails to move from the Initial Licensing Phase to the Full Licensing Phase.\""
    },
    "drivers_ed_required": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": "Required under 18 (at least 30 hours of classroom and 6 hours behind the wheel); first-time applicants aged 18-20 without it take a 6-hour adult driver education course.",
+    "source_url": "https://www.ilsos.gov/content/dam/publications/pdf_publications/dsd_a112.pdf",
+    "quote": "If you are age 16 or 17, you may receive your license if you successfully complete a state-approved driver education course, complete 50 hours of practice driving, and pass the three parts of the driver’s license exam.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-03 (ilsos.gov refuses automated access from our network). Illinois Rules of the Road 2026. \"Approved driver education courses include at least 30 hours of classroom study and six hours of behind-the-wheel training\"."
    },
    "knowledge_test_questions": {
     "value": null,
     "source_url": "",
     "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "note": "Not published: the Rules of the Road 2026 and the GDL page describe the written exam (signs, signals, multiple-choice and true-or-false questions) without a number of questions or a pass mark (read 2026-10-22)."
    },
    "knowledge_test_pass_correct": {
     "value": null,
     "source_url": "",
     "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "note": "Not published: the Rules of the Road 2026 and the GDL page describe the written exam (signs, signals, multiple-choice and true-or-false questions) without a number of questions or a pass mark (read 2026-10-22)."
    },
    "knowledge_test_pass_percent": {
     "value": null,
     "source_url": "",
     "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "note": "Not published: the Rules of the Road 2026 and the GDL page describe the written exam (signs, signals, multiple-choice and true-or-false questions) without a number of questions or a pass mark (read 2026-10-22)."
    },
    "knowledge_test_retake_wait": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": "three attempts per exam within one year of the application fee",
+    "source_url": "https://www.ilsos.gov/content/dam/publications/pdf_publications/dsd_a112.pdf",
+    "quote": "You are allowed three attempts to pass each exam within one year from the date you paid your application fee.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-03 (ilsos.gov refuses automated access from our network). Illinois Rules of the Road 2026. No waiting period between attempts is stated."
    },
    "knowledge_test_spanish": {
     "value": null,
     "source_url": "",
     "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "note": "Not stated: the Rules of the Road 2026 only mentions oral examinations for applicants with a language barrier."
    },
    "permit_fee_usd": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 20,
+    "source_url": "https://www.ilsos.gov/content/dam/publications/pdf_publications/dsd_a112.pdf",
+    "quote": "Instruction Permit ..............................................................................................................$20",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-03 (ilsos.gov refuses automated access from our network). Illinois Rules of the Road 2026."
    },
    "license_fee_usd": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 0,
+    "source_url": "https://www.ilsos.gov/content/dam/publications/pdf_publications/dsd_a112.pdf",
+    "quote": "If you receive your driver’s license before the expiration of the instruction permit, you will not be required to pay an additional fee when applying for your driver’s license.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-03 (ilsos.gov refuses automated access from our network). Illinois Rules of the Road 2026."
    },
    "night_restriction": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": "Under 18 (permit and initial license): no driving Sunday to Thursday 10 p.m.-6 a.m. and Friday to Saturday 11 p.m.-6 a.m.",
+    "source_url": "https://www.ilsos.gov/departments/drivers/teen-driver-safety/gdl.html",
+    "quote": "Nighttime driving restrictions — Sunday through Thursday, 10 p.m. to 6 a.m.; and Friday to Saturday, 11 p.m. to 6 a.m. (local curfews may differ).",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-05-28 (ilsos.gov refuses automated access from our network)."
    },
    "passenger_restriction": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": "Initial license, first 12 months or until 18: no more than one passenger under 20, except siblings, stepsiblings and children of the driver.",
+    "source_url": "https://www.ilsos.gov/departments/drivers/teen-driver-safety/gdl.html",
+    "quote": "For the first 12 months of licensing, or until the driver turns 18, whichever occurs first, the number of passengers is limited to one person under age 20, unless the passenger(s) is a sibling, stepsibling, child or stepchild of the driver.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-05-28 (ilsos.gov refuses automated access from our network)."
    },
    "teen_phone_ban": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": true,
+    "source_url": "https://www.ilsos.gov/departments/drivers/teen-driver-safety/gdl.html",
+    "quote": "Cell phone use while driving including a hands-free device, is prohibited for drivers under age 19, except in the case of an emergency.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-05-28 (ilsos.gov refuses automated access from our network). Applies to drivers under 19."
    },
    "under21_bac": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "value": 0.0,
+    "source_url": "https://www.ilsos.gov/content/dam/publications/pdf_publications/dsd_a112.pdf",
+    "quote": "If you are under age 21 and found to have any trace of alcohol in your system while operating a motor vehicle, you will have your driving privileges suspended for a minimum of three months.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-03 (ilsos.gov refuses automated access from our network). Illinois Rules of the Road 2026. Zero tolerance; coded 0.0."
    },
    "motorcycle_permit_min_age_years": {
     "value": null,
     "source_url": "",
     "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "note": "Not confirmed: the Rules of the Road refers motorcycle licensing to the Illinois Motorcycle Operator Manual, not read."
    },
    "motorcycle_test_questions": {
     "value": null,
     "source_url": "",
     "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "note": "Not confirmed: the Rules of the Road refers motorcycle licensing to the Illinois Motorcycle Operator Manual, not read."
    },
    "motorcycle_test_pass": {
     "value": null,
     "source_url": "",
     "quote": "",
-    "note": "Not verified: ilsos.gov / cyberdriveillinois.com return HTTP 403 (Akamai) and ilga.gov (statutes) refused connections; web search quota exhausted. No official source could be read."
+    "note": "Not confirmed: the Rules of the Road refers motorcycle licensing to the Illinois Motorcycle Operator Manual, not read."
    }
-  }
+  },
+  "retrieved": "2026-10-22"
  },
  {
   "code": "IN",
@@ -3131,7 +3132,7 @@
   "code": "MN",
   "name": "Minnesota",
   "agency": "Minnesota Department of Public Safety, Driver and Vehicle Services",
-  "agency_url": "https://mn.gov/dps/divisions/dvs/",
+  "agency_url": "https://dps.mn.gov/divisions/dvs",
   "handbook_url": null,
   "handbook_edition": "DVS manual not readable; Minnesota Statutes 2025",
   "fields": {
@@ -3139,13 +3140,13 @@
     "value": 15,
     "source_url": "https://www.revisor.mn.gov/statutes/cite/171.05",
     "quote": "The department may issue an instruction permit to an applicant who is 15, 16, or 17 years of age and who: (1) has completed a course of driver education in another state",
-    "note": "Value from Minnesota Statutes 2025 (revisor.mn.gov); the DVS site (dps.mn.gov/divisions/dvs) returned 404 to automated access. Applicant must be enrolled in driver education (classroom phase completed)."
+    "note": "Value from Minnesota Statutes 2025 (revisor.mn.gov); the DVS site (https://dps.mn.gov/divisions/dvs, reached through drive.mn.gov) answers 404 to our network; the Internet Archive captured it with HTTP 200 on 2026-10-22. Applicant must be enrolled in driver education (classroom phase completed)."
    },
    "permit_holding_months": {
     "value": 6,
     "source_url": "https://www.revisor.mn.gov/statutes/cite/171.05",
     "quote": "An applicant who has applied for and received an instruction permit pursuant to subdivision 2 must possess the instruction permit for not less than six months before qualifying for a driver's licens",
-    "note": "Value from Minnesota Statutes 2025 (revisor.mn.gov); the DVS site (dps.mn.gov/divisions/dvs) returned 404 to automated access."
+    "note": "Value from Minnesota Statutes 2025 (revisor.mn.gov); the DVS site (https://dps.mn.gov/divisions/dvs, reached through drive.mn.gov) answers 404 to our network; the Internet Archive captured it with HTTP 200 on 2026-10-22."
    },
    "supervised_hours_total": {
     "value": 50,

@@ -39,7 +39,7 @@ export default definePage({
     slug: 'drivers-ed-requirements',
     nav: 'Driver education requirements',
     card: 'Which states require a driver education course for teens, and what it changes for the permit and license.',
-    title: 'Drivers Ed Requirements by State: Who Must Take a Course',
+    title: 'Drivers Ed by State 2026: Online Classes, Who Must Take One',
     description: 'Drivers ed requirements by state: where teens must complete driver education before the permit or license, where it is optional, and what the course changes.',
     h1: 'Driver education requirements in every state',
     intro: 'Pick a state: the tool quotes its driver education rule next to the permit age and the supervised hours. The table below classifies every state rule we could confirm.',
@@ -70,8 +70,8 @@ ${h.table(['State', 'Category', 'Official rule', 'Practice hours'], rows, `Drive
 <p>Driver education was once a standard high school class; many districts dropped it for budget reasons, and states took different paths. Some made it a condition for licensing under 18, often combined with a long supervised log. Others rely on parents and the practice log alone, and use the course as an incentive: finish it and you reach the next stage sooner. ${h.src('nhtsa_teen', 'NHTSA')} treats driver education as one part of a graduated system rather than a substitute for supervised experience, which is why the hours remain even where the course is required.</p>
 <h2>How the course changes your dates</h2>
 <p>In states where the course is an incentive, it can move the timeline: an earlier permit, a shorter holding period, fewer logged hours or an earlier unrestricted license. The ${h.a('permit-age', 'date calculator')} shows the default dates; the official rule in the table says what the course changes. Remember that the course has a cost, set by the provider, on top of the state ${h.a('fees', 'permit and license fees')}.</p>
-<h2>Choosing a provider</h2>
-<p>Only a provider on the state approved list counts. The agency publishes that list, usually with license numbers. This site does not recommend any school or program; check the list yourself, and compare the hours and the price of two or three approved options. If you also need to log practice, the ${h.a('supervised-hours', 'supervised hours guide')} includes a counter for what is left.</p>`;
+<h2>Finding an approved class near you</h2>
+<p>Only a provider on the state approved list counts. The agency publishes that list, usually with license numbers, and it is the place to look for a class close to home: in Texas, for example, the Department of Licensing and Regulation keeps a searchable list of approved driver education providers, parent-taught courses included. This site does not recommend any school or program; check the list yourself, and compare the hours and the price of two or three approved options. If you also need to log practice, the ${h.a('supervised-hours', 'supervised hours guide')} includes a counter for what is left.</p>`;
     },
   },
   es: {
@@ -109,8 +109,8 @@ ${h.table(['Estado', 'Categoría', 'Edad del permiso', 'Horas de práctica', 'Re
 <p>La educación vial fue durante años una clase normal de la preparatoria; muchos distritos la quitaron por falta de presupuesto, y los estados tomaron caminos distintos. Unos la convirtieron en condición para la licencia antes de los 18, a menudo junto con un registro largo de horas. Otros confían en los padres y en el registro de práctica, y usan el curso como incentivo: quien lo termina pasa antes a la siguiente etapa. La ${h.src('nhtsa_teen', 'NHTSA')} ve la educación vial como una pieza del sistema graduado y no como un sustituto de la experiencia supervisada, por eso las horas se mantienen incluso donde el curso es obligatorio.</p>
 <h2>Cómo cambia el curso sus fechas</h2>
 <p>En los estados donde el curso es un incentivo, puede mover el calendario: un permiso antes, menos tiempo con él, menos horas registradas o una licencia sin restricciones más temprana. La ${h.a('permit-age', 'calculadora de fechas')} muestra las fechas normales; la regla oficial dice qué cambia el curso. Recuerde que el curso tiene un precio, que fija el proveedor, además de las ${h.a('fees', 'tarifas del permiso y la licencia')}.</p>
-<h2>Cómo elegir un proveedor</h2>
-<p>Solo cuenta un proveedor de la lista aprobada por el estado. La agencia publica esa lista, normalmente con números de licencia. Este sitio no recomienda ninguna escuela ni programa; revise la lista usted mismo y compare las horas y el precio de dos o tres opciones aprobadas. Si además debe registrar práctica, la ${h.a('supervised-hours', 'guía de horas supervisadas')} incluye un contador de las que faltan.</p>`;
+<h2>Encontrar un curso aprobado cerca de usted</h2>
+<p>Solo cuenta un proveedor de la lista aprobada por el estado. La agencia publica esa lista, normalmente con números de licencia, y es donde buscar un curso cerca de casa: en Texas, por ejemplo, el Departamento de Licencias y Regulación mantiene una lista consultable de proveedores aprobados de educación vial, incluidos los cursos impartidos por los padres. Este sitio no recomienda ninguna escuela ni programa; revise la lista usted mismo y compare las horas y el precio de dos o tres opciones aprobadas. Si además debe registrar práctica, la ${h.a('supervised-hours', 'guía de horas supervisadas')} incluye un contador de las que faltan.</p>`;
     },
   },
 });

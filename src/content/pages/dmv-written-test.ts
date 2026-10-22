@@ -39,7 +39,7 @@ export default definePage({
     slug: 'dmv-written-test',
     nav: 'DMV written test',
     card: 'Free written test practice with explained answers, plus the format, topics and day-of steps.',
-    title: 'DMV Written Test 2026: Free Practice and What to Expect',
+    title: 'DMV Written Test 2026: Practice Questions and Study Guide',
     description: 'DMV written test practice, free: car questions with explained answers, scored at your state pass mark, plus the test format, the topics and what to bring.',
     h1: 'DMV written test: practice and what to expect',
     intro: 'Answer the practice questions above, scored against the pass line of the state you choose, then read how the real knowledge test is organized and what to bring.',

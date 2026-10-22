@@ -2317,55 +2317,55 @@
   "agency": "Texas Department of Public Safety, Driver License Division",
   "agency_url": "https://www.dps.texas.gov/section/driver-license",
   "handbook_url": "https://www.dps.texas.gov/internetforms/forms/dl-7.pdf",
-  "handbook_edition": "Not read (dps.texas.gov unreachable); Texas statutes + TDLR pages used",
+  "handbook_edition": "Revised January 2026",
   "fields": {
    "permit_min_age_years": {
     "value": 15,
     "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
     "quote": "The department may issue a learner license ... to a person who: (1) is 15 years of age or older but under 18 years of age; (2) has satisfactorily completed and passed the classroom phase of an approved driver education course",
-    "note": "Transp. Code 521.222. Driver ed classroom may start at 14 (TDLR). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "note": "Transp. Code 521.222. Driver ed classroom may start at 14 (TDLR). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read. Confirmed 2026-10-22 on the DPS learner license page: \"15 and 17 years of age\". Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-15 (dps.texas.gov refuses automated access from our network)."
    },
    "permit_holding_months": {
     "value": 6,
     "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
     "quote": "The department may not issue a Class A, B, or C driver's license other than a hardship license to an applicant under 18 years of age unless the applicant has held a learner license or hardship license for at least six months",
-    "note": "Transp. Code 521.204(b). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "note": "Transp. Code 521.204(b). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read. Confirmed 2026-10-22 on the DPS learner license page: \"A Learner license must be held for at least six months unless you turn 18\". Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-15 (dps.texas.gov refuses automated access from our network)."
    },
    "supervised_hours_total": {
     "value": 30,
-    "source_url": "https://www.tdlr.texas.gov/driver/education/parent-taught/",
-    "quote": "30 hours of behind-the-wheel instruction, including at least 10 hours of nighttime instruction",
-    "note": "Part of the 44 in-car hours of teen driver ed (7 observation + 7 behind-the-wheel + 30 practice) per TDLR."
+    "source_url": "https://www.dps.texas.gov/section/driver-license/texas-provisional-license-teen",
+    "quote": "30 hours of behind the wheel driving practice, of which at least 10 hours must be at night with a licensed driver 21 years of age or older in the vehicle at all times.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-10 (dps.texas.gov refuses automated access from our network). Same figures on the TDLR parent-taught page."
    },
    "supervised_hours_night": {
     "value": 10,
-    "source_url": "https://www.tdlr.texas.gov/driver/education/parent-taught/",
-    "quote": "including at least 10 hours of nighttime instruction",
-    "note": ""
+    "source_url": "https://www.dps.texas.gov/section/driver-license/texas-provisional-license-teen",
+    "quote": "of which at least 10 hours must be at night",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-10 (dps.texas.gov refuses automated access from our network)."
    },
    "intermediate_min_age_years": {
     "value": 16,
-    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
-    "quote": "The department may issue a Class C driver's license to an applicant under 18 years of age only if the applicant: (1) is 16 years of age or older",
-    "note": "Provisional license; also requires Impact Texas Teen Drivers (ITTD) within 90 days of the skills test (TDLR provisional page). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "source_url": "https://www.dps.texas.gov/section/driver-license/texas-provisional-license-teen",
+    "quote": "Be between 16 and 17 years of age",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-10 (dps.texas.gov refuses automated access from our network). Also requires Impact Texas Teen Driver Program (ITTD) within 90 days of the driving test."
    },
    "full_license_min_age_years": {
     "value": 18,
-    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.545.htm",
-    "quote": "A person under 18 years of age may not operate a motor vehicle: (1) after midnight and before 5 a.m. ...",
-    "note": "Transp. Code 545.424: restrictions tied to age under 18. DPS describes the night/passenger limits as applying for the first 12 months; that page could not be read. Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "source_url": "https://www.dps.texas.gov/internetforms/forms/dl-7.pdf",
+    "quote": "Phase Two restricts the driving privileges of individuals until their 18th birthday following the issuance of a provisional license.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-14 (dps.texas.gov refuses automated access from our network). Texas Driver Handbook DL-7, revised January 2026."
    },
    "drivers_ed_required": {
     "value": "Required for all applicants under 25 (teens: 24 h classroom + 44 h in-car, via school, provider or parent-taught program; 18-24: 6-hour adult course).",
-    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
-    "quote": "the department may not issue a driver's license to a person who is younger than 25 years of age unless the person submits to the department a driver education certificate",
-    "note": "Transp. Code 521.1601; parent-taught option per TDLR. Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "source_url": "https://www.tdlr.texas.gov/driver/education/students/do-i-need-driver-ed/",
+    "quote": "All persons under 25 years old must take a driver education course to get a Texas driver’s license.",
+    "note": "TDLR page read 2026-10-22: under 18, \"24 hours of classroom instruction and 44 hours of in-car driving\"; 18-24, \"a 6-hour adult driver education course\". Transp. Code 521.1601."
    },
    "knowledge_test_questions": {
     "value": null,
     "source_url": "",
     "quote": "",
-    "note": "Not confirmed on an official source."
+    "note": "Not published: neither the DPS handbook (DL-7, January 2026) nor the DPS teen pages give the number of questions (read 2026-10-22)."
    },
    "knowledge_test_pass_correct": {
     "value": null,
@@ -2374,16 +2374,16 @@
     "note": "Not confirmed on an official source."
    },
    "knowledge_test_pass_percent": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not confirmed on an official source."
+    "value": 70,
+    "source_url": "https://www.dps.texas.gov/internetforms/forms/dl-7.pdf",
+    "quote": "You must score a grade of 70 percent or better to pass any knowledge exam.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-14 (dps.texas.gov refuses automated access from our network). Texas Driver Handbook DL-7, revised January 2026. Number of questions not stated, so no pass count."
    },
    "knowledge_test_retake_wait": {
     "value": null,
     "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
     "quote": "On payment of the required fee, an applicant is entitled to three examinations of each element under Subsection (b) for each application",
-    "note": "No waiting period found in statute; 3 attempts per application fee. Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "note": "DL-7 (January 2026): \"If you do not pass the knowledge and driving exams on your first attempt, your application will be held for 90 days. After 90 days or three failed exams, a new application and fee will be required.\" No waiting period between attempts is stated."
    },
    "knowledge_test_spanish": {
     "value": true,
@@ -2392,22 +2392,22 @@
     "note": "Transp. Code 521.162 (sign text stays in English). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
    },
    "permit_fee_usd": {
-    "value": 15,
-    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
-    "quote": "(c) The fee for issuance of a provisional license or learner license is $15.",
-    "note": "Transp. Code 521.421(c). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "value": 16,
+    "source_url": "https://www.dps.texas.gov/section/driver-license/driver-license-fees",
+    "quote": "Learner license—under 18 New $16",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-11 (dps.texas.gov refuses automated access from our network). $15 statutory fee (Transp. Code 521.421(c)) plus the $1 administrative fee; DL-7 Table 1: \"$15 for license + $1 fee = $16\"."
    },
    "license_fee_usd": {
-    "value": 15,
-    "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
-    "quote": "The fee for issuance of a provisional license or learner license is $15.",
-    "note": "First teen license is the provisional license ($15); standard license $32 (521.421(a)). Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "value": 16,
+    "source_url": "https://www.dps.texas.gov/section/driver-license/driver-license-fees",
+    "quote": "Under 18: new $16",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-11 (dps.texas.gov refuses automated access from our network). Provisional license, $15 + $1 administrative fee (DL-7 Table 4)."
    },
    "night_restriction": {
     "value": "Under 18: no driving midnight-5 a.m. unless for work, school-related activity or medical emergency (not applicable when accompanied as a learner).",
     "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.545.htm",
     "quote": "A person under 18 years of age may not operate a motor vehicle: (1) after midnight and before 5 a.m. unless the operation of the vehicle is necessary for the operator to attend or participate in employment or a school-related activity or because of a medical emergency",
-    "note": "Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read."
+    "note": "Statute text read from the Legislature's statute file server tcss.legis.texas.gov (same content as statutes.capitol.texas.gov). dps.texas.gov refused all connections, so the DPS handbook (DL-7) and DPS pages could not be read. Confirmed 2026-10-22 in DL-7 (Phase Two, until the 18th birthday) and on the DPS provisional license page."
    },
    "passenger_restriction": {
     "value": "Under 18: no more than one passenger under 21 who is not a family member.",
@@ -2440,12 +2440,13 @@
     "note": "Not confirmed on an official source."
    },
    "motorcycle_test_pass": {
-    "value": null,
-    "source_url": "",
-    "quote": "",
-    "note": "Not confirmed on an official source."
+    "value": "70%",
+    "source_url": "https://www.dps.texas.gov/internetforms/forms/dl-7.pdf",
+    "quote": "You must score a grade of 70 percent or better to pass any knowledge exam.",
+    "note": "Read on 2026-10-22 from the Internet Archive copy of the official page captured on 2026-10-14 (dps.texas.gov refuses automated access from our network). Texas Driver Handbook DL-7, revised January 2026. Applies to the Class M knowledge exam."
    }
-  }
+  },
+  "retrieved": "2026-10-22"
  },
  {
   "code": "UT",

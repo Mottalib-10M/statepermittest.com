@@ -126,6 +126,16 @@ const check = async (u, essai = 1) => {
         const s = +stdout;
         if (s >= 200 && s < 400) return void blocked.push(`${r.status} au robot, ${s} au navigateur ${u}`);
       } catch {}
+      // Un hôte dont même la page d'accueil répond 404 ne dit rien de ce lien : il refuse notre
+      // réseau. dps.mn.gov (Minnesota DVS) répond 404 à tout, robots.txt compris, depuis la France
+      // alors que l'Internet Archive le lit en 200 le même jour (us-permit-test, 2026-10-22).
+      try {
+        const racine = new URL(u).origin + '/';
+        if (racine !== u) {
+          const { stdout } = await run('curl', ['-s', '-o', '/dev/null', '-w', '%{http_code}', '-L', '-m', '30', '-A', NAV_UA, racine]);
+          if (+stdout === 404) return void blocked.push(`${r.status}, et 404 sur la racine de l'hôte (réseau refusé) ${u}`);
+        }
+      } catch {}
       dead.push(`${r.status} ${u}`);
     }
     else if (NOT_FOUND.test(body.replace(/<[^>]+>/g, ' '))) dead.push(`200 mais « introuvable » ${u}`);

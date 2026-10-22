@@ -191,9 +191,7 @@
  },
  "TX": {
   "rec": {
-   "feeNote": "Texas Transportation Code 521.421: $15 for a learner license and $15 for a provisional license.",
-   "handbookEdition": null,
-   "handbookUrl": null
+   "feeNote": "Texas DPS fee chart: $16 for the learner license and $16 for the provisional license, each a $15 state fee plus a $1 administrative fee."
   }
  },
  "UT": {
@@ -253,8 +251,9 @@
  },
  "IL": {
   "rec": {
-   "handbookEdition": null,
-   "handbookUrl": null
+   "licenseFee": 0,
+   "feeCombined": true,
+   "feeNote": "The $20 instruction permit fee covers the first license when it is issued before the permit expires."
   }
  },
  "KS": {
