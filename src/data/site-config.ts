@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-permit-test.example";
+export const SITE_URL = "https://statepermittest.com";
 export const SITE_NAMES: Record<string, string> = {"en": "State Permit Test", "es": "Examen del Permiso por Estado"};
 export const LANG_TAGS: Record<string, string> = {"en": "en-US", "es": "es-US"};
 export const OG_LOCALES: Record<string, string> = {"en": "en_US", "es": "es_US"};
@@ -16,7 +16,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners reads 
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["Learner permit knowledge tests in US states", "Graduated driver licensing laws", "Road signs under the MUTCD", "Commercial learner's permit rules (49 CFR 383)", "Motorcycle permit tests", "Driver license fees by state"], "es": ["Exámenes teóricos del permiso de aprendizaje en los estados de EE. UU.", "Leyes de licencias graduadas", "Señales de tránsito según el MUTCD", "Reglas del permiso de aprendiz comercial (49 CFR 383)", "Exámenes del permiso de motocicleta", "Tarifas de licencias de conducir por estado"]};
-export const CONTACT_EMAIL = "contact@us-permit-test.example";
+export const CONTACT_EMAIL = "contact@statepermittest.com";
 export const THEME_COLOR = '#1F3A6E';
 export const LOGO_SYMBOL = 'L';
 export const BING_VERIFY_CODE = '';
